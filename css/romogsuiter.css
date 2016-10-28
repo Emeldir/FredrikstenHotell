@@ -2,7 +2,7 @@
 
 body {
 
-  background-color: grey;
+  background-color: lightgrey;
 }
 
 ul {
@@ -13,13 +13,33 @@ list-style-type: none;
 font-size: 21px;
 }
 
-body .box { 
+.box { 
 background-color: black;
 border: 5px purple solid;
 margin: 20px 10px;
-width: 30%
+width: 30%;
 }
 
-. linebreakbox {
+.box2 {
+  border: 5px green solid;
+  margin: 10px;
+  width: 300px;
+  height: 500px;
+  background: white;
+}
+
+  .part1,.part2 {
+      float: left;
+      padding: 20px;
+  }
+
+#suite, #dobbeltrompremium {
+      float: left;
+
+}
+
+#dobbeltrompremium, #dobbeltromsyd {
+float: left;
+padding: 20px;
 
 }

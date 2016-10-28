@@ -1,10 +1,25 @@
 /* css for romogsuiter */
 
+body {
+
+  background-color: grey;
+}
+
 ul {
 list-style-type: none;
-
 }
+
 .romheading {
 font-size: 21px;
+}
+
+body .box { 
+background-color: black;
+border: 5px purple solid;
+margin: 20px 10px;
+width: 30%
+}
+
+. linebreakbox {
 
 }

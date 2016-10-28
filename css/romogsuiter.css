@@ -1,7 +1,6 @@
 /* css for romogsuiter */
 
 body {
-
   background-color: lightgrey;
 }
 
@@ -9,37 +8,62 @@ ul {
 list-style-type: none;
 }
 
-.romheading {
-font-size: 21px;
+li {
+font-family: Helvetica, verdana, sans-serif;
+font-size: 13px;
+
 }
 
-.box { 
-background-color: black;
-border: 5px purple solid;
-margin: 20px 10px;
-width: 30%;
+.romheading {
+font-size: 18px;
+text-align: left;
+margin-left: 3%;
+margin-right: 3%;
+font-family: Helvetica, verdana, sans-serif;
+
 }
+
+
 
 .box2 {
-  border: 5px green solid;
   margin: 10px;
-  width: 300px;
-  height: 500px;
+  width: 26%;
+  height: 50%;
   background: white;
+}
+
+.picture {
+  width: 100%;
 }
 
   .part1,.part2 {
       float: left;
-      padding: 20px;
+      padding: 10px;
+      margin-bottom: 12%;
   }
+
+.part1 {
+margin-right: 2%;
+
+}
 
 #suite, #dobbeltrompremium {
       float: left;
-
 }
 
 #dobbeltrompremium, #dobbeltromsyd {
 float: left;
-padding: 20px;
+}
+
+#dobbeltromnord, #tomannsrom {
+float: left;
+}
+
+#tomannsrom, #enkeltrom {
+  float: left;
+}
+
+#suite, #dobbeltromnord {
+margin-left: 5%;
 
 }

@@ -1,1 +1,8 @@
 /*CSS*/
+
+
+*{
+	/* Fjerner luftrom over og på sidene*/
+	margin:0;
+	padding:0;
+}

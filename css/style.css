@@ -29,6 +29,11 @@ p, ul,li{
 	font-size: 1em;
 }
 
+article{
+	width:50%;
+	margin:0 auto;
+}
+
 
 /* Bildet dekker hele skjermen*/
 .bigPicture{
@@ -73,10 +78,9 @@ width:100%
 
 
 /*Hotellet/Index*/
-article{
-	width:50%;
-	margin:0 auto;
-}
+
+
+
 
 /* Rom og Suiter */
 

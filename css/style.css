@@ -65,7 +65,7 @@ width:100%
 }
 
 #topNavbar a img{
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 #BookRom {
@@ -76,6 +76,26 @@ width:100%
 	display: inline-block;
 }
 
+/*Styling for the dropdown under Opplevelser. Written by Torstein*/
+
+#opplevelser_bar {
+	display:none;
+  color: white;
+  background-color: black;
+  max-width: 100%;
+  min-width: 99%;
+  height: 45px;
+
+}
+
+.opplevelser_links {
+  display: block;
+  color: white;
+  text-decoration: none;
+	position: absolute;
+	top: 75px;
+	font-size: 0.6em;
+}
 
 /*Hotellet/Index*/
 

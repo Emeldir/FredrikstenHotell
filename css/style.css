@@ -179,9 +179,12 @@ li {
 
 /*Galleri*/
 #galleritittel {
-	margin-left: 100px;
-	margin-top: 200px;
+	margin: auto;
+	text-align: left;
+	padding-top: 150px;
+	padding-bottom: 50px;
 	font-size: 2em;
+	width: 80%;
 }
 
 #gallerigrid {
@@ -189,7 +192,6 @@ li {
 	text-align: center;
 	column-gap: 50px;
 	height: 900px;
-	overflow: hidden;
 	width: 80%
 }
 
@@ -197,5 +199,23 @@ li {
 	width: 250px;
 	height: auto;
 	float: left;
-	margin: 30px;
+	margin: 10px;
+	box-shadow: 3px 3px 3px grey;
+}
+
+#slideshow {
+	margin: auto;
+	text-align: center;
+	max-width: 80%;
+	padding-left: 10px;
+}
+
+.big{
+	max-width: 97%
+}
+
+#slideshowbuttons {
+	margin: auto;
+	padding-left: 10px;
+	width: 80%;
 }

@@ -4,18 +4,32 @@
 	<meta charset="utf-8">
   	<title> Konferanse </title>
   	<link rel="stylesheet" type="text/css" href="css/styling.css">
+  	<style>
+  		* {
+  			margin:0;
+			padding:0;
+		}
+  		#kursOgKonferanse {
+  			font-family: Helvetica, verdana, sans-serif;
+  			text-align: center;
+  		}
+  		h1 {
+  			font-family: Helvetica, verdana, sans-serif;
+  		}
+  	</style>
   </head>
   
   <body>
   	<wrapper> 
   		<header> 
   			<!-- Meny bar kommer her- modularity -->
-  			<img src="img/Kasernen21.jpg" alt="SamtaleMiddag" style="width:1000px;" id="konferanseMiddag"/>
+  			<img src="img/Kasernen21.jpg" alt="SamtaleMiddag" id="konferanseMiddag"
+  			style="width:100%; margin:0; padding:0;"/>
   			<h1>Konferanse</h1>
   		</header>
   		
-  		<section id="KursOgKonferanse" >
-  			<h4> Kurs og Konferanse </h4>
+  		<section id="kursOgKonferanse" >
+  			<h4> KURS OG KONFERANSE </h4> <br>
   			<p> Vi har et flott kurs- og konferansetilbud til grupper fra 2 til 110 personer.<br>
   			Konferanse med eller uten overnatting. Servering av frokost, lunsj og middag etter
   			ønske. Servering av kaffe, te, vann og frukt i møtelokalet. <br>
@@ -24,8 +38,9 @@
   			<br>
   			Ta kontakt med oss for et uforpliktende tilbud. Vi skreddersyr konferansen til ditt behov.
   			</p>
-  			<img src="img/Kasernen28.jpg" alt="Mingling" style="width:1000px;" id="konferanseMingling"/>
-  			<p> Alle våre konferanserom er utstyrt med trådløst nettverk, prosjketor, whiteboard og flipover.
+  			<img src="img/Kasernen28.jpg" alt="Mingling" id="konferanseMingling"
+  			style="width:100%; margin:0; padding:0;"/>
+  			<p> Alle våre konferanserom er utstyrt med trådløst nettverk, prosjktor, whiteboard og flipover.
   			Lydutstyr er fast installert i noen ro, og plasseres ellers etter behov.<br>
   			<br>
   			Konferansesal: Intill 110 deltakere<br>
@@ -35,11 +50,14 @@
   		</section>
   		
   		<div id="bookKonferanse">
-  			<input type="button" name="bookKonferanse" Placeholder="Book Konferanse"> <br>
+  			<form>
+  				<input type="button" name="bookKonferanse" Placeholder="Book Konferanse" onclick=""> <br>
+  			</form>
   		</div>
   		
   		<footer>
-  			<img src="img/konferansesorthvitt.jpg" alt="konferanserom" style="width:1000px;" id="konferanseRom"/>
+  			<img src="img/konferansesorthvitt.jpg" alt="konferanserom" id="konferanseRom"
+  			style="width:100%; margin:0; padding:0;"/>
   			<!-- lagt til ny kommentar -->
   		</footer>
   	</wrapper>

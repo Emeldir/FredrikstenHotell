@@ -21,9 +21,20 @@ content = '<div class="topnav" id="topNavbar">'
 
 navbar.innerHTML += content;
 
-// Code for extra navbar under Opplevelser. Written by Torstein. More cumbersome method.
+// Code for extra navbar under Opplevelser. Written by Torstein.
+
 var opplevelser_bar = document.getElementById("opplevelser_bar");
 opplevelser_bar.className = "opplevelser"
+
+content2 = '<div class="opplevelser" >'
++         '<ul>'
++         '<li><a class="opplevelser_links" href=opplevelser_matogdrikke.html id="matogdrikke"> Mat og Drikke </a></li>'
++         '<li><a class="opplevelser_links" href=opplevelser_selskap.html id="selskap"> Selskap </a></li>'
++         '<li><a class="opplevelser_links" href="opplevelser_aktiviteter.html"> Aktiviteter </a></li></ul></div>';
+
+opplevelser_bar.innerHTML += content2;
+/*
+
 
 var matogdrikke = document.createElement("a");
 matogdrikke.className = "opplevelser_links";
@@ -48,6 +59,7 @@ aktiviteter.href = "opplevelser_aktiviteter.html"
 aktiviteter.style.left = "80%"
 aktiviteter.appendChild(document.createTextNode("Aktiviteter"));
 opplevelser_bar.appendChild(aktiviteter);
+*/
 
 opplevelser.addEventListener("mouseenter", function( event ) {
     opplevelser_bar.style.display = "block";

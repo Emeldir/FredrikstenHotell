@@ -176,3 +176,26 @@ li {
 #suite, #dobbeltromnord {
 	margin-left: 5%;
 }
+
+/*Galleri*/
+#galleritittel {
+	margin-left: 100px;
+	margin-top: 200px;
+	font-size: 2em;
+}
+
+#gallerigrid {
+	margin: auto;
+	text-align: center;
+	column-gap: 50px;
+	height: 900px;
+	overflow: hidden;
+	width: 80%
+}
+
+.thumbs {
+	width: 250px;
+	height: auto;
+	float: left;
+	margin: 30px;
+}

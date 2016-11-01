@@ -1,1 +1,144 @@
 /*CSS*/
+
+/*FILE NAME: style.css
+WRITTEN BY: Cecilie Kristoffersen 
+            Susanne Rom
+            Ida Opsahl 
+            Sunniva Johansen
+            Torstein Bakke
+WHEN: Oktober/November 2016
+PURPOSE: Stylesheet for the whole homepage
+
+/*  Genral CSS for the whole site  */
+*{
+	/* Fjerner luftrom over og på sidene*/
+	margin:0;
+	padding:0;
+	font-family: Helvetica, "Gill Sans", sans-serif;
+}
+
+body{
+	background-color: #f4f4f4;
+}
+
+h2{
+	font-size:3em;
+}
+
+p, ul,li{
+	font-size: 1em;
+}
+
+article{
+	width:50%;
+	margin:0 auto;
+}
+
+
+/* Bildet dekker hele skjermen*/
+.bigPicture{
+width:100%
+}
+
+
+
+/*Navigation Bar*/
+
+		
+#topNavbar {
+	text-align:center;
+	width: 100%;
+	height: 60px;
+	background-color: #000;
+}
+
+#topNavbar li{
+ 	display: inline;
+}
+
+#topNavbar a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	width:12%;
+	font-size:0.8em;
+}
+
+#topNavbar a img{
+	margin-top: 10px;
+}
+
+#BookRom {
+	float:right;
+	background-color:#8b0007;
+	margin-top: 20px;
+	width:8%;
+	display: inline-block;
+}
+
+
+/*Hotellet/Index*/
+
+
+
+
+/* Rom og Suiter */
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	font-family: Helvetica, verdana, sans-serif;
+	font-size: 13px;
+}
+
+.romheading {
+	font-size: 18px;
+	text-align: left;
+	margin-left: 3%;
+	margin-right: 3%;
+	font-family: Helvetica, verdana, sans-serif;
+}
+
+
+.box2 {
+	margin: 10px;
+	width: 26%;
+	height: 50%;
+	background: white;
+}
+
+.picture {
+	width: 100%;
+}
+
+  .part1,.part2 {
+  	float: left;
+  	padding: 10px;
+  	margin-bottom: 12%;
+  }
+
+.part1 {
+	margin-right: 2%;
+}
+
+#suite, #dobbeltrompremium {
+	float: left;
+}
+
+#dobbeltrompremium, #dobbeltromsyd {
+	float: left;
+}
+
+#dobbeltromnord, #tomannsrom {
+	float: left;
+}
+
+#tomannsrom, #enkeltrom {
+	float: left;
+}
+
+#suite, #dobbeltromnord {
+	margin-left: 5%;
+}

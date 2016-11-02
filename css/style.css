@@ -17,6 +17,10 @@ PURPOSE: Stylesheet for the whole homepage
 	font-family: Helvetica, "Gill Sans", sans-serif;
 }
 
+html, body {
+	height: 100%;
+}
+
 body{
 	background-color: #f4f4f4;
 }
@@ -33,6 +37,8 @@ article{
 	width:50%;
 	margin:0 auto;
 }
+
+
 
 
 /* Bildet dekker hele skjermen*/
@@ -219,3 +225,42 @@ li {
 	padding-left: 10px;
 	width: 80%;
 }
+
+
+/* Footer, lagt inn av Susanne */
+
+#footer {
+	text-align: left;
+	width: 100%;
+	height: 250px;
+	background-color: black;
+  color: white;
+  margin-top: 200px;
+position: absolute;
+bottom: 0;
+}
+
+#footerheader { 
+font-size: 10px;
+padding: 20px;
+}
+
+/* must declare 0 margins on everything, also for main layout components use padding, not
+vertical margins (top and bottom) to add spacing, else those margins get added to total height
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+padding-bottom: 220px;}  /* must be same height as the footer */
+
+#footercontainer {position: relative;
+margin-top: -220px; /* negative value of footer height */
+height: 220px;
+clear:both;
+padding-top: 100px;
+}
+
+#footer li {
+padding-left: 5%; }

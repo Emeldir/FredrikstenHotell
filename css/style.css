@@ -242,7 +242,7 @@ bottom: 0;
 	margin-top: 20px;
 	font-size: 1em;
 }
-
+ /*
 #footerheader1, #footerheader2, #footerheader3 {
 	margin-top: 30px;
 	font-size: 1.5em;
@@ -251,6 +251,10 @@ bottom: 0;
 #footertext, #footerheader1, #footerheader2, #footerheader3 {
 font-weight: lighter;
 padding-left: 5%;
+ } */
+
+ .footerheader {
+	 float:left; 
  }
 
 

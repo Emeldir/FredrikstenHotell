@@ -9,8 +9,7 @@ content = '<div class="ourfooter" id="footer">'
 
 /* +         '<li><a href="index.html"><img src="img/logo/LogoHvit.png" height="30" width="156"></a></li>' */
 
-+
-
-+          '</div>'      
++         '<img src="img/ikoner/Facebook.png">'
++          '</div>'
 
 footer.innerHTML += content;

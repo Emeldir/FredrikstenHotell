@@ -4,7 +4,7 @@ var footer = document.getElementById("footer");
 var content;
 
 content = '<div class="ourfooter" id="footer">'
-+         '<ul><li id="footerheader"> KONTAKT OSS </li>'
++         '<ul><li id="footerheader"> <h4> KONTAKT OSS </h4> </li>'
 +         '<li> Fredriksten Hotell</li>'
 +         '<li>Generalveien 25-27</li>'
 +         '<li><a href="index.html"><img src="img/logo/LogoHvit.png" height="30" width="156"></a></li>'

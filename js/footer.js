@@ -4,13 +4,13 @@ var footer = document.getElementById("footer");
 var content;
 
 content = '<div class="ourfooter" id="footer">'
-+         '<ul><li id="footerheader"> <h4> KONTAKT OSS </h4> </li>'
-+         '<li> Fredriksten Hotell</li>'
-+         '<li>Generalveien 25-27</li>'
-+         '<li><a href="index.html"><img src="img/logo/LogoHvit.png" height="30" width="156"></a></li>'
-+         '<li>1769 Halden, Norway</li>'
-+         '<li>+ 47 69 02 10 10</li>'
-+         '<li>post@fredrikstenhotell.no</li>'
++         '<p id="footerheader"> KONTAKT OSS </p>'
++         '<p id="footertext"> Fredriksten Hotell <br> Generalveien 25-27 <br> 1769 Halden, Norway <br> + 47 690 210 10 <br>post@fredrikstenhotell.no </p>'
 
+/* +         '<li><a href="index.html"><img src="img/logo/LogoHvit.png" height="30" width="156"></a></li>' */
+
++
+
++          '</div>'      
 
 footer.innerHTML += content;

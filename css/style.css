@@ -121,7 +121,6 @@ ul {
 }
 
 li {
-	font-family: Helvetica, verdana, sans-serif;
 	font-size: 13px;
 }
 
@@ -132,7 +131,6 @@ li {
 	margin-right: 8%;
 	margin-top: 6%;
 	margin-bottom: 4%;
-	font-family: Helvetica, verdana, sans-serif;
 
 }
 
@@ -180,7 +178,7 @@ li {
 }
 
 #suite, #dobbeltromnord {
-	margin-left: 5%;
+	margin-left: 10%;
 }
 
 /*Galleri*/
@@ -240,10 +238,21 @@ position: absolute;
 bottom: 0;
 }
 
-#footerheader { 
-font-size: 10px;
-padding: 20px;
+#footertext {
+	margin-top: 20px;
+	font-size: 1.2em;
 }
+
+#footerheader {
+	margin-top: 30px;
+	font-size: 1.5em;
+}
+
+#footertext, #footerheader {
+font-weight: lighter;
+padding-left: 5%;
+ }
+
 
 /* must declare 0 margins on everything, also for main layout components use padding, not
 vertical margins (top and bottom) to add spacing, else those margins get added to total height

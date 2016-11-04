@@ -240,19 +240,31 @@ bottom: 0;
 
 #footertext {
 	margin-top: 20px;
-	font-size: 1.2em;
+	font-size: 1em;
 }
-
-#footerheader {
+ /*
+#footerheader1, #footerheader2, #footerheader3 {
 	margin-top: 30px;
 	font-size: 1.5em;
 }
 
-#footertext, #footerheader {
+#footertext, #footerheader1, #footerheader2, #footerheader3 {
 font-weight: lighter;
 padding-left: 5%;
+ } */
+
+ .footerheader {
+	 float:left; 
  }
 
+
+
+a {
+	color: white;
+	font-size: 1em;
+	text-decoration: none;
+	font-weight: lighter;
+}
 
 /* must declare 0 margins on everything, also for main layout components use padding, not
 vertical margins (top and bottom) to add spacing, else those margins get added to total height
@@ -270,6 +282,3 @@ height: 220px;
 clear:both;
 padding-top: 100px;
 }
-
-#footer li {
-padding-left: 5%; }

@@ -38,7 +38,7 @@ article{
 	margin:0 auto;
 }
 
-
+.wrap {min-height: 100%;}
 
 
 /* Bildet dekker hele skjermen*/
@@ -54,7 +54,7 @@ width:100%
 #topNavbar {
 	text-align:center;
 	width: 100%;
-	height: 60px;
+	height: 80px;
 	background-color: #000;
 }
 
@@ -67,11 +67,11 @@ width:100%
 	text-decoration: none;
 	color: white;
 	width:12%;
-	font-size:0.8em;
+	font-size:12px;
 }
 
 #topNavbar a img{
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 #BookRom {
@@ -121,11 +121,11 @@ ul {
 }
 
 li {
-	font-size: 13px;
+	font-size: 0.9em;
 }
 
 .romheading {
-	font-size: 18px;
+	font-size: 1.2em;
 	text-align: left;
 	margin-left: 11%;
 	margin-right: 8%;
@@ -238,25 +238,35 @@ position: absolute;
 bottom: 0;
 }
 
-#footertext {
+.footertext {
 	margin-top: 20px;
 	font-size: 1em;
 }
- /*
-#footerheader1, #footerheader2, #footerheader3 {
-	margin-top: 30px;
-	font-size: 1.5em;
-}
 
-#footertext, #footerheader1, #footerheader2, #footerheader3 {
+
+.footertext, .footerheader {
 font-weight: lighter;
-padding-left: 5%;
- } */
-
- .footerheader {
-	 float:left; 
  }
 
+ .footerheader {
+	 margin-top: 15px;
+	 margin-bottom: 20px;
+	 font-size: 1.5em;
+	 float:left;
+ }
+
+
+
+#column1, #column2, #column3, #column4 {
+margin-top: 3%;
+margin-left: 5%;
+margin-right: 5%;
+float: left;
+}
+
+#instaikon {
+margin-left: 7%;
+}
 
 
 a {
@@ -266,12 +276,12 @@ a {
 	font-weight: lighter;
 }
 
+a:hover {background-color:transparent; text-decoration:underline}
+
 /* must declare 0 margins on everything, also for main layout components use padding, not
 vertical margins (top and bottom) to add spacing, else those margins get added to total height
 and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
 
-
-#wrap {min-height: 100%;}
 
 #main {overflow:auto;
 padding-bottom: 220px;}  /* must be same height as the footer */

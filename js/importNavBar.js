@@ -13,13 +13,19 @@ content = '<div class="topnav" id="topNavbar">'
 +         '<ul><li><a href=index.html>HOTELLET</a></li>'
 +         '<li><a href=romogsuiter.html>ROM OG SUITER </a></li>'
 +         '<li><a href=konferanse.html>KONFERANSE </a></li>'
-+         '<li><a href="index.html"><img src="img/logo/LogoHvit.png" height="30" width="156"></a></li>'
++         '<li><a href="index.html"><img src="img/logo/FredrikstenLogo.svg"></a></li>'
 +         '<li><a id="opplevelser">OPPLEVELSER </a></li>'
 +         '<li><a href="galleri.html">GALLERI</a></li>'
 +         '<li><a href="kontakt.html">KONTAKT</a></li>'
 +         '<li id="BookRom"><a href="">BOOK ROOM</a></li></ul></div>';
 
 navbar.innerHTML += content;
+
+/*$(window).scroll(function(){
+	if($(window).scrollTop > 100){
+		$('#topNavbar').css('top', $(window).scrollTop());
+	}
+});*/
 
 // Code for extra navbar under Opplevelser. Written by Torstein.
 

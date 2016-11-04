@@ -238,25 +238,33 @@ position: absolute;
 bottom: 0;
 }
 
-#footertext {
+.footertext {
 	margin-top: 20px;
 	font-size: 1em;
 }
- /*
-#footerheader1, #footerheader2, #footerheader3 {
-	margin-top: 30px;
-	font-size: 1.5em;
-}
 
-#footertext, #footerheader1, #footerheader2, #footerheader3 {
+
+.footertext, .footerheader {
 font-weight: lighter;
-padding-left: 5%;
- } */
-
- .footerheader {
-	 float:left; 
  }
 
+ .footerheader {
+	 margin-top: 15px;
+	 margin-bottom: 20px;
+	 font-size: 1.5em;
+	 float:left;
+ }
+
+
+
+#column1, #column2, #column3, #column4 {
+margin: 4%;
+float: left;
+}
+
+#tripikon {
+
+}
 
 
 a {

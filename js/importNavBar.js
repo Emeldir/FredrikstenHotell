@@ -21,6 +21,12 @@ content = '<div class="topnav" id="topNavbar">'
 
 navbar.innerHTML += content;
 
+/*$(window).scroll(function(){
+	if($(window).scrollTop > 100){
+		$('#topNavbar').css('top', $(window).scrollTop());
+	}
+});*/
+
 // Code for extra navbar under Opplevelser. Written by Torstein.
 
 var opplevelser_bar = document.getElementById("opplevelser_bar");

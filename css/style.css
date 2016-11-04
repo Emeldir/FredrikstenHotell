@@ -240,7 +240,7 @@ bottom: 0;
 
 #footertext {
 	margin-top: 20px;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 #footerheader {
@@ -253,6 +253,11 @@ font-weight: lighter;
 padding-left: 5%;
  }
 
+a {
+	color: white;
+	font-size: 1em;
+	text-decoration: none; 
+}
 
 /* must declare 0 margins on everything, also for main layout components use padding, not
 vertical margins (top and bottom) to add spacing, else those margins get added to total height
@@ -270,6 +275,3 @@ height: 220px;
 clear:both;
 padding-top: 100px;
 }
-
-#footer li {
-padding-left: 5%; }

@@ -38,7 +38,7 @@ article{
 	margin:0 auto;
 }
 
-
+.wrap {min-height: 100%;}
 
 
 /* Bildet dekker hele skjermen*/
@@ -121,11 +121,11 @@ ul {
 }
 
 li {
-	font-size: 13px;
+	font-size: 0.9em;
 }
 
 .romheading {
-	font-size: 18px;
+	font-size: 1.2em;
 	text-align: left;
 	margin-left: 11%;
 	margin-right: 8%;
@@ -258,12 +258,14 @@ font-weight: lighter;
 
 
 #column1, #column2, #column3, #column4 {
-margin: 4%;
+margin-top: 3%;
+margin-left: 5%;
+margin-right: 5%;
 float: left;
 }
 
-#tripikon {
-
+#instaikon {
+margin-left: 7%;
 }
 
 
@@ -274,12 +276,12 @@ a {
 	font-weight: lighter;
 }
 
+a:hover {background-color:transparent; text-decoration:underline}
+
 /* must declare 0 margins on everything, also for main layout components use padding, not
 vertical margins (top and bottom) to add spacing, else those margins get added to total height
 and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
 
-
-#wrap {min-height: 100%;}
 
 #main {overflow:auto;
 padding-bottom: 220px;}  /* must be same height as the footer */

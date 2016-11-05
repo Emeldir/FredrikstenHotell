@@ -1,27 +1,49 @@
-<head>
-  <meta charset="utf-8">
-   <title>Kontakt</title>
-   <link rel="stylesheet" type="text/css" href="css/style.css">
-   <h1></h1>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Kontakt </title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+  		<style>
+  		</style>
+  	</head>
 
+	<body>
+  		<wrapper>
+  			<header>
+        		<p id="navbar"></p>
+        		<div id="opplevelser_bar"></div>
+  				<img src="img/Kasernen12 2.jpg" alt="resepsjonen" class="bigPicture"/>
+  				<h1>Kontakt oss</h1>
+  			</header>
+  			
+  			<article>
+  				<p>Kontakt oss gjerne for spørsmål eller forespørsler. Vi skreddersyr et konferanseopplegg,
+  				Selskap eller opphold som passer deg og ditt behov. Fyll ut kontaktskjema under, eller kontakt
+  				oss direkte via mail på post@fredrikstenhotell.no eller telefon +47 69 02 10 10.</p>
+  				<form>
+  					<input type="text" id="kontaktOssNavn" placeholder="Navn"> </input>
+  					<input type="email" id="kontaktOssEpost" placeholder="E-post"> </input>
+  					<input type="tel" id="kontaktOssTelefon" placeholder="Telefon"> </input>
+  					<input type="text" id="kontaktOssForespørsel" placeholder="Forespørsel"> </input>
+  					<input type="button" id="kontaktOssSend" onclick="kontaktOssSend()" value="SEND"> </input>
+  				</form>
+			</article>
 
- </head>
- <body>
-<div class="wrap">
-   <wrapper>
-     <p id="navbar"></p>
-     <div id="opplevelser_bar"></div>
-   </wrapper>
-
-
- </div>
- <div id="footercontainer">
-  <p id="footer"> </p>
- </div>
-
-
-<script src="js/importNavBar.js" type="text/javascript"></script>
-<script src="js/footer.js" type="text/javascript"></script>
-
- </body>
+  			<footer>
+  				<article>
+  					<p>KONTAKTINFO<br>
+  						+47 69 02 10 10<br>
+  						post@fredrikstenhotell.no<br>
+  						<br>
+  						ADRESSE<br>
+  						Fredriksten Hotell<br>
+  						Generalveien 25-27, 1769 Halden, Norway
+  					</p>
+  				</article>
+  				<!--kontakt oss bar kommer her-->
+  			</footer>
+  		</wrapper>
+    	<script src="js/importNavBar.js" type="text/javascript"></script>
+  	</body>
 </html>

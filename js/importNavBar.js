@@ -9,23 +9,38 @@ var navbar = document.getElementById("navbar");
 
 var content;
 
-content = '<div class="topnav" id="topNavbar">'
-+         '<ul><li><a href=index.html>HOTELLET</a></li>'
+content = '<div id="navbarFixed" class="navbar">'
++         '<ul class="topnav" id="topNavbar"><li><a href=index.html>HOTELLET</a></li>'
 +         '<li><a href=romogsuiter.html>ROM OG SUITER </a></li>'
 +         '<li><a href=konferanse.html>KONFERANSE </a></li>'
 +         '<li><a href="index.html"><img src="img/logo/FredrikstenLogo.svg"></a></li>'
 +         '<li><a id="opplevelser">OPPLEVELSER </a></li>'
 +         '<li><a href="galleri.html">GALLERI</a></li>'
 +         '<li><a href="kontakt.html">KONTAKT</a></li>'
-+         '<li id="BookRom"><a href="">BOOK ROOM</a></li></ul></div>';
++         '<li id="BookRom"><a href="">BOOK ROOM</a></li>'
++         '<li class="icon"> <a href="javascript:void(0);" onclick="dropDown()">☰</a></ul></div>';
 
 navbar.innerHTML += content;
 
-/*$(window).scroll(function(){
-	if($(window).scrollTop > 100){
-		$('#topNavbar').css('top', $(window).scrollTop());
+/*function dropDown(){
+	var meny = document.getElementById("topNavbar");
+	if (meny.className === "topnav"){
+		meny.className += "responsive";
+	}else{
+		meny.className = "topnav";
 	}
-});*/
+}*/
+
+//Code to set the navbar fixed on top
+
+window.addEventListener('scroll',function(){
+	if(window.pageYOffset > 100){
+		document.getElementById('navbarFixed').className = 'navbar navbarScrolled';
+	}else if(window.pageYOffset <= 100){
+		document.getElementById('navbarFixed').className = 'navbar';
+	}
+});
+
 
 // Code for extra navbar under Opplevelser. Written by Torstein.
 

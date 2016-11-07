@@ -159,19 +159,12 @@ li {
 	margin-left: 8%;
 }
 
-#suite, #dobbeltrompremium {
+#suite, #dobbeltrompremium,  #dobbeltromsyd {
 	float: left;
 }
 
-#dobbeltrompremium, #dobbeltromsyd {
-	float: left;
-}
 
-#dobbeltromnord, #tomannsrom {
-	float: left;
-}
-
-#tomannsrom, #enkeltrom {
+#dobbeltromnord, #tomannsrom,  #enkeltrom {
 	float: left;
 }
 
@@ -284,5 +277,5 @@ position: relative;
 margin-top: -220px; /* negative value of footer height */
 height: 220px;
 clear:both;
-margin-top: 100px;
+margin-top: 80px;
 }

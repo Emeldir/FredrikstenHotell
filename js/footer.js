@@ -1,3 +1,10 @@
+/* FILE NAME: footer.js
+//WRITTEN BY: Susanne Rom
+//WHEN: November 2016
+//PURPOSE: To make contact info and links avaiable to users at all times.   */ 
+
+
+
 var footer = document.getElementById("footer");
 
 

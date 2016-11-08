@@ -9,7 +9,8 @@ WRITTEN BY: Cecilie Kristoffersen
 WHEN: Oktober/November 2016
 PURPOSE: Stylesheet for the whole homepage
 
-/* /////Genral CSS for the whole site////*/
+/* /////General CSS for the whole site////*/
+
 *{
 	/* Fjerner luftrom over og på sidene*/
 	margin:0;
@@ -383,13 +384,15 @@ article {/*Selve avsnittene */
 	article h4 { /*skape rom mellom overskrift og brødtekst*/
 		margin-bottom: 20px;
 }
+
+
 	#bookingBoks {
-		background-color: rgba(139, 0, 7, 1); /*#8b0007;*/
+		background-color: rgba(139, 0, 7, 0.8); /*#8b0007;*/
 		border-radius: 3px;
 		width: /*35%;*/250px;
 		height: /*30%;*/300px;
 		color: white;
-		position: absolute; right: 10%; top:45%;
+		position: absolute; right: 10%; top:45%; bottom: 10%;
 		text-align: center;
 	}
 

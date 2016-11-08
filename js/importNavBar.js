@@ -22,16 +22,6 @@ content = '<div id="navbarFixed" class="navbar">'
 
 navbar.innerHTML += content;
 
-/*function dropDown(){
-	var meny = document.getElementById("topNavbar");
-	if (meny.className === "topnav"){
-		meny.className += "responsive";
-	}else{
-		meny.className = "topnav";
-	}
-}*/
-
-
 
 // Code for extra navbar under Opplevelser. Written by Torstein.
 
@@ -45,33 +35,6 @@ content2 = '<div  id="opplevelserFixed" class="opplevelser" >'
 +         '<li><a class="opplevelser_links" href="opplevelser_aktiviteter.html"> Aktiviteter </a></li></ul></div>';
 
 opplevelser_bar.innerHTML += content2;
-/*
-
-
-var matogdrikke = document.createElement("a");
-matogdrikke.className = "opplevelser_links";
-matogdrikke.id = "matogdrikke";
-matogdrikke.href = "opplevelser_matogdrikke.html"
-matogdrikke.style.left = "60%"
-matogdrikke.appendChild(document.createTextNode("Mat og Drikke"));
-opplevelser_bar.appendChild(matogdrikke);
-
-var selskap = document.createElement("a");
-selskap.className = "opplevelser_links";
-selskap.id = "selskap";
-selskap.href = "opplevelser_selskap.html"
-selskap.style.left = "70%"
-selskap.appendChild(document.createTextNode("Selskap"));
-opplevelser_bar.appendChild(selskap);
-
-var aktiviteter = document.createElement("a");
-aktiviteter.className = "opplevelser_links";
-aktiviteter.id = "aktiviteter";
-aktiviteter.href = "opplevelser_aktiviteter.html"
-aktiviteter.style.left = "80%"
-aktiviteter.appendChild(document.createTextNode("Aktiviteter"));
-opplevelser_bar.appendChild(aktiviteter);
-*/
 
 opplevelser.addEventListener("mouseenter", function( event ) {
     opplevelser_bar.style.display = "block";
@@ -80,16 +43,3 @@ opplevelser.addEventListener("mouseenter", function( event ) {
 opplevelser_bar.addEventListener("mouseleave", function( event ) {
     opplevelser_bar.style.display = "none";
 })
-
-
-//Code to set the navbar fixed on top
-
-window.addEventListener('scroll',function(){
-	if(window.pageYOffset > 30){
-		document.getElementById('navbarFixed').className = 'navbar navbarScrolled';
-		document.getElementById('opplevelserFixed').className = 'opplevelserScrolled';
-	}else if(window.pageYOffset <= 30){
-		document.getElementById('navbarFixed').className = 'navbar';
-		document.getElementById('opplevelserFixed').className='opplevelser_bar';
-	}
-});

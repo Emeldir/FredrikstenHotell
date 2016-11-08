@@ -1,4 +1,9 @@
+//FILE NAME: slideshow.js
+//WRITTEN BY: Cecilie Kristoffersen
+//WHEN: November 2016
+//PURPOSE: Provides a slidehsow for the gallery and frontpage.
 
+//Slideshow for frontpage:
 
 var index = 0;
 frontpageSlideshow();

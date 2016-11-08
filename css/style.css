@@ -9,6 +9,9 @@ WRITTEN BY: Cecilie Kristoffersen
 WHEN: Oktober/November 2016
 PURPOSE: Stylesheet for the whole homepage
 
+
+
+
 /* /////General CSS for the whole site////*/
 
 *{
@@ -26,9 +29,6 @@ body{
 	background-color: #f4f4f4;
 }
 
-/*h2{
-	font-size:3em;
-}*/
 
 p, ul,li{
 	font-size: 1em;
@@ -42,7 +42,8 @@ article{
   	margin-bottom: 50px;
 }
 
-.wrap {min-height: 100%;}
+.wrap {
+	min-height: 100%;}
 
 
 /* Bildet dekker hele skjermen*/
@@ -53,7 +54,6 @@ width:100%
 	width:100%;
 	transition: box-shadow 0.3s ease-out;
 }
-
 
 /* Provides shadow to pictures when hovered over. By Susanne */
 
@@ -68,14 +68,19 @@ width:100%
 }
 
 
+/*///////End of general CSS/////////*/
 
-/*///////Navigation Bar///////*/
+
+
+/*///////CSS for Navigation Bar.///////*/
 
 ul.topnav {
-  	text-align:center;
+	position: fixed;
+	z-index: 2;
+  text-align:center;
  	list-style-type: none;
  	max-width: 100%;
- 	min-width: 99%;
+ 	min-width: 100%;
  	height: 60px;
   	background-color: #000;
  	overflow: hidden;
@@ -111,7 +116,6 @@ ul.topnav li a img{
  	display: none;
  }
 
-
 #BookRom {
 	float:right;
 	background-color:#8b0007;
@@ -120,63 +124,111 @@ ul.topnav li a img{
 	display: inline-block;
 }
 
-
-
-/*Responsive Design:*/
-
-@media only screen and (max-width: 500px) {
-    body {
-        background-color: lightblue;
-    }
-}
-
- .navbarScrolled {
- 	position: fixed;
- 	transition-property: margin-top;
- 	transition-duration:.3s;
- 	width:100%;
- }
-
- .opplevelserScrolled {
- 	transition-property: margin-top;
- 	transition-duration:.3s;
- 	width:100%;
- }
-
-
- /*/////Styling for the dropdown under Opplevelser. Written by Torstein///////*/
+/*/////Styling for the dropdown under Opplevelser. Written by Torstein///////*/
 
 #opplevelser_bar {
-	display:none;
-  background-color: black;
-  max-width: 100%;
-  min-width: 99%;
-  height: 45px;
-	text-align: right;
+	z-index: 2;
+	position: fixed; top: 60px;
+ display:none;
+ background-color: black;
+ max-width: 100%;
+ min-width: 99%;
+ height: 45px;
+ text-align: right;
 }
 
 #opplevelser_bar ul{
-	margin-right: 30%;
-	padding-top: 15px;
+ margin-right: 30%;
+ padding-top: 15px;
 }
 
 #opplevelser_bar li{
-	display:inline;
+ display:inline;
 }
 #opplevelser_bar a{
-	display: inline-block;
-	text-decoration: none;
-	color: white;
-	width:7%;
-	font-size:0.7em;
+ display: inline-block;
+ text-decoration: none;
+ color: white;
+ width:7%;
+ font-size:0.7em;
 }
 
-/*Hotellet/Index*/
+#opplevelser_bar a:hover{
+ color: grey;
+ transition-duration:.3s;
+}
 
 
+/*//////////////End of CSS for navbar/////////*/
 
 
-/* Rom og Suiter, written by Susanne */
+/*//////////////Index.html, written by Ida/////////////////////////////*/
+
+article {/*Selve avsnittene */
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	article h4 { /*skape rom mellom overskrift og brødtekst*/
+		margin-bottom: 20px;
+}
+
+
+	#bookingBoks {
+		background-color: rgba(139, 0, 7, 0.8); /*#8b0007;*/
+		border-radius: 3px;
+		width: /*35%;*/250px;
+		height: /*30%;*/300px;
+		color: white;
+		position: absolute; right: 10%; top:45%; bottom: 10%;
+		text-align: center;
+	}
+
+	div h3 { /*overskrift i bookingboks- book ditt opphold*/
+		margin-top: 20px;
+	}
+	header h1 { /*Velkommen- Hovedoverskrift*/
+		position: absolute; left: 5%; top:60%;
+		color: white;
+	}
+	#ankomst { /*felt til å skrive inn ankomst*/
+		padding-left: 10px;
+		margin-top: 20px;
+		position: relative;
+		width: 180px;
+		height: 24px;
+	}
+	#avreise { /*felt til å skrive inn avreise*/
+		padding-left: 10px;
+		margin-top: 10px;
+		position: relative;
+		width: 180px;
+		height: 24px;
+	}
+	#sjekkTilgjengelighet { /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
+		position: auto;
+		border-radius: 2px;
+		background-color: rgb(139, 0, 7);
+		color: white;
+		padding-left: 10px;
+		margin-top: 20px;
+		position: relative;
+		width: 180px;
+		height: 24px;
+	}
+#underMeny {
+	color: LightGray;
+	text-align: center;
+}
+a {font-size: 1 ems;}
+a:hover {color: #ededed;}
+a:link {color: #504f4f;}
+a:visited {color: #504f4f;}
+
+/*///////////////////END OF CSS FOR INDEX.HTML//////////////////////////*/
+
+
+/*////////////////////////// Rom og Suiter, written by Susanne ////////////*/
 
 ul {
 	list-style-type: none;
@@ -217,8 +269,6 @@ li {
 .picture {
 	width: 100%;
 }
-
-
   .part1,.part2 {
   	float: left;
   	margin-bottom: 12%;
@@ -262,19 +312,34 @@ text-decoration: underline;
 	margin-left: 10%;
 }
 
+/*///////////////////END OF CSS FOR ROMOGSUITER.CSS//////////////////*/
 
+/*////////////////////CSS FOR KONFERANSE.HTML, WRITTEN BY IDA/////////////////////*/
 
-
-
-/*Galleri*/
-#galleritittel {
-	margin: auto;
-	text-align: left;
-	padding-top: 150px;
-	padding-bottom: 50px;
-	font-size: 2em;
-	width: 80%;
+#kursOgKonferanse {
+	font-family: Helvetica, verdana, sans-serif;
+	text-align: center;
 }
+h1 {
+	font-family: Helvetica, verdana, sans-serif;
+}
+#bookKonferanse { /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
+	position: auto;
+	border-radius: 2px;
+	background-color: rgb(139, 0, 7);
+	color: white;
+	padding-left: 10px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	width: 180px;
+	height: 24px;
+}
+
+/*////////////////////END OF CSS FOR KONFERANSE.HTML, WRITTEN BY IDA/////////////////////*/
+
+
+/*////////////////////CSS FOR GALLERI.HTML, WRITTEN BY TORSTEIN/////////////////////*/
+
 
 #gallerigrid {
 	margin: auto;
@@ -300,7 +365,8 @@ text-decoration: underline;
 }
 
 .big{
-	max-width: 97%
+	max-width: 80%;
+	height: auto;
 }
 
 #slideshowbuttons {
@@ -309,8 +375,9 @@ text-decoration: underline;
 	width: 80%;
 }
 
+/*////////////////////END OF CSS FOR GALLERI.HTML, WRITTEN BY TORSTEIN/////////////////////*/
 
-/* Footer, written by Susanne */
+/*///////////////// CSS forFooter, written by Susanne ///////////////////*/
 
 #footer {
 	text-align: left;
@@ -374,65 +441,14 @@ clear:both;
 margin-top: 80px;
 }
 
-/*Index.html*/
+/*////////////////////////////END OF CSS FOR FOOTER/////////////////*/
 
-article {/*Selve avsnittene */
-		text-align: center;
-		margin-top: 50px;
-		margin-bottom: 50px;
-	}
-	article h4 { /*skape rom mellom overskrift og brødtekst*/
-		margin-bottom: 20px;
+/*////////////////////Responsive Design, written by Torstein & Cecilie/////////////////*/
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: lightblue;
+    }
 }
 
-
-	#bookingBoks {
-		background-color: rgba(139, 0, 7, 0.8); /*#8b0007;*/
-		border-radius: 3px;
-		width: /*35%;*/250px;
-		height: /*30%;*/300px;
-		color: white;
-		position: absolute; right: 10%; top:45%; bottom: 10%;
-		text-align: center;
-	}
-
-	div h3 { /*overskrift i bookingboks- book ditt opphold*/
-		margin-top: 20px;
-	}
-	header h1 { /*Velkommen- Hovedoverskrift*/
-		position: absolute; left: 5%; top:60%;
-		color: white;
-	}
-	#ankomst { /*felt til å skrive inn ankomst*/
-		padding-left: 10px;
-		margin-top: 20px;
-		position: relative;
-		width: 180px;
-		height: 24px;
-	}
-	#avreise { /*felt til å skrive inn avreise*/
-		padding-left: 10px;
-		margin-top: 10px;
-		position: relative;
-		width: 180px;
-		height: 24px;
-	}
-	#sjekkTilgjengelighet { /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
-		position: auto;
-		border-radius: 2px;
-		background-color: rgb(139, 0, 7);
-		color: white;
-		padding-left: 10px;
-		margin-top: 20px;
-		position: relative;
-		width: 180px;
-		height: 24px;
-	}
-#underMeny {
-	color: LightGray;
-	text-align: center;
-}
-a {font-size: 1 ems;}
-a:hover {color: #ededed;}
-a:link {color: #504f4f;}
-a:visited {color: #504f4f;}
+/*//////////////End of responsive design////////*/

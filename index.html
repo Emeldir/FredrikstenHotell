@@ -5,137 +5,76 @@
   		<title>Hjemmeside Fredriksten Hotell</title>
   		<link rel="stylesheet" type="text/css" href="css/style.css">
   		<style>
-<<<<<<< Updated upstream
-			article {/*Selve avsnittene */
-  				text-align: center;
-  				margin-top: 50px;
-  				margin-bottom: 50px;
-  			}
-  			article h4 { /*skape rom mellom overskrift og brødtekst*/
-  				margin-bottom: 20px;
-			}
-  			#bookingBoks {
-  				background-color: rgba(139, 0, 7, 1); /*#8b0007;*/
-  				border-radius: 3px;
-  				width: /*35%;*/250px;
-  				height: /*30%;*/300px;
-  				color: white;
-  				position: absolute; right: 10%; top:45%;
-  				text-align: center;
-  			}
-
-  			div h3 { /*overskrift i bookingboks- book ditt opphold*/
-  				margin-top: 20px;
-  			}
-  			header h1 { /*Velkommen- Hovedoverskrift*/
-  				position: absolute; left: 5%; top:60%;
-  				color: white;
-  			}
-  			#ankomst { /*felt til å skrive inn ankomst*/
-  				padding-left: 10px;
-  				margin-top: 20px;
-  				position: relative;
-  				width: 180px;
-  				height: 24px;
-  			}
-  			#avreise { /*felt til å skrive inn avreise*/
-  				padding-left: 10px;
-  				margin-top: 10px;
-  				position: relative;
-  				width: 180px;
-  				height: 24px;
-  			}
-  			#sjekkTilgjengelighet { /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
-  				position: auto;
-  				border-radius: 2px;
-  				background-color: rgba(139, 0, 7, 0.8);
-  				color: white;
-  				padding-left: 10px;
-  				margin-top: 20px;
-  				position: relative;
-  				width: 180px;
-  				height: 24px;
-  			}
-			#underMeny {
-				color: LightGray;
-				text-align: center;
-			}
-			a {font-size: 1 ems;}
-			a:hover {color: #ededed;}
-			a:link {color: #504f4f;}
-			a:visited {color: #504f4f;}
-=======
-			
->>>>>>> Stashed changes
   		</style>
 	</head>
 
 	<body>
 		<div class="wrap">
   		<wrapper>
-  			<header>
+  			<header id="header">
   				<p id="navbar"></p>
 					<div id="opplevelser_bar"></div>
   				<img src="img/frontpage/frontpage2.jpg" alt="Utsikt Halden Natt" class="bigPicture">
   				<img src="img/frontpage/frontpage3.jpg" alt="Julestemning" class="bigPicture" >
   				<img src="img/frontpage/frontpage4.jpg" alt="Hotellrom" class="bigPicture">
   				<img src="img/frontpage/frontpage5.jpg" alt="sitteplass" class="bigPicture">
-  				<h1>Velkommen</h1>
+  				<h1 class="overskrift">Velkommen</h1>
+					<div id="bookingBoks">
+			  			<h3>Book ditt opphold</h3>
+			  			<form>
+			  				<input type="text" name="ankomst" id="ankomst" placeholder="ANKOMST"> <br>
+			  				<input type="text" name="avreise" id="avreise" placeholder="AVREISE"> <br>
+			  				<label id="bookingBoksRomLabel"> Rom </label>
+			  				<label id="bookingBoksVoksneLabel"> Voksne </label>
+			  				<label id="bookinngBoksBarnLabel"> Barn </label> <br>
+			  				<select id="bookingBoksRom">
+			  					<label id="bookingBoksRomLabel"> Rom </label>
+			  					<option value="0">0</option>
+			  					<option value="1">1</option>
+			  					<option value="2">2</option>
+			  					<option value="3">3</option>
+			  					<option value="4">4</option>
+			  					<option value="5">5</option>
+			  					<option value="6">6</option>
+			  					<option value="7">7</option>
+			  					<option value="8">8</option>
+			  					<option value="9">9</option>
+			  					<option value="10">10</option>
+			  				</select>
+			  				<select id="bookingBoksVoksneLabel">
+			  					<option value="0">0</option>
+			  					<option value="1">1</option>
+			  					<option value="2">2</option>
+			  					<option value="3">3</option>
+			  					<option value="4">4</option>
+			  					<option value="5">5</option>
+			  					<option value="6">6</option>
+			  					<option value="7">7</option>
+			  					<option value="8">8</option>
+			  					<option value="9">9</option>
+			  					<option value="10">10</option>
+			  				</select>
+			  				<select id="bookingBoksBarn">
+			  					<option value="0">0</option>
+			  					<option value="1">1</option>
+			  					<option value="2">2</option>
+			  					<option value="3">3</option>
+			  					<option value="4">4</option>
+			  					<option value="5">5</option>
+			  					<option value="6">6</option>
+			  					<option value="7">7</option>
+			  					<option value="8">8</option>
+			  					<option value="9">9</option>
+			  					<option value="10">10</option>
+			  				</select>
+			  				<!-- Legge til funksjonalitet når man trykker på knappen- hvor skal man komme til?-->
+							<input type="button" id="sjekkTilgjengelighet" onclick="sjekkTilgjengelighet()" value="Sjekk Tilgjengelighet"> </input>
+			  			</form>
+			  		</div>
   			</header>
 
 
-		<div id="bookingBoks">
-  			<h3>Book ditt opphold</h3>
-  			<form>
-  				<input type="text" name="ankomst" id="ankomst" placeholder="ANKOMST"> <br>
-  				<input type="text" name="avreise" id="avreise" placeholder="AVREISE"> <br>
-  				<label id="bookingBoksRomLabel"> Rom </label>
-  				<label id="bookingBoksVoksneLabel"> Voksne </label>
-  				<label id="bookinngBoksBarnLabel"> Barn </label> <br>
-  				<select id="bookingBoksRom">
-  					<label id="bookingBoksRomLabel"> Rom </label>
-  					<option value="0">0</option>
-  					<option value="1">1</option>
-  					<option value="2">2</option>
-  					<option value="3">3</option>
-  					<option value="4">4</option>
-  					<option value="5">5</option>
-  					<option value="6">6</option>
-  					<option value="7">7</option>
-  					<option value="8">8</option>
-  					<option value="9">9</option>
-  					<option value="10">10</option>
-  				</select>
-  				<select id="bookingBoksVoksneLabel">
-  					<option value="0">0</option>
-  					<option value="1">1</option>
-  					<option value="2">2</option>
-  					<option value="3">3</option>
-  					<option value="4">4</option>
-  					<option value="5">5</option>
-  					<option value="6">6</option>
-  					<option value="7">7</option>
-  					<option value="8">8</option>
-  					<option value="9">9</option>
-  					<option value="10">10</option>
-  				</select>
-  				<select id="bookingBoksBarn">
-  					<option value="0">0</option>
-  					<option value="1">1</option>
-  					<option value="2">2</option>
-  					<option value="3">3</option>
-  					<option value="4">4</option>
-  					<option value="5">5</option>
-  					<option value="6">6</option>
-  					<option value="7">7</option>
-  					<option value="8">8</option>
-  					<option value="9">9</option>
-  					<option value="10">10</option>
-  				</select>
-  				<!-- Legge til funksjonalitet når man trykker på knappen- hvor skal man komme til?-->
-				<input type="button" id="sjekkTilgjengelighet" onclick="sjekkTilgjengelighet()" value="Sjekk Tilgjengelighet"> </input>
-  			</form>
-  		</div>
+
 
       	<div id="underMeny" >
         	| <a href="#vårFilosofi"> Vår filosofi </a> | <a href="#historie"> Historie </a>  |

@@ -119,13 +119,7 @@ ul.topnav li a img{
 	display: inline-block;
 }
 
-.navBurger{
-	display: none;
-	position: absolute;
-	right: 0;
-	height: 60px;
-	width: 60px;
-}
+
 
 /*Responsive Design:*/
 
@@ -137,6 +131,12 @@ ul.topnav li a img{
 
  .navbarScrolled {
  	position: fixed;
+ 	transition-property: margin-top;
+ 	transition-duration:.3s;
+ 	width:100%;
+ }
+
+ .opplevelserScrolled {
  	transition-property: margin-top;
  	transition-duration:.3s;
  	width:100%;

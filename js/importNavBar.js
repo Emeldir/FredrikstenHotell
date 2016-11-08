@@ -31,15 +31,6 @@ navbar.innerHTML += content;
 	}
 }*/
 
-//Code to set the navbar fixed on top
-
-window.addEventListener('scroll',function(){
-	if(window.pageYOffset > 30){
-		document.getElementById('navbarFixed').className = 'navbar navbarScrolled';
-	}else if(window.pageYOffset <= 30){
-		document.getElementById('navbarFixed').className = 'navbar';
-	}
-});
 
 
 // Code for extra navbar under Opplevelser. Written by Torstein.
@@ -47,7 +38,7 @@ window.addEventListener('scroll',function(){
 var opplevelser_bar = document.getElementById("opplevelser_bar");
 opplevelser_bar.className = "opplevelser"
 
-content2 = '<div class="opplevelser" >'
+content2 = '<div  id="opplevelserFixed" class="opplevelser" >'
 +         '<ul>'
 +         '<li><a class="opplevelser_links" href=opplevelser_matogdrikke.html id="matogdrikke"> Mat og Drikke </a></li>'
 +         '<li><a class="opplevelser_links" href=opplevelser_selskap.html id="selskap"> Selskap </a></li>'
@@ -89,3 +80,16 @@ opplevelser.addEventListener("mouseenter", function( event ) {
 opplevelser_bar.addEventListener("mouseleave", function( event ) {
     opplevelser_bar.style.display = "none";
 })
+
+
+//Code to set the navbar fixed on top
+
+window.addEventListener('scroll',function(){
+	if(window.pageYOffset > 30){
+		document.getElementById('navbarFixed').className = 'navbar navbarScrolled';
+		document.getElementById('opplevelserFixed').className = 'opplevelserScrolled';
+	}else if(window.pageYOffset <= 30){
+		document.getElementById('navbarFixed').className = 'navbar';
+		document.getElementById('opplevelserFixed').className='opplevelser_bar';
+	}
+});

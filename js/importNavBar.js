@@ -1,6 +1,6 @@
 //FILE NAME: importNavBar.js
 //WRITTEN BY: Cecilie Kristoffersen
-//WHEN: Oktober 2016
+//WHEN: November 2016
 //PURPOSE: A reusubale navbar.
 
 //IMPORTS NAVBAR:
@@ -17,8 +17,8 @@ content = '<div id="navbarFixed" class="navbar">'
 +         '<li><a id="opplevelser">OPPLEVELSER </a></li>'
 +         '<li><a href="galleri.html">GALLERI</a></li>'
 +         '<li><a href="kontakt.html">KONTAKT</a></li>'
-+         '<li id="BookRom"><a href="">BOOK ROOM</a></li>'
-+         '<li class="icon"> <a href="javascript:void(0);" onclick="dropDown()">☰</a></ul></div>';
++         '<li id="BookRom"><a href="http://online.techotel.dk/domino.aspx?hotelid=76955&lang=no">BOOK ROOM</a></li>'
+/*+         '<li class="icon"> <a href="javascript:void(0);" onclick="dropDown()">☰</a></ul></div>';*/
 
 navbar.innerHTML += content;
 

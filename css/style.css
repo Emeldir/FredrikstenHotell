@@ -9,7 +9,7 @@ WRITTEN BY: Cecilie Kristoffersen
 WHEN: Oktober/November 2016
 PURPOSE: Stylesheet for the whole homepage
 
-/*  Genral CSS for the whole site  */
+/* /////Genral CSS for the whole site////*/
 *{
 	/* Fjerner luftrom over og på sidene*/
 	margin:0;
@@ -65,30 +65,48 @@ width:100%
 }
 
 
-/*Navigation Bar*/
+/*///////Navigation Bar///////*/
 
-#topNavbar {
-	text-align:center;
-	width: 100%;
-	height: 70px;
-	background-color: #000;
-}
+ul.topnav {
+  	text-align:center;
+ 	list-style-type: none; 
+ 	max-width: 100%;
+ 	min-width: 99%;
+ 	height: 60px;
+  	background-color: #000;
+ 	overflow: hidden;
+  }
+  
 
-#topNavbar li{
- 	display: inline;
-}
+ul.topnav li{
+   	display: inline;
+  }
 
-#topNavbar a{
-	display: inline-block;
-	text-decoration: none;
-	color: white;
-	width:12%;
-	font-size:12px;
-}
+ul.topnav li a{
+  	display: inline-block;
+  	text-decoration: none;
+  	color: white;
+  	width:12%;
+  	font-size:12px;
+	transition: 0.5s;
+  }
 
-#topNavbar a img{
-	margin-top: 10px;
-}
+ul.topnav li a img{
+  	margin-top: 10px;
+  }
+  
+ ul.topnav li a:hover{
+ 	color:gray;
+ }
+ 
+ ul.topnav li a:active{
+ 	color:#504f4f ;
+ }
+ 
+ ul.topnav li.icon {
+ 	display: none;
+ }
+ 
 
 #BookRom {
 	float:right;
@@ -98,7 +116,40 @@ width:100%
 	display: inline-block;
 }
 
-/*Styling for the dropdown under Opplevelser. Written by Torstein*/
+/*@media screen and (max-width: 680px){
+ ul.topnav li:not(:first-child){display: none;}
+ 	ul.topnav li.icon {
+ 		float:left;
+ 		display: inline-block;
+ 	}
+ }
+ 
+ @media screen and (max-width: 680px){
+ 	ul.topnav.responsive {position: relative}
+ 	ul.topnav.responsive li.icon{
+ 		position: absolute;
+ 		right: 0;
+ 		top: 0;
+ 	}
+ 	ul.topnav.responsive li{
+ 		float: none;
+ 		display: inline;
+ 	}
+ 	ul.topnav.responsive li a{
+ 		display: block;
+ 		text-align: left;
+ 	}
+ }*/
+ 
+ .navbarScrolled {
+ 	position: fixed;
+ 	transition-property: margin-top;
+ 	transition-duration:.3s;
+ 	width:100%;
+ }
+ 
+ 
+ /*/////Styling for the dropdown under Opplevelser. Written by Torstein///////*/
 
 #opplevelser_bar {
 	display:none;

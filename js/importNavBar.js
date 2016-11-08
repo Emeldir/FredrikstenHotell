@@ -34,9 +34,9 @@ navbar.innerHTML += content;
 //Code to set the navbar fixed on top
 
 window.addEventListener('scroll',function(){
-	if(window.pageYOffset > 100){
+	if(window.pageYOffset > 30){
 		document.getElementById('navbarFixed').className = 'navbar navbarScrolled';
-	}else if(window.pageYOffset <= 100){
+	}else if(window.pageYOffset <= 30){
 		document.getElementById('navbarFixed').className = 'navbar';
 	}
 });

@@ -1,5 +1,5 @@
 //FILE NAME: slideshow.js
-//WRITTEN BY: Cecilie Kristoffersen
+//WRITTEN BY: Torstein Bakke
 //WHEN: November 2016
 //PURPOSE: Provides a slidehsow for the gallery and frontpage.
 
@@ -45,5 +45,6 @@ function showSlide(n) {
         pics[i].style.display = "none";
     }
     pics[slideIndex-1].style.display = "block";
+    document.getElementById("slideshowbuttons").style.display = "block";
 
 }

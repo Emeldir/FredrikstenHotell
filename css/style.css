@@ -370,9 +370,18 @@ h1 {
 }
 
 #slideshowbuttons {
-	margin: auto;
-	padding-left: 10px;
-	width: 80%;
+	background-color: black;
+	display: none;
+}
+
+.buttonleft{
+	position: absolute; top: 1025px; left:8%;
+	background-color: black;
+}
+
+.buttonright{
+	position: absolute; top: 1025px; right: 24%;
+	background-color: black;
 }
 
 /*////////////////////END OF CSS FOR GALLERI.HTML, WRITTEN BY TORSTEIN/////////////////////*/

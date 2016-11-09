@@ -252,10 +252,11 @@ li {
 
 .box2 {
 	margin: 1%;
-	width: 26%;
+	width: 300px;
 	height: 450px;
 	background: white;
 	margin-top: 40px;
+	position: relative;
 }
 
 .box2:hover {
@@ -269,14 +270,22 @@ li {
 .picture {
 	width: 100%;
 }
-  .part1,.part2 {
-  	float: left;
-  	margin-bottom: 12%;
-  }
 
-.part1, .part2 {
-margin: auto;
-padding: 8%;
+
+
+#bookNa:hover {
+border-color: rgb(139, 0, 7);
+border: 1px solid;
+text-decoration: underline;
+	}
+
+.center {
+	position:absolute;
+   left:50%;
+	 bottom: 6px;
+   transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+
 }
 
 #bookNa {
@@ -287,19 +296,19 @@ padding: 8%;
 	height: 24px;
 	text-align: center;
 	display: block;
-	margin: auto;
+	margin: 20px;
 }
 
-#bookNa:hover {
-border-color: rgb(139, 0, 7);
-border: 1px solid;
-text-decoration: underline;
-	}
-
-.center {
+.part1,.part2 {
+	float: left;
+	margin-bottom: 12%;
+	display: block;
 }
 
-
+.part1, .part2 {
+margin: auto;
+padding: 8%;
+}
 #suite, #dobbeltrompremium,  #dobbeltromsyd {
 	float: left;
 }
@@ -308,9 +317,6 @@ text-decoration: underline;
 	float: left;
 }
 
-#suite, #dobbeltromnord {
-	margin-left: 10%;
-}
 
 /*///////////////////END OF CSS FOR ROMOGSUITER.CSS//////////////////*/
 
@@ -440,7 +446,10 @@ and your footer gets pushed down a bit more, creating vertical scroll bars in th
 
 
 #main {overflow:auto;
-padding-bottom: 220px;}  /* must be same height as the footer */
+padding-bottom: 220px; /* must be same height as the footer */
+padding-left: 10%;
+padding-right: 8%;
+}
 
 #footercontainer {
 position: relative;

@@ -409,7 +409,7 @@ h1 {
 	width: 100%;
 	height: 100%;
   background-color: black;
-  color: white;
+  color: lightgrey;
 	position:absolute;
 	 left:50%;
 	 bottom: 6px;
@@ -422,36 +422,55 @@ h1 {
 .footertext {
 	margin-top: 20px;
 	font-size: 1em;
-}
+	}
 
  .footerheader {
 	 margin-top: 15px;
 	 margin-bottom: 20px;
 	 font-size: 1.5em;
 	 float:left;
+	 color: white;
  }
 
-#column1, #column2, #column3, #column4 {
+#column1 {
+	margin-left: 10%;
+
+}
+#column1, #column2, #column3 {
 margin-top: 3%;
-margin-left: 5%;
 margin-right: 5%;
 float: left;
 }
+
+
+#column4 {
+	margin-top: 3%;
+	float: left;
+}
+
+
 
 #instaikon {
 margin-left: 7%;
 }
 
+#faceikon, #instaikon {
+	float: left;
+	margin-bottom: 20px;
+}
+
+
+
 #main {overflow:auto;
-padding-bottom: 220px; /* must be same height as the footer */
+padding-bottom: 250px; /* must be same height as the footer */
 padding-left: 10%;
 padding-right: 8%;
 }
 
 #footercontainer {
 position: relative;
-margin-top: -220px; /* negative value of footer height */
-height: 220px;
+margin-top: -250px; /* negative value of footer height */
+height: 250px;
 clear:both;
 margin-top: 0;
 /*margin-top: 80px; Trengs denne? Skaper rom i mellom footer og bilde*/
@@ -480,11 +499,62 @@ and your footer gets pushed down a bit more, creating vertical scroll bars in th
     body {
         background-color: lightblue;
     }
+}
+
+/*////////////////////Responsive Design footer, written by Susanne/////////////////*/
+
+
+@media screen and (max-width: 1000px)  {
+
+		#footercontainer {
+			background-color: black;
+			height: 50%;
+			width: auto;
+		}
+		#column3 {
+			position: absolute;
+			bottom: 2%;
+			margin-left: 10%;
+		}
+		#column4 {
+			position: absolute;
+			left: 50%;
+			bottom: 2%;
+		}
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: blue;
+    }
 
 		#footercontainer {
 width: 100%;
 height: 100%;
+float: none;
 }
+
+
+#column3 {
+	position: relative;
 }
+
+#column4 {
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+}
+#column2 {
+	margin-left: 10%;
+
+}
+
+
+
+
+
 
 /*//////////////End of responsive design////////*/

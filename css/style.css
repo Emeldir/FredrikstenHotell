@@ -397,12 +397,16 @@ h1 {
 #footer {
 	text-align: left;
 	width: 100%;
-	height: 250px;
+	height: 100%;
   background-color: black;
   color: white;
-  position: absolute;
-  bottom: 0;
-  font-weight: lighter;
+	position:absolute;
+	 left:50%;
+	 bottom: 6px;
+	 transform: translateX(-50%);
+	 -webkit-transform: translateX(-50%);
+	 overflow: none;
+
 }
 
 .footertext {
@@ -410,15 +414,12 @@ h1 {
 	font-size: 1em;
 }
 
-
  .footerheader {
 	 margin-top: 15px;
 	 margin-bottom: 20px;
 	 font-size: 1.5em;
 	 float:left;
  }
-
-
 
 #column1, #column2, #column3, #column4 {
 margin-top: 3%;
@@ -430,20 +431,6 @@ float: left;
 #instaikon {
 margin-left: 7%;
 }
-
-
-a {
-	color: white;
-	font-size: 1em;
-	text-decoration: none;
-}
-
-a:hover {background-color:transparent; text-decoration:underline}
-
-/* must declare 0 margins on everything, also for main layout components use padding, not
-vertical margins (top and bottom) to add spacing, else those margins get added to total height
-and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
-
 
 #main {overflow:auto;
 padding-bottom: 220px; /* must be same height as the footer */
@@ -459,6 +446,21 @@ clear:both;
 margin-top: 80px;
 }
 
+a {
+	color: white;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+a:hover {background-color:transparent; text-decoration:underline}
+
+/* must declare 0 margins on everything, also for main layout components use padding, not
+vertical margins (top and bottom) to add spacing, else those margins get added to total height
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+
+
+
 /*////////////////////////////END OF CSS FOR FOOTER/////////////////*/
 
 /*////////////////////Responsive Design, written by Torstein & Cecilie/////////////////*/
@@ -467,6 +469,11 @@ margin-top: 80px;
     body {
         background-color: lightblue;
     }
+
+		#footercontainer {
+width: 100%;
+height: 100%;
+}
 }
 
 /*//////////////End of responsive design////////*/

@@ -362,10 +362,28 @@ h1 {
 
 /*////////////////////END OF CSS FOR KONFERANSE.HTML, WRITTEN BY IDA/////////////////////*/
 
+<<<<<<< Updated upstream
 /*////////////////////////CSS FOR OPPLEVELSER_SELSKAP.HTML, WRITTEN BY CECILIE////////////////*/
 
 
 /*//////////////////////END OF CSS FOR OPPLEVELSER_SELSKAP.HTML, WRITTEN BY CECILIE///////////////*/
+=======
+/*////////////////////CSS FOR OPPLEVELSER_MATOGDRIKKE.HTML, WRITTEN BY SUNNIVA/////////////////////*/
+
+
+
+
+#debio { 
+margin:auto;
+display: block;
+width: 10%; 
+margin-bottom: 30px;
+}
+
+
+
+/*////////////////////END OF CSS FOR OPPLEVELSER_MATOGDRIKKE.HTML, WRITTEN BY SUNNIVA/////////////////////*/
+>>>>>>> Stashed changes
 
 
 /*////////////////////CSS FOR GALLERI.HTML, WRITTEN BY TORSTEIN/////////////////////*/

@@ -24,11 +24,9 @@ content = '<div class="ourfooter" id="footer">'
 +         '<a href="https://www.facebook.com/fredrikstenhotell/?fref=ts"> <img  id="faceikon" src="img/ikoner/facebook.png" heigth="57" width="57"></a>'
 +         '<a href="https://www.instagram.com/fredrikstenhotell/">  <img  id="instaikon" src="img/ikoner/insta.png" heigth="60" width="60"> </a>'
 +         '<br> <br> <br></div>'
-+         '<div id="column3"> <p class="footerheader"> SOSIALE MEDIER </p> <br>'
-+         '<a href="https://www.facebook.com/fredrikstenhotell/?fref=ts"> <img  id="faceikon" src="img/ikoner/facebook.png" heigth="57" width="57"></a>'
-+         '<a href="https://www.instagram.com/fredrikstenhotell/">  <img  id="instaikon" src="img/ikoner/insta.png" heigth="60" width="60"> </a>'
-+         '<br> <br> <br></div>'
-
++         '<div id="column4">'
++         '<a href="https://no.tripadvisor.com/Hotel_Review-g315897-d3246588-Reviews-Fredriksten_Hotell-Halden_Halden_Municipality_Ostfold_Eastern_Norway.html"> <img id="tripikon" src="img/ikoner/testtripadvisor.png" heigth="140" width="140"></a>'
++         '</div>'
 
 +          '</div>'
 

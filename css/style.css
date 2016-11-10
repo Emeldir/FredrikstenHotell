@@ -204,31 +204,14 @@ article h4 { /*skape rom mellom overskrift og brødtekst*/
 		min-width: 180px;
 		height: 30%;/*300px;*/
 		color: white;
-<<<<<<< Updated upstream
 		position: absolute; right: 10%; bottom: 2%;
-=======
-		position: relative;
-		left: 65%; 
->>>>>>> Stashed changes
 		text-align: center;
 	}
 
 	div h3 { /*overskrift i bookingboks- book ditt opphold*/
 		margin-top: 20px;
 	}
-<<<<<<< Updated upstream
-	
-=======
-<<<<<<< Updated upstream
 
-=======
-	header h1 { /*Velkommen- Hovedoverskrift*/
-		position: relative; left: 5%; top:30%;
-		color: white;
-		float: left;
-	}
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 	#ankomst { /*felt til å skrive inn ankomst*/
 		padding-left: 10px;
 		margin-top: 20px;
@@ -384,12 +367,12 @@ h1 {
 
 /*////////////////////END OF CSS FOR KONFERANSE.HTML, WRITTEN BY IDA/////////////////////*/
 
-<<<<<<< Updated upstream
+
 /*////////////////////////CSS FOR OPPLEVELSER_SELSKAP.HTML, WRITTEN BY CECILIE////////////////*/
 
 
 /*//////////////////////END OF CSS FOR OPPLEVELSER_SELSKAP.HTML, WRITTEN BY CECILIE///////////////*/
-=======
+
 /*////////////////////CSS FOR OPPLEVELSER_MATOGDRIKKE.HTML, WRITTEN BY SUNNIVA/////////////////////*/
 
 
@@ -405,7 +388,7 @@ margin-bottom: 30px;
 
 
 /*////////////////////END OF CSS FOR OPPLEVELSER_MATOGDRIKKE.HTML, WRITTEN BY SUNNIVA/////////////////////*/
->>>>>>> Stashed changes
+
 
 
 /*////////////////////CSS FOR GALLERI.HTML, WRITTEN BY TORSTEIN/////////////////////*/

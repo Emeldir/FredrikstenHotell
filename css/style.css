@@ -206,29 +206,33 @@ article h4 { /*skape rom mellom overskrift og brødtekst*/
 		width: 35%;/*250px;*/
 		max-width: 250px;
 		min-width: 180px;
-		height: 30%;/*300px;*/
+		height: /*30%;*/280px;
 		color: white;
 		position: absolute; right: 10%; bottom: 2%;
 		text-align: center;
 	}
 
 	div h3 { /*overskrift i bookingboks- book ditt opphold*/
-		margin-top: 20px;
+		font-size: 16pt;
+		margin-top: 30px;
 	}
 
 	#ankomst { /*felt til å skrive inn ankomst*/
 		padding-left: 10px;
 		margin-top: 20px;
 		position: relative;
-		width: 180px;
+		width: 165px;
 		height: 24px;
 	}
 	#avreise { /*felt til å skrive inn avreise*/
 		padding-left: 10px;
 		margin-top: 10px;
 		position: relative;
-		width: 180px;
+		width: 165px;
 		height: 24px;
+	}
+	.antallMeny {
+	max-width: 165px;
 	}
 	#sjekkTilgjengelighet { /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
 		position: auto;

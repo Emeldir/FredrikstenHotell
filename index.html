@@ -27,11 +27,14 @@
               <form>
                 <input type="text" name="ankomst" id="ankomst" placeholder="ANKOMST"> <br>
                 <input type="text" name="avreise" id="avreise" placeholder="AVREISE"> <br>
-                <label id="bookingBoksRomLabel"> Rom </label>
+                <label class="antallMeny"> Rom </label>
+                <label class="antallMeny"> Voksne </label>
+                <label class="antallMeny"> Barn </label> <br>
+                <!--<label id="bookingBoksRomLabel"> Rom </label>
                 <label id="bookingBoksVoksneLabel"> Voksne </label>
-                <label id="bookinngBoksBarnLabel"> Barn </label> <br>
-                <select id="bookingBoksRom">
-                  <label id="bookingBoksRomLabel"> Rom </label>
+                <label id="bookinngBoksBarnLabel"> Barn </label> <br>-->
+                <!--<input type="number" name="rom" id="antallRom" min="0" max="10"></input> <br>-->
+                <select id="antallRom">
                   <option value="0">0</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -44,7 +47,7 @@
                   <option value="9">9</option>
                   <option value="10">10</option>
                 </select>
-                <select id="bookingBoksVoksneLabel">
+                <select id="antallVoksne">
                   <option value="0">0</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -57,7 +60,7 @@
                   <option value="9">9</option>
                   <option value="10">10</option>
                 </select>
-                <select id="bookingBoksBarn">
+                <select id="antallBarn">
                   <option value="0">0</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -158,13 +161,14 @@
   			<img src="img/kaserna_2.jpg" alt="OversiktHotellet" class="contentPicture">
   	</wrapper>
 
-	</div> <!-- lagt til av Susanne, for å få inn footeren -->
-	<div id="footercontainer">
-	 <p id="footer"> </p>
 	</div>
+	<footer id="footer">
+
+	   </footer>
+
   <script src="js/importNavBar.js" type="text/javascript"></script>
 	<script src="js/slideshow.js" type="text/javascript"></script>
-	<script src="js/footer.js" type="text/javascript"></script>
+	<script src="js/footerresp.js" type="text/javascript"></script>
 
 
   </body>

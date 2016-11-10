@@ -21,13 +21,14 @@ PURPOSE: Stylesheet for the whole homepage
 	font-family: Helvetica, "Gill Sans", sans-serif;
 }
 
-html, body {
+html {
 	height: 100%;
 
 }
 
 body{
 	background-color: #f4f4f4;
+	margin: auto;
 }
 
 
@@ -404,67 +405,81 @@ h1 {
 
 /*///////////////// CSS for Footer, written by Susanne ///////////////////*/
 
-#footer {
-	text-align: left;
-	width: 100%;
-	height: 100%;
-  background-color: black;
-  color: lightgrey;
-	position:absolute;
-	 left:50%;
-	 bottom: 6px;
-	 transform: translateX(-50%);
-	 -webkit-transform: translateX(-50%);
-	 overflow: none;
 
-}
-
-.footertext {
-	margin-top: 0px;
-	font-size: 1em;
-	margin: 50px;
-	}
-
- .footerheader {
-	 margin-top: 15px;
-	 margin-bottom: 20px;
-	 font-size: 1.5em;
-	 float:left;
-	 color: white;
- }
-
-#column1 {
-
-}
-#column1, #column2, #column3 {
-float: left;
-width: 25%;
+a {
+    text-decoration: none;
 }
 
 
-#column4 {
-	float: left;
-	width: 25%;
+
+
+footer {
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    margin-top: -250px; /* negative value of footer height */
+    height: 250px;
+    clear:both;
+    margin-top: 0;
+    height: 100%;
 }
 
-#column3 {
-	position: relative;
-
+footer > ul {
+    list-style: none outside none;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 35px 0;
+    position: relative;
+    width: 90%;
 }
+footer > ul li {
+    float: left;
+    padding: 20px 15px;
+    width: 25%;
 
-
-#instaikon {
-right: 0%;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
 }
+footer > ul li {
+    padding-left: 0;
+}
+footer > ul li:nth-child(4) { padding-right: 0;
+  }
 
-#faceikon, #instaikon {
-	float: left;
-	margin-bottom: 20px;
-	position: absolute;
+
+footer > ul li .text {
+    color: #848889;
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 95px;
+    position: relative;
+    text-align: justify;
+    white-space: nowrap;
+}
+.text h4 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.text a {
+    border-bottom: 1px dotted transparent;
+    color: white;
+}
+.text a:hover {
+    border-color: white;
 }
 
 #faceikon {
-left: 0%; 
+  margin-right: 10px;
+}
+
+#faceikon, #instaikon {
+  margin-top: 8px;
+    margin-right: 5px;
+    margin-left: 10px;
 }
 
 
@@ -472,15 +487,7 @@ left: 0%;
 padding-bottom: 250px; /* must be same height as the footer */
 padding-left: 10%;
 padding-right: 8%;
-}
-
-#footercontainer {
-position: relative;
-margin-top: -250px; /* negative value of footer height */
-height: 250px;
-clear:both;
-margin-top: 0;
-/*margin-top: 80px; Trengs denne? Skaper rom i mellom footer og bilde*/
+z-index: 1;
 }
 
 a {
@@ -511,53 +518,20 @@ and your footer gets pushed down a bit more, creating vertical scroll bars in th
 /*////////////////////Responsive Design footer, written by Susanne/////////////////*/
 
 
-@media screen and (max-width: 1000px)  {
 
-		#footercontainer {
-			background-color: black;
-			height: 50%;
-			width: auto;
-		}
-		#column3 {
-			position: absolute;
-			bottom: 2%;
-			margin-left: 10%;
-		}
-		#column4 {
-			position: absolute;
-			left: 50%;
-			bottom: 2%;
-		}
-}
+@media screen and (max-width: 900px)  {
 
+  #boks1, #boks2 {
+      float:left;
+      width:auto;
+  }
 
-
-@media only screen and (max-width: 500px) {
-    body {
-        background-color: blue;
+    footer > ul li {
+      float: none;
+      width: auto;
     }
 
-		#footercontainer {
-width: 100%;
-height: 100%;
-float: none;
 }
-
-
-#column3 {
-	position: relative;
-}
-
-#column4 {
-	position: absolute;
-	bottom: 25px;
-	left: 25px; /* må referere til column3 */
-}
-#column2 {
-	margin-left: 10%;
-
-}
-
 
 
 

@@ -193,21 +193,42 @@ article h4 { /*skape rom mellom overskrift og brødtekst*/
 	margin-bottom: 20px;
 }
 
-
+	#header {
+	position: relative;
+	}
 	#bookingBoks {
 		background-color: rgba(139, 0, 7, 0.8); /*#8b0007;*/
 		border-radius: 3px;
-		width: /*35%;*/250px;
-		height: /*30%;*/300px;
+		width: 35%;/*250px;*/
+		max-width: 250px;
+		min-width: 180px;
+		height: 30%;/*300px;*/
 		color: white;
+<<<<<<< Updated upstream
 		position: absolute; right: 10%; bottom: 2%;
+=======
+		position: relative;
+		left: 65%; 
+>>>>>>> Stashed changes
 		text-align: center;
 	}
 
 	div h3 { /*overskrift i bookingboks- book ditt opphold*/
 		margin-top: 20px;
 	}
+<<<<<<< Updated upstream
 	
+=======
+<<<<<<< Updated upstream
+
+=======
+	header h1 { /*Velkommen- Hovedoverskrift*/
+		position: relative; left: 5%; top:30%;
+		color: white;
+		float: left;
+	}
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 	#ankomst { /*felt til å skrive inn ankomst*/
 		padding-left: 10px;
 		margin-top: 20px;
@@ -350,7 +371,8 @@ h1 {
  /*Kan bruke denne på alle "knapper" som skal se like ut*/
 .bookingButtons{ /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
 	position: auto;
-	border-radius: 2px;
+	border-radius: 3px;
+	border: 1px solid #ebe9e4;
 	background-color: rgb(139, 0, 7);
 	color: white;
 	padding-left: 10px;

@@ -18,7 +18,8 @@ PURPOSE: Stylesheet for the whole homepage
 	/* Fjerner luftrom over og på sidene*/
 	margin:0;
 	padding:0;
-	font-family: Helvetica, "Gill Sans", sans-serif;
+	
+	
 }
 
 html, body {
@@ -28,6 +29,7 @@ html, body {
 
 body{
 	background-color: #f4f4f4;
+	font-family:  Helvetica, "Gill Sans", sans-serif;
 }
 
 
@@ -51,8 +53,25 @@ article{
 
 /* Bildet dekker hele skjermen*/
 .bigPicture{
-width:100%
+	/*margin-top: 30px; ødelegger for galleri og index, se på dette senere. Burde ha der for å få mer av bildet med*/
+    width:100%
 }
+
+.pictureContainer{
+	position: relative;
+	max-width: 100%
+	max-height:100%
+}
+.pictureContainer h1{
+	position: absolute; left: 5%; bottom:10%;
+	color: white;
+	opacity: 0.85;
+	font-size: 5.9vw;
+	font-weight: 100;
+	font-style: normal;
+	font-variant:normal;
+}
+
 
 .contentPicture{
 	width:100%;
@@ -71,11 +90,6 @@ width:100%
 									/*Litt usikker på hvordan dette egentlig fremstår, bildene ser klikkbare ut. Tilbakemeldinger?*/
 }
 
-.overskrift{
-	position: absolute; left: 5%; top:60%;
-	color: white;
-	font-size: 9em;
-}
 
 
 /*///////End of general CSS/////////*/

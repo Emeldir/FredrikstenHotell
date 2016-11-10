@@ -16,63 +16,66 @@
 		<div class="wrap">
   		<wrapper>
   			<header id="header">
-  				<img src="img/frontpage/frontpage2.jpg" alt="Utsikt Halden Natt" class="bigPicture">
-  				<img src="img/frontpage/frontpage3.jpg" alt="Julestemning" class="bigPicture" >
-  				<img src="img/frontpage/frontpage4.jpg" alt="Hotellrom" class="bigPicture">
-  				<img src="img/frontpage/frontpage5.jpg" alt="sitteplass" class="bigPicture">
-  				<h1 class="overskrift">Velkommen</h1>
-					<div id="bookingBoks">
-			  			<h3>Book ditt opphold</h3>
-			  			<form>
-			  				<input type="text" name="ankomst" id="ankomst" placeholder="ANKOMST"> <br>
-			  				<input type="text" name="avreise" id="avreise" placeholder="AVREISE"> <br>
-			  				<label id="bookingBoksRomLabel"> Rom </label>
-			  				<label id="bookingBoksVoksneLabel"> Voksne </label>
-			  				<label id="bookinngBoksBarnLabel"> Barn </label> <br>
-			  				<select id="bookingBoksRom">
-			  					<label id="bookingBoksRomLabel"> Rom </label>
-			  					<option value="0">0</option>
-			  					<option value="1">1</option>
-			  					<option value="2">2</option>
-			  					<option value="3">3</option>
-			  					<option value="4">4</option>
-			  					<option value="5">5</option>
-			  					<option value="6">6</option>
-			  					<option value="7">7</option>
-			  					<option value="8">8</option>
-			  					<option value="9">9</option>
-			  					<option value="10">10</option>
-			  				</select>
-			  				<select id="bookingBoksVoksneLabel">
-			  					<option value="0">0</option>
-			  					<option value="1">1</option>
-			  					<option value="2">2</option>
-			  					<option value="3">3</option>
-			  					<option value="4">4</option>
-			  					<option value="5">5</option>
-			  					<option value="6">6</option>
-			  					<option value="7">7</option>
-			  					<option value="8">8</option>
-			  					<option value="9">9</option>
-			  					<option value="10">10</option>
-			  				</select>
-			  				<select id="bookingBoksBarn">
-			  					<option value="0">0</option>
-			  					<option value="1">1</option>
-			  					<option value="2">2</option>
-			  					<option value="3">3</option>
-			  					<option value="4">4</option>
-			  					<option value="5">5</option>
-			  					<option value="6">6</option>
-			  					<option value="7">7</option>
-			  					<option value="8">8</option>
-			  					<option value="9">9</option>
-			  					<option value="10">10</option>
-			  				</select>
-			  				<!-- Legge til funksjonalitet når man trykker på knappen- hvor skal man komme til?-->
-							<input type="button" id="sjekkTilgjengelighet" onclick="sjekkTilgjengelighet()" value="Sjekk Tilgjengelighet"> </input>
-			  			</form>
-			  		</div>
+          <div class="pictureContainer">
+            <img src="img/frontpage/frontpage2.jpg" alt="Utsikt Halden Natt" class="bigPicture">
+          <img src="img/frontpage/frontpage3.jpg" alt="Julestemning" class="bigPicture" >
+          <img src="img/frontpage/frontpage4.jpg" alt="Hotellrom" class="bigPicture">
+          <img src="img/frontpage/frontpage5.jpg" alt="sitteplass" class="bigPicture">
+          <h1 class="overskrift">Velkommen</h1>
+          <div id="bookingBoks">
+              <h3>Book ditt opphold</h3>
+              <form>
+                <input type="text" name="ankomst" id="ankomst" placeholder="ANKOMST"> <br>
+                <input type="text" name="avreise" id="avreise" placeholder="AVREISE"> <br>
+                <label id="bookingBoksRomLabel"> Rom </label>
+                <label id="bookingBoksVoksneLabel"> Voksne </label>
+                <label id="bookinngBoksBarnLabel"> Barn </label> <br>
+                <select id="bookingBoksRom">
+                  <label id="bookingBoksRomLabel"> Rom </label>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <select id="bookingBoksVoksneLabel">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <select id="bookingBoksBarn">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <!-- Legge til funksjonalitet når man trykker på knappen- hvor skal man komme til?-->
+              <input type="button" id="sjekkTilgjengelighet" onclick="sjekkTilgjengelighet()" value="Sjekk Tilgjengelighet"> </input>
+              </form>
+            </div>
+          </div>
+  				
   			</header>
 
 

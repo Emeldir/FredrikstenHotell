@@ -200,14 +200,14 @@ article h4 { /*skape rom mellom overskrift og brødtekst*/
 		width: /*35%;*/250px;
 		height: /*30%;*/300px;
 		color: white;
-		position: absolute; right: 10%; top:45%; bottom: 10%;
+		position: absolute; right: 10%; bottom: 2%;
 		text-align: center;
 	}
 
 	div h3 { /*overskrift i bookingboks- book ditt opphold*/
 		margin-top: 20px;
 	}
-
+	
 	#ankomst { /*felt til å skrive inn ankomst*/
 		padding-left: 10px;
 		margin-top: 20px;
@@ -434,9 +434,8 @@ h1 {
 }
 
 .footertext {
-	margin-top: 0px;
+	margin-top: 20px;
 	font-size: 1em;
-	margin: 50px;
 	}
 
  .footerheader {
@@ -448,38 +447,32 @@ h1 {
  }
 
 #column1 {
+	margin-left: 10%;
 
 }
 #column1, #column2, #column3 {
+margin-top: 3%;
+margin-right: 5%;
 float: left;
-width: 25%;
 }
 
 
 #column4 {
+	margin-top: 3%;
 	float: left;
-	width: 25%;
 }
 
-#column3 {
-	position: relative;
-
-}
 
 
 #instaikon {
-right: 0%;
+margin-left: 7%;
 }
 
 #faceikon, #instaikon {
 	float: left;
 	margin-bottom: 20px;
-	position: absolute;
 }
 
-#faceikon {
-left: 0%; 
-}
 
 
 #main {overflow:auto;
@@ -542,6 +535,7 @@ and your footer gets pushed down a bit more, creating vertical scroll bars in th
 			left: 50%;
 			bottom: 2%;
 		}
+
 }
 
 
@@ -565,7 +559,7 @@ float: none;
 #column4 {
 	position: absolute;
 	bottom: 25px;
-	left: 25px; /* må referere til column3 */
+	left: 25px; /* må referere til column3 */ 
 }
 #column2 {
 	margin-left: 10%;

@@ -4,172 +4,181 @@
 		<meta charset="utf-8">
   		<title>Hjemmeside Fredriksten Hotell</title>
   		<link rel="stylesheet" type="text/css" href="css/style.css">
-      <link href="img/ikoner/favicon.ico" rel="icon" type="image/x-icon"/>
-  		<style>
-  		</style>
+      	<link href="img/ikoner/favicon.ico" rel="icon" type="image/x-icon"/>
 	</head>
 
 	<body>
-     <!--Navigation Bar-->
-    <div id="navbar"></div>
+    	<div id="navbar"></div>
         <div id="opplevelser_bar"></div>
 		<div class="wrap">
-  		<wrapper>
-  			<header id="header">
-          <div class="pictureContainer">
-            <img src="img/frontpage/frontpage2.jpg" alt="Utsikt Halden Natt" class="bigPicture">
-          <img src="img/frontpage/frontpage3.jpg" alt="Julestemning" class="bigPicture" >
-          <img src="img/frontpage/frontpage4.jpg" alt="Hotellrom" class="bigPicture">
-          <img src="img/frontpage/frontpage5.jpg" alt="sitteplass" class="bigPicture">
-          <h1 class="overskrift">Velkommen</h1>
-          <div id="bookingBoks">
-              <h3>Book ditt opphold</h3>
-              <form>
-                <input type="text" name="ankomst" id="ankomst" placeholder="ANKOMST"> <br>
-                <input type="text" name="avreise" id="avreise" placeholder="AVREISE"> <br>
-                <label class="antallMeny"> Rom </label>
-                <label class="antallMeny"> Voksne </label>
-                <label class="antallMeny"> Barn </label> <br>
-                <!--<label id="bookingBoksRomLabel"> Rom </label>
-                <label id="bookingBoksVoksneLabel"> Voksne </label>
-                <label id="bookinngBoksBarnLabel"> Barn </label> <br>-->
-                <!--<input type="number" name="rom" id="antallRom" min="0" max="10"></input> <br>-->
-                <select id="antallRom">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select>
-                <select id="antallVoksne">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select>
-                <select id="antallBarn">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select>
-                <!-- Legge til funksjonalitet når man trykker på knappen- hvor skal man komme til?-->
-              <input type="button" id="sjekkTilgjengelighet" onclick="sjekkTilgjengelighet()" value="Sjekk Tilgjengelighet"> </input>
-              </form>
-            </div>
-          </div>
-  			</header>
+  			<wrapper>
+  				<header id="header">
+          			<div class="pictureContainer">
+            			<img src="img/frontpage/frontpage2.jpg" alt="Utsikt Halden Natt" class="bigPicture">
+          				<img src="img/frontpage/frontpage3.jpg" alt="Julestemning" class="bigPicture" >
+          				<img src="img/frontpage/frontpage4.jpg" alt="Hotellrom" class="bigPicture">
+          				<img src="img/frontpage/frontpage5.jpg" alt="sitteplass" class="bigPicture">
+          				<h1 class="overskrift">Velkommen</h1>
+          				
+          				<!-- Den røde booking boksen øverst til høyre på siden-->
+          				<div id="bookingBoks">
+              				<h3>Book ditt opphold</h3>
+              				<form>
+              					<fieldset class="fieldset">
+                					<input type="text" name="ankomst" id="ankomst" placeholder="ANKOMST"> <br>
+                					<input type="text" name="avreise" id="avreise" placeholder="AVREISE"> <br>
+                				</fieldset>
+                				<fieldset class="fieldset">
+                					<ul class="col-3">
+          								<li class="liBookingBoks">
+            								<div class="romValg">
+              									<label for="rom">Rom</label><br>
+              									<select class="selector">
+                									<option value="0">0</option>
+                									<option value="1">1</option>
+                									<option value="2">2</option>
+                									<option value="3">3</option>
+                									<option value="4">4</option>
+                									<option value="5">5</option>
+                									<option value="6">6</option>
+                									<option value="7">7</option>
+                									<option value="8">8</option>
+                									<option value="9">9</option>
+                									<option value="10">10</option>
+                									<span style="width: 62px; user-select: none;"></span>
+              									</select>
+            								</div>
+          								</li>
+          								<li class="liBookingBoks">
+            								<div class="voksneValg">
+              									<label for="voksne">Voksne</label><br>
+              									<select class="selector">
+                									<option value="0">0</option>
+                									<option value="1">1</option>
+                									<option value="2">2</option>
+                									<option value="3">3</option>
+                									<option value="4">4</option>
+                									<option value="5">5</option>
+                									<option value="6">6</option>
+                									<option value="7">7</option>
+                									<option value="8">8</option>
+                									<option value="9">9</option>
+                									<option value="10">10</option>
+                									<span style="width: 62px; user-select: none;"></span>
+              									</select>
+              								</div>
+          								</li>
+          								<li class="liBookingBoks">
+            								<div class="barnValg">
+              									<label for="barn">Barn</label><br>
+              									<select class="selector">
+                									<option value="0">0</option>
+                									<option value="1">1</option>
+                									<option value="2">2</option>
+                									<option value="3">3</option>
+                									<option value="4">4</option>
+                									<option value="5">5</option>
+                									<option value="6">6</option>
+                									<option value="7">7</option>
+                									<option value="8">8</option>
+                									<option value="9">9</option>
+                									<option value="10">10</option>
+                									<span style="width: 62px; user-select: none;"></span>
+              									</select>
+            								</div>
+          								</li>
+        							</ul>
+                				</fieldset>
+                				<input type="button" id="sjekkTilgjengelighet" onclick="sjekkTilgjengelighet()" value="Sjekk Tilgjengelighet"> </input>
+              				</form>
+            			</div>
+          			</div>
+  				</header>
 
+      			<div id="underMeny" >
+        			| <a href="#vårFilosofi"> Vår filosofi </a> | <a href="#historie"> Historie </a>  |
+      			</div>
 
+				<article>
+        			<h4> Historisk på Festningen i Halden </h4>
+        			<p> Fredriksten Hotell ligger fantastisk til på Fredriksten festnings historiske grunn.
+        				Her er det gjennom århundrer utkjempet viktige slag og sluttført harde forhandlinger.
+        				Hotellet ligger høyt over halden sentrum- som likevel er kun en flott spasertur unna.
+        				Etter full rehabilitering i 2014 har hotellet nå 69 helt nye rom og nye fellesarealer.
+        				Vi har dobbeltrom, enkeltrom og 6 herlige suiter.<br>
+        				Maten lages fra bunnen av med kvalitetsråvarer, og utsikten må bare nytes!
+        				Enten du ønsker å overnatte i flotte, historiske omgivelser, eller en særpreget arena
+        				for ditt møte eller konferanse, er Fredriksten et godt valg.<br> <br> Velkommen!
+        			</p>
+      			</article>
 
+      			<img src="img/Kasernejul22_1_1.jpg" alt="hotellrom" class="contentPicture">
 
-      	<div id="underMeny" >
-        	| <a href="#vårFilosofi"> Vår filosofi </a> | <a href="#historie"> Historie </a>  |
-      	</div>
+      			<article id="vårFilosofi">
+      				<h4> Vår filosofi- Ubuntu i alt vi gjør </h4>
+        			<p> Vår filosofi kan oppsummeres i begrepet Ubuntu. Ubuntu er en sørafrikansk tenkemåte
+        				som bidrar til gode opplevelser og forbedringsprosesser over hele kloden. Ubuntu er
+        				bindeleddet mellom våre gjester og vi som jobber i vår organisasjon. Ubuntu dreier seg i
+        				det store og hele om å bidra til at samfunnet rundt oss skal kunne forbedres. <br>
+        				Nelson Mandela forklarer Ubuntu slik: "Om en reisende gjennom vårt land stoppes ved
+        				en landsby, ville han ikke måtte spørre etter mat og vann. Med en gang når han stopper,
+        				ville folket gi ham mat og underholde ham. Det er en side av Ubuntu, men ubuntu har mange
+        				sider." <br>
+        				<br>
+        				Ubuntu betyr ikke at folk ikke burde tenke på seg selv. Spørsmålet er derfor: "Vil du handle
+        				for at samfunnet rundt deg skal kunne forbedres?"
+        				Ubuntu kan oppsummeres til: En person er en person gjennom andre mennesker"- eller på en
+        				litt annen måte: "We are, because of you".<br>
+        				<br>
+        				Fredriksten hotellog våre spisesteder eksisterer på grunn av våre gjester og vi ønsker at
+        				dette skal gjenspeiles i alt vi gjør. Vår misjon er å gi våre gjester gode opplevelser som
+        				gjør at vi fortjener deres lojalitet på livstid. Dette er hele eksistensgrunnlaget vårt og
+        				eksistensbetingelsen til våre virksomhetsområder. En del av vår Ubuntu er også knyttet til
+        				bærekraftig drift og miljøvennlig fangst og råvareproduksjon.
+        			</p>
+      			</article>
 
-		<article>
-        	<h4> Historisk på Festningen i Halden </h4>
-        	<p> Fredriksten Hotell ligger fantastisk til på Fredriksten festnings historiske grunn.
-        	Her er det gjennom århundrer utkjempet viktige slag og sluttført harde forhandlinger.
-        	Hotellet ligger høyt over halden sentrum- som likevel er kun en flott spasertur unna.
-        	Etter full rehabilitering i 2014 har hotellet nå 69 helt nye rom og nye fellesarealer.
-        	Vi har dobbeltrom, enkeltrom og 6 herlige suiter.<br>
-        	Maten lages fra bunnen av med kvalitetsråvarer, og utsikten må bare nytes!
-        	Enten du ønsker å overnatte i flotte, historiske omgivelser, eller en særpreget arena
-        	for ditt møte eller konferanse, er Fredriksten et godt valg.<br> <br> Velkommen!
-        	</p>
-      </article>
+      			<img src="img/Kasernen12 2_2.jpg" alt="SmilResepsjon" class="contentPicture">
 
-      <img src="img/Kasernejul22_1_1.jpg" alt="hotellrom" class="contentPicture">
+      			<article id="historie">
+        			<h4> Et historisk tilbakeblikk</h4>
+        			<p> Den store mursteinsbygningen som i dag rommer det meste av Fredriksten Hotell omtales
+        				ofte som Kaserna. Byggingen av Kaserna ble påbegynt i 1939, etter tegninger av Arnstein
+        				Arneberg. I 1940 fullførte tyskerne byggingen, etter å ha inntatt Fredriksten festning.<br>
+        				<br>
+        				Etter krigen ble bygningen tatt i bruk som kaserne for elever til militær utdanning.
+        				Førkrigstidens underoffiserskole og militære forskolekom begge i gang igjen i 1946. I 1947
+        				vedtok stortinget å etablere et forsvarets gymnas på Fredriksten. i 1970 avla det siste kullet
+        				realskoleeksamen og gymnaset ble avviklet i 1982.<br>
+        				<br>
+        				Til gjengjeld ble Hærens forvaltningsskole flyttet til Fredriksten festning i 1983.
+        				Forvaltningsskolene for de tre våpengrener ble så slått sammen til Forsvarets forvaltningsskole,
+        				og skolens utdanningsavdeling lå på Fredriksten frem til høsten 2005. Det store bygget ble
+        				benyttet som kaserne for elever/studentene i hele denne perioden fra krigen og til nedleggelsen
+        				i 2005.<br>
+        				<br>
+        				Sommeren 2007 inngikk et privat selskap en avtale med Forsvarsbygg om leie av Kaserna, og den
+        				nedlagte forvaltningsskolens administrasjonsbygg. Hensikten var å drive hotell, konferanse- og
+        				selskapslokale samt kontorutleie. En ny eier overtok driften av lokalene fra 2009. Den gamle
+        				kasernebygningen huset så Halden Vandrehjem- Kaserna, spisesal, bar og kjøkken, cateringvirksomhet
+        				og utstrakt konferanse- og selskapsvirksomhet. Administrasjonsbygningens inneholdt resepsjon,
+        				møterom, konferansefasiliteter og kontorutleie.<br>
+        				<br>
+        				I 2013 overtok Fredriksten Hotell driften. Det er blitt investert flere titalls millioner i
+        				totalrehabilitere det gamle kasernebygget. Sommeren 2014 fullføres arbeidet, og Fredriksten
+        				Hotell innvies som et topp moderne hotell med 69 helt nye rom og nye fellesområder.
+        			</p>
+      			</article>
 
-      <article id="vårFilosofi">
-      		<h4> Vår filosofi- Ubuntu i alt vi gjør </h4>
-        	<p> Vår filosofi kan oppsummeres i begrepet Ubuntu. Ubuntu er en sørafrikansk tenkemåte
-        	som bidrar til gode opplevelser og forbedringsprosesser over hele kloden. Ubuntu er
-        	bindeleddet mellom våre gjester og vi som jobber i vår organisasjon. Ubuntu dreier seg i
-        	det store og hele om å bidra til at samfunnet rundt oss skal kunne forbedres. <br>
-        	Nelson Mandela forklarer Ubuntu slik: "Om en reisende gjennom vårt land stoppes ved
-        	en landsby, ville han ikke måtte spørre etter mat og vann. Med en gang når han stopper,
-        	ville folket gi ham mat og underholde ham. Det er en side av Ubuntu, men ubuntu har mange
-        	sider." <br>
-        	<br>
-        	Ubuntu betyr ikke at folk ikke burde tenke på seg selv. Spørsmålet er derfor: "Vil du handle
-        	for at samfunnet rundt deg skal kunne forbedres?"
-        	Ubuntu kan oppsummeres til: En person er en person gjennom andre mennesker"- eller på en
-        	litt annen måte: "We are, because of you".<br>
-        	<br>
-        	Fredriksten hotellog våre spisesteder eksisterer på grunn av våre gjester og vi ønsker at
-        	dette skal gjenspeiles i alt vi gjør. Vår misjon er å gi våre gjester gode opplevelser som
-        	gjør at vi fortjener deres lojalitet på livstid. Dette er hele eksistensgrunnlaget vårt og
-        	eksistensbetingelsen til våre virksomhetsområder. En del av vår Ubuntu er også knyttet til
-        	bærekraftig drift og miljøvennlig fangst og råvareproduksjon.
-        	</p>
-      </article>
+  				<img src="img/kaserna_2.jpg" alt="OversiktHotellet" class="contentPicture">
+  			</wrapper>
+		</div>
+		
+		<footer id="footer">
+		</footer>
 
-      <img src="img/Kasernen12 2_2.jpg" alt="SmilResepsjon" class="contentPicture">
-
-      <article id="historie">
-        	<h4> Et historisk tilbakeblikk</h4>
-        	<p> Den store mursteinsbygningen som i dag rommer det meste av Fredriksten Hotell omtales
-        	ofte som Kaserna. Byggingen av Kaserna ble påbegynt i 1939, etter tegninger av Arnstein
-        	Arneberg. I 1940 fullførte tyskerne byggingen, etter å ha inntatt Fredriksten festning.<br>
-        	<br>
-        	Etter krigen ble bygningen tatt i bruk som kaserne for elever til militær utdanning.
-        	Førkrigstidens underoffiserskole og militære forskolekom begge i gang igjen i 1946. I 1947
-        	vedtok stortinget å etablere et forsvarets gymnas på Fredriksten. i 1970 avla det siste kullet
-        	realskoleeksamen og gymnaset ble avviklet i 1982.<br>
-        	<br>
-        	Til gjengjeld ble Hærens forvaltningsskole flyttet til Fredriksten festning i 1983.
-        	Forvaltningsskolene for de tre våpengrener ble så slått sammen til Forsvarets forvaltningsskole,
-        	og skolens utdanningsavdeling lå på Fredriksten frem til høsten 2005. Det store bygget ble
-        	benyttet som kaserne for elever/studentene i hele denne perioden fra krigen og til nedleggelsen
-        	i 2005.<br>
-        	<br>
-        	Sommeren 2007 inngikk et privat selskap en avtale med Forsvarsbygg om leie av Kaserna, og den
-        	nedlagte forvaltningsskolens administrasjonsbygg. Hensikten var å drive hotell, konferanse- og
-        	selskapslokale samt kontorutleie. En ny eier overtok driften av lokalene fra 2009. Den gamle
-        	kasernebygningen huset så Halden Vandrehjem- Kaserna, spisesal, bar og kjøkken, cateringvirksomhet
-        	og utstrakt konferanse- og selskapsvirksomhet. Administrasjonsbygningens inneholdt resepsjon,
-        	møterom, konferansefasiliteter og kontorutleie.<br>
-        	<br>
-        	I 2013 overtok Fredriksten Hotell driften. Det er blitt investert flere titalls millioner i
-        	totalrehabilitere det gamle kasernebygget. Sommeren 2014 fullføres arbeidet, og Fredriksten
-        	Hotell innvies som et topp moderne hotell med 69 helt nye rom og nye fellesområder.
-        	</p>
-      </article>
-
-  			<img src="img/kaserna_2.jpg" alt="OversiktHotellet" class="contentPicture">
-  	</wrapper>
-
-	</div>
-	<footer id="footer">
-
-	   </footer>
-
-  <script src="js/importNavBar.js" type="text/javascript"></script>
-	<script src="js/slideshow.js" type="text/javascript"></script>
-	<script src="js/footerresp.js" type="text/javascript"></script>
-
-
-  </body>
+  		<script src="js/importNavBar.js" type="text/javascript"></script>
+		<script src="js/slideshow.js" type="text/javascript"></script>
+		<script src="js/footerresp.js" type="text/javascript"></script>
+	</body>
 </html>

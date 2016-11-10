@@ -215,7 +215,7 @@ article h4 { /*skape rom mellom overskrift og brødtekst*/
 	}
 
 	.selector{
-  		-webkit-appearance: none;
+  		-webkit-appearance: menulist-button;
   		width: 50px;
   		height: 24px;
   		border-radius: 0;
@@ -223,12 +223,14 @@ article h4 { /*skape rom mellom overskrift og brødtekst*/
 
 	#ankomst { /*felt til å skrive inn ankomst*/
 		position: relative;
+		padding-left: 5px;
 		width: 180px;
 		height: 24px;
 	}
 	#avreise { /*felt til å skrive inn avreise*/
 		margin-top: 10px;
 		position: relative;
+		padding-left: 5px;
 		width: 180px;
 		height: 24px;
 	}

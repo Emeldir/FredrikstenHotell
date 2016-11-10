@@ -29,7 +29,6 @@ html {
 
 body{
 	background-color: #f4f4f4;
-	margin: auto;
 	font-family:  Helvetica, "Gill Sans", sans-serif;
 }
 
@@ -203,33 +202,29 @@ article h4 { /*skape rom mellom overskrift og brødtekst*/
 		width: 35%;/*250px;*/
 		max-width: 250px;
 		min-width: 180px;
-		height: /*30%;*/280px;
+		height: 30%;/*300px;*/
 		color: white;
 		position: absolute; right: 10%; bottom: 2%;
 		text-align: center;
 	}
 
 	div h3 { /*overskrift i bookingboks- book ditt opphold*/
-		font-size: 16pt;
-		margin-top: 30px;
+		margin-top: 20px;
 	}
 
 	#ankomst { /*felt til å skrive inn ankomst*/
 		padding-left: 10px;
 		margin-top: 20px;
 		position: relative;
-		width: 165px;
+		width: 180px;
 		height: 24px;
 	}
 	#avreise { /*felt til å skrive inn avreise*/
 		padding-left: 10px;
 		margin-top: 10px;
 		position: relative;
-		width: 165px;
+		width: 180px;
 		height: 24px;
-	}
-	.antallMeny {
-	max-width: 165px;
 	}
 	#sjekkTilgjengelighet { /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
 		position: auto;
@@ -447,8 +442,11 @@ margin-bottom: 30px;
 /*///////////////// CSS for Footer, written by Susanne ///////////////////*/
 
 
-a {
-    text-decoration: none;
+#main {overflow:auto;
+	padding: 250px 0; /* must be same height as the footer */
+padding-left: 10%;
+padding-right: 10%;
+z-index: 1;
 }
 
 
@@ -524,23 +522,6 @@ footer > ul li .text {
 }
 
 
-#instaikon {
-margin-left: 7%;
-}
-
-#faceikon, #instaikon {
-	float: left;
-	margin-bottom: 20px;
-}
-
-
-
-#main {overflow:auto;
-padding-bottom: 250px; /* must be same height as the footer */
-padding-left: 10%;
-padding-right: 8%;
-z-index: 1;
-}
 
 a {
 	color: white;
@@ -582,6 +563,8 @@ and your footer gets pushed down a bit more, creating vertical scroll bars in th
       float: none;
       width: auto;
     }
+
+
 
 
 

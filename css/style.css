@@ -12,7 +12,7 @@ PURPOSE: Stylesheet for the whole homepage
 
 
 
-/* /////General CSS for the whole site////*/
+/* /////General CSS for the whole site. Written by Cecilie////*/
 
 *{
 	/* Fjerner luftrom over og på sidene*/
@@ -23,6 +23,7 @@ PURPOSE: Stylesheet for the whole homepage
 
 html, body {
 	height: 100%;
+
 }
 
 body{
@@ -43,13 +44,16 @@ article{
 }
 
 .wrap {
-	min-height: 100%;}
+	min-height: 100%;
+
+}
 
 
 /* Bildet dekker hele skjermen*/
 .bigPicture{
 width:100%
 }
+
 .contentPicture{
 	width:100%;
 	transition: box-shadow 0.3s ease-out;
@@ -67,12 +71,18 @@ width:100%
 									/*Litt usikker på hvordan dette egentlig fremstår, bildene ser klikkbare ut. Tilbakemeldinger?*/
 }
 
+.overskrift{
+	position: absolute; left: 5%; top:60%;
+	color: white;
+	font-size: 9em;
+}
+
 
 /*///////End of general CSS/////////*/
 
 
 
-/*///////CSS for Navigation Bar.///////*/
+/*///////CSS for Navigation Bar. Written by Cecilie///////*/
 
 ul.topnav {
 	position: fixed;
@@ -164,13 +174,9 @@ ul.topnav li a img{
 
 /*//////////////Index.html, written by Ida/////////////////////////////*/
 
-article {/*Selve avsnittene */
-		text-align: center;
-		margin-top: 50px;
-		margin-bottom: 50px;
-	}
-	article h4 { /*skape rom mellom overskrift og brødtekst*/
-		margin-bottom: 20px;
+
+article h4 { /*skape rom mellom overskrift og brødtekst*/
+	margin-bottom: 20px;
 }
 
 
@@ -187,10 +193,7 @@ article {/*Selve avsnittene */
 	div h3 { /*overskrift i bookingboks- book ditt opphold*/
 		margin-top: 20px;
 	}
-	header h1 { /*Velkommen- Hovedoverskrift*/
-		position: absolute; left: 5%; top:60%;
-		color: white;
-	}
+	
 	#ankomst { /*felt til å skrive inn ankomst*/
 		padding-left: 10px;
 		margin-top: 20px;
@@ -330,7 +333,8 @@ padding: 8%;
 h1 {
 	font-family: Helvetica, verdana, sans-serif;
 }
-#bookKonferanse { /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
+ /*Kan bruke denne på alle "knapper" som skal se like ut*/
+.bookingButtons{ /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
 	position: auto;
 	border-radius: 2px;
 	background-color: rgb(139, 0, 7);
@@ -343,6 +347,11 @@ h1 {
 }
 
 /*////////////////////END OF CSS FOR KONFERANSE.HTML, WRITTEN BY IDA/////////////////////*/
+
+/*////////////////////////CSS FOR OPPLEVELSER_SELSKAP.HTML, WRITTEN BY CECILIE////////////////*/
+
+
+/*//////////////////////END OF CSS FOR OPPLEVELSER_SELSKAP.HTML, WRITTEN BY CECILIE///////////////*/
 
 
 /*////////////////////CSS FOR GALLERI.HTML, WRITTEN BY TORSTEIN/////////////////////*/
@@ -393,7 +402,7 @@ h1 {
 
 /*////////////////////END OF CSS FOR GALLERI.HTML, WRITTEN BY TORSTEIN/////////////////////*/
 
-/*///////////////// CSS forFooter, written by Susanne ///////////////////*/
+/*///////////////// CSS for Footer, written by Susanne ///////////////////*/
 
 #footer {
 	text-align: left;
@@ -444,7 +453,8 @@ position: relative;
 margin-top: -220px; /* negative value of footer height */
 height: 220px;
 clear:both;
-margin-top: 80px;
+margin-top: 0;
+/*margin-top: 80px; Trengs denne? Skaper rom i mellom footer og bilde*/
 }
 
 a {

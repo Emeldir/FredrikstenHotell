@@ -3,21 +3,60 @@
 //WHEN: November 2016
 //PURPOSE: Change content in "matogdrikke" and "aktiviteter" depending on the seasons.
 
+function show(id){
+element=document.getElementById(id);
+element.style.display='block';
+}
+
+function hide(id){
+element=document.getElementById(id);
+element.style.display='none';
+}
+
+function setSeason(season){
+	switch(season){
+		
+		case "autumn":
+			 show("autumn"); 
+   			 hide("winter"); 
+   			 hide("spring");
+   			 hide("summer");
+   			 
+   			 break;
+   			 
+   		case "winter":
+			 show("winter"); 
+    		hide("autumn"); 
+    		hide("spring");
+    		hide("summer");
+   			 
+   			 break;
+		
+	}
+}
 //Seasons:
 
 var d = new Date(Date.now());
 var month = d.getMonth() + 1;
 
 if (month >= 3 && month <= 5) {
-   document.getElementById("menu").innerHTML = document.getElementById("spring").innerHTML;
-   document.getElementById("aktiviteter").innerHTML = document.getElementById("spring").innerHTML;
+    show("spring"); 
+    hide("winter"); 
+    hide("autumn");
+    hide("summer");
 } else if (month >= 6 && month <= 8) {
-    document.getElementById("menu").innerHTML = document.getElementById("summer").innerHTML;
-    document.getElementById("aktiviteter").innerHTML = document.getElementById("climbing"+"golf").innerHTML;
+    show("summer"); 
+    hide("winter"); 
+    hide("spring");
+    hide("autumn");
 } else if (month >= 9 && month <= 11) {
-    document.getElementById("menu").innerHTML = document.getElementById("autumn").innerHTML;
-    document.getElementById("aktiviteter").innerHTML = document.getElementById("climbing"+"golf").innerHTML;
+    show("autumn"); 
+    hide("winter"); 
+    hide("spring");
+    hide("summer");
 } else if (month == 12 || month <= 2) {
-   document.getElementById("menu").innerHTML = document.getElementById("winter").innerHTML;
-   document.getElementById("aktiviteter").innerHTML = document.getElementById("winter").innerHTML;
+   show("winter"); 
+    hide("autumn"); 
+    hide("spring");
+    hide("summer");
 }

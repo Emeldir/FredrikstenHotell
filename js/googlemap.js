@@ -1,11 +1,11 @@
  function initMap() {
-        var uluru = {lat: 59.1161757, lng: 11.3923223};
+        var fredriksten = {lat: 59.1161757, lng: 11.3923223};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
+          zoom: 8,
+          center: fredriksten
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: fredriksten,
           map: map
         });
       }

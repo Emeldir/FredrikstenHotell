@@ -432,19 +432,20 @@ h5:after {
 	text-align: center;
 }
 
-#dishName {
+.dishName {
 	font-size:100%;
 	margin-top:20px;
 }
 
-#dishDescription {
+.dishDescription {
 	font-size:80%;
 	font-style:italic;
 }
 
-#dishInfo {
+.dishInfo {
 	font-size:60%;
 }
+
 /*////////////////////END OF CSS FOR OPPLEVELSER_MATOGDRIKKE.HTML, WRITTEN BY SUNNIVA/////////////////////*/
 
 
@@ -525,12 +526,50 @@ h5:after {
 
 /*////////////////////CSS for kontakt.html, written by Sunniva/////////////////////*/
 
+.formAndMap {
+margin-top:0
+}
+
 #map {
+        position:relative;
         height: 400px;
         margin-left:60%;
         margin-right:10%;
        }
        
+#form { 
+        margin-left: 20%;
+        position:absolute;
+       }
+       
+.formelement	 {
+    width: 80%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size:16px;
+} 
+
+#kontaktOssSend	 {
+    width: 40%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size:16px;
+  
+} 
+
+
+
+
+ 
+
 
 /*////////////////////End of CSS for kontakt.html, written by Sunniva/////////////////////*/
 

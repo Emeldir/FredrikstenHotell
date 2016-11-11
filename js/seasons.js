@@ -5,15 +5,15 @@
 
 //Seasons:
 
-var d = new Date();
+var d = new Date(Date.now());
 var month = d.getMonth() + 1;
 
 if (month >= 3 && month <= 5) {
-   document.getElementById("meny").innerHTML = "Paragraph changed!";
+   document.getElementById("menu").innerHTML = document.getElementById("spring").innerHTML;
 } else if (month >= 6 && month <= 8) {
-    document.getElementById("meny").innerHTML = "Paragraph changed!";
+    document.getElementById("menu").innerHTML = document.getElementById("summer").innerHTML;
 } else if (month >= 9 && month <= 11) {
-    document.getElementById("meny").innerHTML = "Paragraph changed!";
-} else(month == 12 || month <= 2) {
-   document.getElementById("meny").innerHTML = "Paragraph changed!";
+    document.getElementById("menu").innerHTML = document.getElementById("autumn").innerHTML;
+} else if (month == 12 || month <= 2) {
+   document.getElementById("menu").innerHTML = document.getElementById("winter").innerHTML;
 }

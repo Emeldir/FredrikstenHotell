@@ -34,16 +34,22 @@ PURPOSE:
   				<p>Kontakt oss gjerne for spørsmål eller forespørsler. Vi skreddersyr et konferanseopplegg,
   				Selskap eller opphold som passer deg og ditt behov. Fyll ut kontaktskjema under, eller kontakt
   				oss direkte via mail på post@fredrikstenhotell.no eller telefon +47 69 02 10 10.</p>
+  				</article>
+  				<div id="form" class="formAndMap"> 
+  		
   				<form>
-  					<input type="text" id="kontaktOssNavn" placeholder="Navn"> </input> <br>
-  					<input type="email" id="kontaktOssEpost" placeholder="E-post"> </input><br>
-  					<input type="tel" id="kontaktOssTelefon" placeholder="Telefon"> </input><br>
-  					<input type="text" id="kontaktOssForespørsel" placeholder="Forespørsel"> </input><br>
-  					<input type="button" id="kontaktOssSend" onclick="kontaktOssSend()" value="SEND"> </input><br>
+  					<input class="formelement" type="text" id="kontaktOssNavn" placeholder="Navn"> </input> <br>
+  					<input class="formelement" type="email" id="kontaktOssEpost" placeholder="E-post"> </input><br>
+  					<input class="formelement" type="tel" id="kontaktOssTelefon" placeholder="Telefon"> </input><br>
+  					<textarea class="formelement" id="kontaktOssForespørsel" cols="40" rows="10" placeholder="Forespørsel"></textarea><br>
+  					<!--<input type="text" id="kontaktOssForespørsel" placeholder="Forespørsel"> </input><br>-->	
+  					<input class="formelement" type="button" id="kontaktOssSend" onclick="kontaktOssSend()" value="SEND"> </input><br>
   				</form>
-			</article>
+  				
+  				</div>
 			
-			<div id="map"></div>
+			
+			<div id="map" class="formAndMap"></div>
 
 
   			<!--<footer> -->

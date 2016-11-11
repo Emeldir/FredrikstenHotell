@@ -80,7 +80,7 @@ article{
 .pictureContainer h1{
 	position: absolute; left: 5%; bottom:10%;
 	color: white;
-	opacity: 0.85;
+	opacity: 0.95;
 	font-size: 5.9vw;
 	font-weight: 100;
 	font-style: normal;
@@ -105,21 +105,22 @@ article{
 
 
 /*///////CSS for Navigation Bar. Written by Cecilie///////*/
-ul.topnav {
+	nav {
 	position: fixed;
 	z-index: 2;
-  	text-align:center;
+  text-align:center;
  	list-style-type: none;
  	max-width: 100%;
  	min-width: 100%;
  	height: 60px;
   	background-color: #000;
  	overflow: hidden;
-}
+  }
+
 
 ul.topnav li{
    	display: inline;
-}
+  }
 
 ul.topnav li a{
   	display: inline-block;
@@ -128,25 +129,23 @@ ul.topnav li a{
   	width:12%;
   	font-size:12px;
 	transition: 0.5s;
-}
+  }
 
 ul.topnav li a img{
   	margin-top: 10px;
-}
+  }
 
-ul.topnav li a:hover{
+ ul.topnav li a:hover{
  	color:gray;
-}
+ 	transition-duration:.3s;
+ }
 
-ul.topnav li a:active{
-	color:#504f4f ;
-}
+ ul.topnav li a:active{
+ 	color:#504f4f ;
+ }
 
-ul.topnav li.icon {
- 	display: none;
-}
 
-#BookRom {
+.BookRom {
 	float:right;
 	background-color:#8b0007;
 	margin-top: 20px;
@@ -154,39 +153,57 @@ ul.topnav li.icon {
 	display: inline-block;
 }
 
-/*/////Styling for the dropdown under Opplevelser. Written by Torstein///////*/
-#opplevelser_bar {
-	z-index: 2;
-	position: fixed; top: 60px;
- display:none;
- background-color: black;
- max-width: 100%;
- min-width: 99%;
- height: 45px;
- text-align: right;
+.nav-responsive .logo{display: none;}
+
+
+.nav-responsive .icon{
+	display: none;
+	padding-top:15px;
+	padding-right: 20px; 
+	color: white;
+
 }
 
-#opplevelser_bar ul{
+.nav-responsive {
+	display: none;
+}
+
+/*/////Styling for the dropdown under Opplevelser. Written by Torstein///////*/
+.opplevelser {
+	z-index: 2;
+	position: fixed; top: 60px;
+    display:none;
+    background-color: black;
+    max-width: 100%;
+    min-width: 100%;
+    height: 45px;
+    text-align: right;
+}
+
+.opplevelser ul{
  margin-right: 30%;
  padding-top: 15px;
 }
 
-#opplevelser_bar li{
+.opplevelser li{
  display:inline;
 }
 
-#opplevelser_bar a{
+.opplevelser a{
  display: inline-block;
  text-decoration: none;
  color: white;
  width:7%;
- font-size:0.7em;
+ font-size:0.8em;
 }
 
-#opplevelser_bar a:hover{
+.opplevelser a:hover{
  color: grey;
  transition-duration:.3s;
 }
+
+ul.topnav li.opplevelser_links{display: none;}
+
 /*//////////////End of CSS for navbar/////////*/
 
 
@@ -282,15 +299,15 @@ input[type="date"] {
 	height: 24px;
 	}
 
-#underMeny {
+.underMeny {
 	color: LightGray;
 	text-align: center;
 }
 
-a {font-size: 1 ems;}
-a:hover {color: #ededed;}
-a:link {color: #504f4f;}
-a:visited {color: #504f4f;}
+.underMeny a {font-size: 1 ems;}
+.underMeny a:hover {color: #ededed;}
+.underMeny a:link {color: #504f4f;}
+.underMeny a:visited {color: #504f4f;}
 /*///////////////////END OF CSS FOR INDEX.HTML//////////////////////////*/
 
 
@@ -556,9 +573,7 @@ h5:after {
 
 /*////////////////////CSS for kontakt.html, written by Sunniva/////////////////////*/
 
-.formAndMap {
-margin-top:0
-}
+
 
 #map {
         margin-top:4%;
@@ -717,24 +732,70 @@ a {
 
 
 /*////////////////////Responsive Design, written by Torstein & Cecilie/////////////////*/
-@media only screen and (max-width: 700px) {
-    body {
-        background-color: lightblue;
-    }
-<<<<<<< HEAD
+@media only screen and (max-width:900px){
+	
+	nav ul.topnav {
+		width:100%;
+	}
+	ul.topnav li{display: none;}
+	
+	.nav-responsive .icon{
+		float:right;
+		display: inline-block;
+	}
+	.nav-responsive .logo{
+		float: left;
+		width: 150px;
+		background-size: cover;
+		display: inline-block;
+		box-sizing: border-box;
+		height:60px;
+		padding:20px;
+	}
+			
 
-=======
+	ul.topnav.responsive {
+		position: fixed;
+		top:60px;
+		background-color: #000;
+		opacity: 0.85;
+		max-height: 100%;
+		transition-duration: .3s;
+		
+	}
+	ul.topnav.responsive li#opplevelser{display: none;}
+	
+	ul.topnav.responsive li:not(:nth-child(4)){
+		display: block;
+		width:100%;
+		text-align: center;
+		box-sizing: border-box;
+		height: 14%;
+		padding: 10px;
+		
+	}
 
-    #map {
-    margin-top:500px;
+
+	ul.topnav.responsive li.BookRom{
+		display:block;
+		width:100%;
+		float: none;
+		height: 40px;
+	}
+
+	 .nav-responsive {
+	 	display: block;
+	 }
+
+}
+  
+/*Legg dette inn for kontakt*/
+    /*#map {
+    margin-top:500px;}
 
     #form {
         width:10%
-       }
-
->>>>>>> origin/master
-
-}
+       }*/
 
 
 

@@ -72,10 +72,6 @@ ul.topnav li a img{
  	color:#504f4f ;
  }
 
-.dritt .icon {
- 	display: none;
- }
-
 
 .BookRom {
 	float:right;
@@ -85,10 +81,10 @@ ul.topnav li a img{
 	display: inline-block;
 }
 
-.dritt .logo{display: none;}
+.nav-responsive .logo{display: none;}
 
 
-.dritt .icon{
+.nav-responsive .icon{
 	display: none;
 	padding-top:15px;
 	padding-right: 20px; 
@@ -96,7 +92,7 @@ ul.topnav li a img{
 
 }
 
-.dritt {
+.nav-responsive {
 	display: none;
 }
 
@@ -107,7 +103,7 @@ ul.topnav li a img{
  display:none;
  background-color: black;
  max-width: 100%;
- min-width: 99%;
+ min-width: 100%;
  height: 45px;
  text-align: right;
 }
@@ -133,22 +129,23 @@ ul.topnav li a img{
  color: grey;
  transition-duration:.3s;
 }
+ul.topnav li.opplevelser_links{display: none;}
 
 
 
 @media only screen and (max-width:900px){
-	.opplevelser.responsive {display: none}
+	
 
 	nav ul.topnav {
 		width:100%;
 	}
 	ul.topnav li{display: none;}
 	
-	.dritt .icon{
+	.nav-responsive .icon{
 		float:right;
 		display: inline-block;
 	}
-	.dritt .logo{
+	.nav-responsive .logo{
 		float: left;
 		width: 150px;
 		background-size: cover;
@@ -167,6 +164,7 @@ ul.topnav li a img{
 		max-height: 100%;
 		
 	}
+	ul.topnav.responsive li#opplevelser{display: none;}
 	
 	ul.topnav.responsive li:not(:nth-child(4)){
 		display: block;
@@ -178,6 +176,8 @@ ul.topnav li a img{
 		
 	}
 
+
+
 	ul.topnav.responsive li.BookRom{
 		display:block;
 		width:100%;
@@ -185,10 +185,10 @@ ul.topnav li a img{
 		height: 40px;
 	}
 
-	 .dritt {
+	 .nav-responsive {
 	 	display: block;
 	 }
-	 .opplevelser li{display: none}
+	 
 }
 
 
@@ -197,10 +197,9 @@ ul.topnav li a img{
 	</style>
 </head>
 <body>
-<div id="nav-collapsed">
   <nav>
-  	<div class="dritt">
-    	<a class="icon" href="javascript:void(0);" style="font-size:20px;" onclick="myFunction()">☰</a>
+  	<div class="nav-responsive">
+    	<a class="icon" href="javascript:void(0);" style="font-size:20px;" onclick="IconClick()">☰</a>
   		<a class="logo" href="index.html"><img src="img/logo/FredrikstenLogo.svg"></a>
   	</div>
   	<ul class="topnav" id="topNavbar">
@@ -209,14 +208,16 @@ ul.topnav li a img{
 		<li><a href=konferanse.html>KONFERANSE </a></li>
 		<!-- Making the logo clicable, linking back to index-->
 		<li><a href="index.html"><img src="img/logo/FredrikstenLogo.svg"></a></li>
-		<li><a id="opplevelser" >OPPLEVELSER </a></li>
+		<li id="opplevelser"><a >OPPLEVELSER </a></li>
+		<li class="opplevelser_links"><a  href=opplevelser_matogdrikke.html id="matogdrikke"> MAT OG DRIKKE </a></li>
+        <li class="opplevelser_links"><a  href=opplevelser_selskap.html id="selskap"> SELSKAP </a></li>
+        <li class="opplevelser_links"><a  href="opplevelser_aktiviteter.html"> AKTIVITETER </a></li>
 		<li><a href="galleri.html">GALLERI</a></li>
 		<li><a href="kontakt.html">KONTAKT</a></li>
 		<li class="BookRom"><a href="">BOOK ROM</a></li>
     </ul>
   </nav>
 
-  </div>
 
 <div  id="opplevelser_bar" class="opplevelser" >
       <ul>
@@ -228,7 +229,7 @@ ul.topnav li a img{
 
 
 <script type="text/javascript">
-	function myFunction(){
+	function IconClick(){
 		var x = document.getElementById("topNavbar");
 		if(x.className === "topnav"){
 			x.className += " responsive";
@@ -240,32 +241,10 @@ ul.topnav li a img{
 var opplevelser_bar = document.getElementById("opplevelser_bar");
 opplevelser_bar.className = "opplevelser"
 
-/*function Satan(){
-	var y = document.getElementById("opplevelser_bar");
-	if(y.className ==="opplevelser"){
-		y.className += " responsive";
-	}else{
-		y.className ="opplevelser";
-		opplevelser.addEventListener("mouseenter", function( event ) {
-    opplevelser_bar.style.display = "block";
 
-})
-opplevelser_bar.addEventListener("mouseleave", function( event ) {
-    opplevelser_bar.style.display = "none";
-})
-	}
-}*/
 
 opplevelser.addEventListener("mouseenter", function( event ) {
-    
-    var y = document.getElementById("opplevelser_bar");
-    if(y.className === "opplevelser"){
-    	y.className += " responsive";
-    	opplevelser_bar.style.display = "block";
-    }else{
-    	y.className = "opplevelser";
-
-    }
+    opplevelser_bar.style.display = "block";
 
 })
 opplevelser_bar.addEventListener("mouseleave", function( event ) {

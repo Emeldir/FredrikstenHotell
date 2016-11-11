@@ -502,9 +502,17 @@ h5:after {
 color: #000000;
 }
 
+.seasonMenu a:hover {
+color: #000000;
+color: #888888;
+cursor: pointer;
+}
+
 .seasonMenu {
 text-align: center;
 }
+
+
 
 /*////////////////////END OF CSS FOR OPPLEVELSER_AKTIVITETER.HTML, WRITTEN BY SUNNIVA/////////////////////*/
 

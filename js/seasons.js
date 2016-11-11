@@ -4,13 +4,16 @@
 //PURPOSE: Change content in "matogdrikke" and "aktiviteter" depending on the seasons.
 
 function show(id){
+console.log(id);
 element=document.getElementById(id);
 element.style.display='block';
 }
 
 function hide(id){
+console.log(id);
 element=document.getElementById(id);
 element.style.display='none';
+
 }
 
 function setSeason(season){
@@ -113,4 +116,14 @@ if (month >= 3 && month <= 5) {
     hide("autumn"); 
     hide("spring");
     hide("summer");
+}
+
+if (month >= 3 && month <= 5) {
+    setSeasonMenu("springmenu");
+} else if (month >= 6 && month <= 8) {
+    setSeasonMenu("summermenu");
+} else if (month >= 9 && month <= 11) {
+    setSeasonMenu("autumnmenu");
+} else if (month == 12 || month <= 2) {
+   setSeasonMenu("wintermenu");
 }

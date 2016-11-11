@@ -24,6 +24,12 @@ html {
 	height: 100%;
 }
 
+.overskrift{
+	font-weight:100;
+	font-style:italic;
+}
+
+
 body{
 	background-color: #f4f4f4;
 	font-family:  Helvetica, "Gill Sans", sans-serif;
@@ -37,6 +43,11 @@ p, ul,li{
 h4 {
 font-weight:100;
 font-size:110%;
+}
+
+h1 {
+font-weight:100;
+
 }
 
 article{
@@ -505,13 +516,12 @@ h5:after {
 /*////////////////////CSS FOR OPPLEVELSER_AKTIVITETER.HTML, WRITTEN BY SUNNIVA/////////////////////*/
 
 .seasonMenu a {
-color: #000000;
+color: #504f4f;
 font-size: 20px;
 }
 
 .seasonMenu a:hover {
-color: #000000;
-color: #888888;
+color: #ededed;
 cursor: pointer;
 }
 
@@ -519,6 +529,16 @@ cursor: pointer;
 text-align: center;
 }
 
+
+.underMeny {
+	color: LightGray;
+	text-align: center;
+}
+
+.underMeny a {font-size: 1 ems;}
+.underMeny a:hover {color: #ededed;}
+.underMeny a:link {color: #504f4f;}
+.underMeny a:visited {color: #504f4f;}
 
 
 /*////////////////////END OF CSS FOR OPPLEVELSER_AKTIVITETER.HTML, WRITTEN BY SUNNIVA/////////////////////*/

@@ -50,6 +50,44 @@ function setSeason(season){
 		
 	}
 }
+
+function setSeasonMenu(season){
+	switch(season){
+		
+		case "autumnmenu":
+			 show("autumnmenu"); 
+   			 hide("wintermenu"); 
+   			 hide("springmenu");
+   			 hide("summermenu");
+   			 
+   			 break;
+   			 
+   		case "wintermenu":
+			 show("wintermenu"); 
+    		 hide("autumnmenu"); 
+    		 hide("springmenu");
+    		 hide("summermenu");
+   			 
+   			 break;
+   			 
+   		case "springmenu":
+			 show("springmenu"); 
+    		 hide("autumnmenu"); 
+    		 hide("wintermenu");
+    		 hide("summermenu");
+   			 
+   			 break;
+   			 
+   		case "summermenu":
+			 show("summermenu"); 
+    		 hide("autumnmenu"); 
+    		 hide("wintermenu");
+    		 hide("springmenu");
+   			 
+   			 break;
+		
+	}
+}
 //Seasons:
 
 var d = new Date(Date.now());

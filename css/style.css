@@ -520,26 +520,16 @@ color: #504f4f;
 font-size: 20px;
 }
 
+
 .seasonMenu a:hover {
 color: #ededed;
 cursor: pointer;
 }
 
+
 .seasonMenu {
 text-align: center;
 }
-
-
-.underMeny {
-	color: LightGray;
-	text-align: center;
-}
-
-.underMeny a {font-size: 1 ems;}
-.underMeny a:hover {color: #ededed;}
-.underMeny a:link {color: #504f4f;}
-.underMeny a:visited {color: #504f4f;}
-
 
 /*////////////////////END OF CSS FOR OPPLEVELSER_AKTIVITETER.HTML, WRITTEN BY SUNNIVA/////////////////////*/
 
@@ -818,6 +808,8 @@ a {
 		background-color: #000;
 		opacity: 0.85;
 		max-height: 100%;
+		transition-duration: .3s;
+
 	}
 	ul.topnav.responsive li#opplevelser{display: none;}
 

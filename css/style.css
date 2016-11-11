@@ -725,6 +725,13 @@ a {
         background-color: lightblue;
     }
     
+    #map { 
+    margin-top:500px;
+    
+    #form {
+        width:10%
+       }
+    
 
 }
 

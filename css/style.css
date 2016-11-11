@@ -324,10 +324,11 @@ li {
 
 
 #bookNa:hover {
-border-color: rgb(139, 0, 7);
 border: 1px solid;
-text-decoration: underline;
+color: #ededed;
 	}
+
+
 
 .center {
 	position:absolute;

@@ -159,7 +159,7 @@ ul.topnav li a img{
 .nav-responsive .icon{
 	display: none;
 	padding-top:15px;
-	padding-right: 20px; 
+	padding-right: 20px;
 	color: white;
 
 }
@@ -748,12 +748,12 @@ a {
 
 /*////////////////////Responsive Design, written by Torstein & Cecilie/////////////////*/
 @media only screen and (max-width:900px){
-	
+
 	nav ul.topnav {
 		width:100%;
 	}
 	ul.topnav li{display: none;}
-	
+
 	.nav-responsive .icon{
 		float:right;
 		display: inline-block;
@@ -767,7 +767,7 @@ a {
 		height:60px;
 		padding:20px;
 	}
-			
+
 
 	ul.topnav.responsive {
 		position: fixed;
@@ -776,10 +776,10 @@ a {
 		opacity: 0.85;
 		max-height: 100%;
 		transition-duration: .3s;
-		
+
 	}
-	ul.topnav.responsive li#opplevelser{display: none;}
-	
+	ul.topnav.responsive li #opplevelser{display: none;}
+
 	ul.topnav.responsive li:not(:nth-child(4)){
 		display: block;
 		width:100%;
@@ -787,7 +787,7 @@ a {
 		box-sizing: border-box;
 		height: 14%;
 		padding: 10px;
-		
+
 	}
 
 
@@ -803,7 +803,7 @@ a {
 	 }
 
 }
-  
+
 /*Legg dette inn for kontakt*/
     /*#map {
     margin-top:500px;}

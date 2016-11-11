@@ -21,3 +21,18 @@ document.getElementById("datefield").setAttribute("min", today);
 
 /* Code from link: 
 http://stackoverflow.com/questions/32378590/set-max-date-to-today-for-date-input*/
+
+/*legge til validation....
+
+function validateForm() {
+    var ankomst = document.forms["myForm"]["ankomst"].value;
+    var avreise = document.forms["myForm"]["avreise"].value;
+    if (ankomst == null || x == "") {
+        alert("ankomst dato må fylles ut");
+        return false;
+    }else if (avreise == null || x == "") {
+        alert("ankomst dato må fylles ut");
+        return false;
+    }
+}
+*/

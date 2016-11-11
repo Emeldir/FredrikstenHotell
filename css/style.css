@@ -338,13 +338,14 @@ li {
 	margin-top: 12px;
 	background: white;
 	position: relative;
+	transition: box-shadow 0.3s ease-out;
 }
 
 .box2:hover {
 	box-shadow:
 									0	0 4px 4px rgba(0, 0, 0, .1),
 	              	0 0 8px 8px rgba(0, 0, 0, .1);
-									transition: box-shadow 0.3s ease-out;
+
 									/*vet ikke om det bør være sånn.. */
 }
 
@@ -513,9 +514,17 @@ h5:after {
 	width: 250px;
 	height: auto;
 	margin: 10px;
-	box-shadow: 3px 3px 3px grey;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, .1);
+	transition: box-shadow 0.3s ease-out;
 }
 
+.thumbs:hover {
+	box-shadow:
+									0	0 4px 4px rgba(0, 0, 0, .15),
+	              	0 0 8px 8px rgba(0, 0, 0, .15);
+
+									/*vet ikke om det bør være sånn.. */
+}
 
 
 #slideshow {

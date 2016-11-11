@@ -217,10 +217,20 @@ div h3 { /*overskrift i bookingboks- book ditt opphold*/
 }
 
 input[type="date"]:before {
-    content: attr(placeholder) !important; /*legge til placeholder til tekst*/
+    content: attr(placeholder); /*legge til placeholder til tekst*/
     color: #aaa;
     font-family: Helvetica, "Gill Sans", sans-serif;
     margin-right: 0.5em;
+}
+input[type="date"] {
+    color: #aaa;
+    font-family: Helvetica, "Gill Sans", sans-serif;
+    margin-right: 0.5em;
+}
+
+/* link to */
+::-webkit-inner-spin-button {
+    display: none;
 }
 
 /*input[type="date"]:focus:before,*/

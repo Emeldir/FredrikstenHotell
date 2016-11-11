@@ -782,7 +782,7 @@ a {
 		transition-duration: .3s;
 
 	}
-	ul.topnav.responsive li #opplevelser{display: none;}
+	ul.topnav.responsive li#opplevelser{display: none;}
 
 	ul.topnav.responsive li:not(:nth-child(4)){
 		display: block;

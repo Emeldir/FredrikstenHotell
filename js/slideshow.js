@@ -23,10 +23,23 @@ function frontpageSlideshow() {
 }
 
 //Slideshow for gallery:
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 37:
+            prevOrNext(-1);
+            break;
+
+        case 39:
+            prevOrNext(+1);
+            break;
+    }
+};
+
 var slideIndex
 showSlide(slideIndex);
 
-function plusDivs(n) {
+function prevOrNext(n) {
     showSlide(slideIndex += n);
 }
 
@@ -46,5 +59,4 @@ function showSlide(n) {
     }
     pics[slideIndex-1].style.display = "block";
     document.getElementById("slideshowbuttons").style.display = "block";
-
-}
+};

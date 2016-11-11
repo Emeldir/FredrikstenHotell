@@ -510,8 +510,8 @@ h5:after {
 .big{
 	display: none;
 	margin: auto;
-	max-width: 100%;
-	min-width: 100%;
+	max-width: 80%;
+	min-width: 80%;
 	height: auto;
 }
 
@@ -599,8 +599,8 @@ margin-top:0
 }
 =======
 =======
-  
-} 
+
+}
 >>>>>>> origin/master
 
 
@@ -724,7 +724,7 @@ a {
     body {
         background-color: lightblue;
     }
-    
+
 
 }
 

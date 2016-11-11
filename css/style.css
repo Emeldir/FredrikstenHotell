@@ -172,19 +172,10 @@ ul.topnav li.icon {
 
 
 /*//////////////Index.html, written by Ida/////////////////////////////*/
-article h4 { /*skape rom mellom overskrift og brødtekst*/
-	margin-bottom: 20px;
-}
-
-#header {
-	position: relative;
-}
-
-/*styling av den røde booking boksen øverst til høyre på index.html siden*/
-#bookingBoks {
-	background-color: rgba(139, 0, 7, 0.8); /*#8b0007;*/
+#bookingBoks { /* booking boksen øverst til høyre på index.html siden */
+	background-color: rgba(139, 0, 7, 0.8); /* Rødfargen #8b0007 */
 	border-radius: 5px;
-	width: 35%;/*250px;*/
+	width: 30%;/*250px;*/
 	max-width: 250px;
 	min-width: 180px;
 	height: 250px;
@@ -197,15 +188,16 @@ div h3 { /*overskrift i bookingboks- book ditt opphold*/
 	margin-top: 20px;
 }
 
-.selector{
+.selector{ /*Drop down meny- Rom, Voksne, Barn */
   	-webkit-appearance: menulist-button;
   	width: 50px;
   	height: 24px;
   	border-radius: 0;
+  	margin-right: 0.5em;
 }
 
-input[type="date"]:before {
-    content: attr(placeholder) !important;
+input[type="date"]:before { 
+    content: attr(placeholder) !important; /*legge til placeholder til tekst*/
     color: #aaa;
     font-family: Helvetica, "Gill Sans", sans-serif;
     margin-right: 0.5em;
@@ -217,30 +209,37 @@ input[type="date"]:valid:before {
 }
 
 #ankomst { /*felt til å skrive inn ankomst*/
-	position: relative;
-	padding-left: 5px;
-	width: 180px;
+	/*position: relative;*/
+	/*padding-left: 5px;*/
+	width: 75%;/*180px;*/
+	max-width: 180px;
 	height: 24px;
 }
 
 #avreise { /*felt til å skrive inn avreise*/
-	margin-top: 10px;
-	position: relative;
-	padding-left: 5px;
-	width: 180px;
+	margin-top: 15px;
+	/*position: relative;*/
+	/*padding-left: 5px;*/
+	text-align: auto;
+	width: 75%;/*180px;*/
+	max-width: 180px;
 	height: 24px;
 }
 
 .fieldset {
-  	padding-left: 10px;
+	position: relative;
+  	/*padding-left: 5px;*/
   	margin-top: 15px;
   	border: 0;
 }
 
 .liBookingBoks{
   	float:left;
-  	width: 40px;
+  	width: 13%;/*40px;*/
+  	max-width: 180px;
   	margin-left: 25px;
+  	
+  	text-align: center;
 }
 
 #sjekkTilgjengelighet { /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/

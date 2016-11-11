@@ -34,6 +34,8 @@ content = '<nav> <div class="nav-responsive">'
 //Written by Cecilie
 navbar.innerHTML += content;
 
+
+
 function IconClick(){
 		var x = document.getElementById("topNavbar");
 		if(x.className === "topnav"){

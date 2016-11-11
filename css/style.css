@@ -557,14 +557,15 @@ margin-top:0
 }
 
 #map {
+        margin-top:4%;
         position:relative;
-        height: 400px;
-        margin-left:60%;
-        margin-right:10%;
+        height: 408px;
+        margin-right:25%;
+        margin-left:51%;
        }
 
 #form {
-        margin-left: 20%;
+        margin-left: 25%;
         position:absolute;
        }
 
@@ -588,16 +589,13 @@ margin-top:0
     border-radius: 4px;
     box-sizing: border-box;
     font-size:16px;
-<<<<<<< HEAD
+
     cursor: pointer;
     color: #ffffff;
     background-color:#8b0007
   
 } 
-=======
 
-}
->>>>>>> origin/master
 
 #kontaktOssSend:hover {
     background-color: #580004;
@@ -719,6 +717,7 @@ a {
     body {
         background-color: lightblue;
     }
+    
 
 }
 

@@ -1,6 +1,7 @@
 /*CSS*/
 
-/*FILE NAME: style.css
+/*
+FILE NAME: style.css
 WRITTEN BY: Cecilie Kristoffersen
             Susanne Rom
             Ida Opsahl
@@ -8,30 +9,25 @@ WRITTEN BY: Cecilie Kristoffersen
             Torstein Bakke
 WHEN: Oktober/November 2016
 PURPOSE: Stylesheet for the whole homepage
-
+*/
 
 
 
 /* /////General CSS for the whole site. Written by Cecilie////*/
-
 *{
 	/* Fjerner luftrom over og på sidene*/
 	margin:0;
 	padding:0;
-
-
 }
 
 html {
 	height: 100%;
-
 }
 
 body{
 	background-color: #f4f4f4;
 	font-family:  Helvetica, "Gill Sans", sans-serif;
 }
-
 
 p, ul,li{
 	font-size: 1em;
@@ -47,9 +43,7 @@ article{
 
 .wrap {
 	min-height: 100%;
-
 }
-
 
 /* Bildet dekker hele skjermen*/
 .bigPicture{
@@ -62,6 +56,7 @@ article{
 	max-width: 100%
 	max-height:100%
 }
+
 .pictureContainer h1{
 	position: absolute; left: 5%; bottom:10%;
 	color: white;
@@ -72,48 +67,39 @@ article{
 	font-variant:normal;
 }
 
-
 .contentPicture{
 	width:100%;
 	transition: box-shadow 0.3s ease-out;
 }
 
 /* Provides shadow to pictures when hovered over. By Susanne */
-
 .contentPicture:hover {
 	box-shadow:
 									0	0 4px 4px rgba(0, 0, 0, .1),
 	              	0 0 8px 8px rgba(0, 0, 0, .1),
 									0 0 16px 16px rgba(0, 0, 0, .15);
-
-
 									/*Litt usikker på hvordan dette egentlig fremstår, bildene ser klikkbare ut. Tilbakemeldinger?*/
 }
-
-
-
 /*///////End of general CSS/////////*/
 
 
 
 /*///////CSS for Navigation Bar. Written by Cecilie///////*/
-
 ul.topnav {
 	position: fixed;
 	z-index: 2;
-  text-align:center;
+  	text-align:center;
  	list-style-type: none;
  	max-width: 100%;
  	min-width: 100%;
  	height: 60px;
   	background-color: #000;
  	overflow: hidden;
-  }
-
+}
 
 ul.topnav li{
    	display: inline;
-  }
+}
 
 ul.topnav li a{
   	display: inline-block;
@@ -122,23 +108,23 @@ ul.topnav li a{
   	width:12%;
   	font-size:12px;
 	transition: 0.5s;
-  }
+}
 
 ul.topnav li a img{
   	margin-top: 10px;
-  }
+}
 
- ul.topnav li a:hover{
+ul.topnav li a:hover{
  	color:gray;
- }
+}
 
- ul.topnav li a:active{
- 	color:#504f4f ;
- }
+ul.topnav li a:active{
+	color:#504f4f ;
+}
 
- ul.topnav li.icon {
+ul.topnav li.icon {
  	display: none;
- }
+}
 
 #BookRom {
 	float:right;
@@ -149,7 +135,6 @@ ul.topnav li a img{
 }
 
 /*/////Styling for the dropdown under Opplevelser. Written by Torstein///////*/
-
 #opplevelser_bar {
 	z-index: 2;
 	position: fixed; top: 60px;
@@ -169,6 +154,7 @@ ul.topnav li a img{
 #opplevelser_bar li{
  display:inline;
 }
+
 #opplevelser_bar a{
  display: inline-block;
  text-decoration: none;
@@ -181,106 +167,108 @@ ul.topnav li a img{
  color: grey;
  transition-duration:.3s;
 }
-
-
 /*//////////////End of CSS for navbar/////////*/
 
 
+
 /*//////////////Index.html, written by Ida/////////////////////////////*/
-
-
-article h4 { /*skape rom mellom overskrift og brødtekst*/
-	margin-bottom: 20px;
+#bookingBoks { /* booking boksen øverst til høyre på index.html siden */
+	background-color: rgba(139, 0, 7, 0.8); /* Rødfargen #8b0007 */
+	border-radius: 5px;
+	width: 30%;/*250px;*/
+	max-width: 250px;
+	min-width: 180px;
+	height: 250px;
+	color: white;
+	position: absolute; right: 10%; bottom: 2%;
+	text-align: center;
 }
 
-	#header {
+div h3 { /*overskrift i bookingboks- book ditt opphold*/
+	margin-top: 20px;
+}
+
+.selector{ /*Drop down meny- Rom, Voksne, Barn */
+  	-webkit-appearance: menulist-button;
+  	width: 50px;
+  	height: 24px;
+  	border-radius: 0;
+  	margin-right: 0.5em;
+}
+
+input[type="date"]:before { 
+    content: attr(placeholder) !important; /*legge til placeholder til tekst*/
+    color: #aaa;
+    font-family: Helvetica, "Gill Sans", sans-serif;
+    margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+    content: "";
+}
+
+#ankomst { /*felt til å skrive inn ankomst*/
+	/*position: relative;*/
+	/*padding-left: 5px;*/
+	width: 75%;/*180px;*/
+	max-width: 180px;
+	height: 24px;
+}
+
+#avreise { /*felt til å skrive inn avreise*/
+	margin-top: 15px;
+	/*position: relative;*/
+	/*padding-left: 5px;*/
+	text-align: auto;
+	width: 75%;/*180px;*/
+	max-width: 180px;
+	height: 24px;
+}
+
+.fieldset {
 	position: relative;
-	}
+  	/*padding-left: 5px;*/
+  	margin-top: 15px;
+  	border: 0;
+}
 
-	/*styling av den røde booking boksen øverst til høyre på index.html siden*/
-	#bookingBoks {
-		background-color: rgba(139, 0, 7, 0.8); /*#8b0007;*/
-		border-radius: 5px;
-		width: 35%;/*250px;*/
-		max-width: 250px;
-		min-width: 180px;
-		height: 250px;
-		color: white;
-		position: absolute; right: 10%; bottom: 2%;
-		text-align: center;
-	}
+.liBookingBoks{
+  	float:left;
+  	width: 13%;/*40px;*/
+  	max-width: 180px;
+  	margin-left: 25px;
+  	
+  	text-align: center;
+}
 
-	div h3 { /*overskrift i bookingboks- book ditt opphold*/
-		margin-top: 20px;
+#sjekkTilgjengelighet { /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
+	position: auto;
+	border-radius: 2px;
+	border: 1px solid #ebe9e4;
+	background-color: rgb(139, 0, 7);
+	color: white;
+	padding-left: 10px;
+	margin-top: 20px;
+	position: relative;
+	width: 180px;
+	height: 24px;
 	}
-
-	.selector{
-  		-webkit-appearance: menulist-button;
-  		width: 50px;
-  		height: 24px;
-  		border-radius: 0;
-	}
-	input[type="date"]:before {
-    	content: attr(placeholder) !important;
-    	color: #aaa;
-    	font-family: Helvetica, "Gill Sans", sans-serif;
-    	margin-right: 0.5em;
-  	}
-  	input[type="date"]:focus:before,
-  	input[type="date"]:valid:before {
-    	content: "";
-  	}
-
-	#ankomst { /*felt til å skrive inn ankomst*/
-		position: relative;
-		padding-left: 5px;
-		width: 180px;
-		height: 24px;
-	}
-	#avreise { /*felt til å skrive inn avreise*/
-		margin-top: 10px;
-		position: relative;
-		padding-left: 5px;
-		width: 180px;
-		height: 24px;
-	}
-	.fieldset {
-  		padding-left: 10px;
-  		margin-top: 15px;
-  		border: 0;
-	}
-	.liBookingBoks{
-  		float:left;
-  		width: 40px;
-  		margin-left: 25px;
-	}
-
-	#sjekkTilgjengelighet { /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
-		position: auto;
-		border-radius: 2px;
-		border: 1px solid #ebe9e4;
-		background-color: rgb(139, 0, 7);
-		color: white;
-		padding-left: 10px;
-		margin-top: 20px;
-		position: relative;
-		width: 180px;
-		height: 24px;
-	}
+	
 #underMeny {
 	color: LightGray;
 	text-align: center;
 }
+
 a {font-size: 1 ems;}
 a:hover {color: #ededed;}
 a:link {color: #504f4f;}
 a:visited {color: #504f4f;}
-
 /*///////////////////END OF CSS FOR INDEX.HTML//////////////////////////*/
 
 
-/*////////////////////////// Rom og Suiter, written by Susanne ////////////*/
 
+/*////////////////////////// Rom og Suiter, written by Susanne ////////////*/
 ul {
 	list-style-type: none;
 }
@@ -297,9 +285,7 @@ li {
 	padding-top: 20px;
 	padding-right: 8%;
 	padding-left: 8%;
-
 }
-
 
 .box2 {
 	margin: 1%;
@@ -322,21 +308,26 @@ li {
 	width: 100%;
 }
 
-
 #bookNa:hover {
+<<<<<<< HEAD
 border: 1px solid;
 color: #ededed;
 	}
+=======
+	border-color: rgb(139, 0, 7);
+	border: 1px solid;
+	text-decoration: underline;
+}
+>>>>>>> origin/master
 
 
 
 .center {
 	position:absolute;
-   left:50%;
-	 bottom: 6px;
-   transform: translateX(-50%);
-   -webkit-transform: translateX(-50%);
-
+	left:50%;
+	bottom: 6px;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
 }
 
 #bookNa {
@@ -357,30 +348,32 @@ color: #ededed;
 }
 
 .part1, .part2 {
-margin: auto;
-padding: 8%;
+	margin: auto;
+	padding: 8%;
 }
-#suite, #dobbeltrompremium,  #dobbeltromsyd {
+
+#suite, #dobbeltrompremium, #dobbeltromsyd {
 	float: left;
 }
 
-#dobbeltromnord, #tomannsrom,  #enkeltrom {
+#dobbeltromnord, #tomannsrom, #enkeltrom {
 	float: left;
 }
-
-
 /*///////////////////END OF CSS FOR ROMOGSUITER.CSS//////////////////*/
 
-/*////////////////////CSS FOR KONFERANSE.HTML, WRITTEN BY IDA/////////////////////*/
 
+
+/*////////////////////CSS FOR KONFERANSE.HTML, WRITTEN BY IDA/////////////////////*/
 #kursOgKonferanse {
 	font-family: Helvetica, verdana, sans-serif;
 	text-align: center;
 }
+
 h1 {
 	font-family: Helvetica, verdana, sans-serif;
 }
- /*Kan bruke denne på alle "knapper" som skal se like ut*/
+
+/*Kan bruke denne på alle "knapper" som skal se like ut*/
 .bookingButtons{ /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
 	position: auto;
 	border-radius: 3px;
@@ -393,82 +386,81 @@ h1 {
 	width: 180px;
 	height: 24px;
 }
-
 /*////////////////////END OF CSS FOR KONFERANSE.HTML, WRITTEN BY IDA/////////////////////*/
 
 
 
 /*////////////////////////CSS FOR OPPLEVELSER_SELSKAP.HTML, WRITTEN BY CECILIE////////////////*/
 
-
 /*//////////////////////END OF CSS FOR OPPLEVELSER_SELSKAP.HTML, WRITTEN BY CECILIE///////////////*/
 
+
+
 /*////////////////////CSS FOR OPPLEVELSER_MATOGDRIKKE.HTML, WRITTEN BY SUNNIVA/////////////////////*/
-
-
-
-
 #debio {
-margin:auto;
-display: block;
-width: 10%;
-margin-bottom: 30px;
+	margin:auto;
+	display: block;
+	width: 10%;
+	margin-bottom: 30px;
 }
+
 #dishType {
-font-size:130%;
-margin-top:20px;
-font-weight:100;
+	font-size:130%;
+	margin-top:20px;
+	font-weight:100;
 }
+
 h5 {
-font-size:130%;
-margin-top:20px;
-font-weight:100;
-  display: inline-block;
-  padding: 0 15px ;
-  position: relative;
+	font-size:130%;
+	margin-top:20px;
+	font-weight:100;
+	display: inline-block;
+	padding: 0 15px ;
+	position: relative;
 }
+
 h5:before,
 h5:after {
-  background: #ddd;
-  content: "";
-  display: block;
-  height: 2px;
-  position: absolute;
-    top: 50%;
-  width: 200%;
+	background: #ddd;
+	content: "";
+	display: block;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	width: 200%;
+}
 
-}
 h5:before {
-  right: 100%;
+	right: 100%;
 }
+
 h5:after {
-  left: 100%;
+	left: 100%;
 }
+
 .dishType {
-  overflow: hidden;
-  text-align: center;
+	overflow: hidden;
+	text-align: center;
 }
+
 #dishName {
-font-size:100%;
-margin-top:20px;
+	font-size:100%;
+	margin-top:20px;
 }
+
 #dishDescription {
-font-size:80%;
-font-style:italic;
+	font-size:80%;
+	font-style:italic;
 }
 
 #dishInfo {
-font-size:60%;
+	font-size:60%;
 }
-
-
 /*////////////////////END OF CSS FOR OPPLEVELSER_MATOGDRIKKE.HTML, WRITTEN BY SUNNIVA/////////////////////*/
 
 
 
 /*////////////////////CSS FOR GALLERI.HTML, WRITTEN BY TORSTEIN/////////////////////*/
-
-
 .gallerioverskrift h1{
 	position: relative;
 	left: 12%;
@@ -496,7 +488,6 @@ font-size:60%;
 	box-shadow: 3px 3px 3px grey;
 }
 
-
 #overskriftgalleri{
 	top: 300px;
 	margin: auto;
@@ -514,8 +505,6 @@ font-size:60%;
 	max-width: 70%;
 	height: auto;
 }
-
-
 
 #slideshowbuttons {
 	display: none;
@@ -542,17 +531,24 @@ font-size:60%;
 .buttonright:hover, .buttonleft:hover{
 	background-color: grey;
 }
-
 /*////////////////////END OF CSS FOR GALLERI.HTML, WRITTEN BY TORSTEIN/////////////////////*/
+
+
+/*////////////////////CSS for kontakt.html, written by Sunniva/////////////////////*/
+
+/*////////////////////End of CSS for kontakt.html, written by Sunniva/////////////////////*/
+
 
 /*///////////////// CSS for Footer, written by Susanne ///////////////////*/
 
 
-#main {overflow:auto;
+/*///////////////// CSS for Footer, written by Susanne ///////////////////*/
+#main {
+	overflow:auto;
 	padding: 120px 0;
-padding-left: 10%;
-padding-right: 10%;
-z-index: 1;
+	padding-left: 10%;
+	padding-right: 10%;
+	z-index: 1;
 }
 
 footer {
@@ -580,7 +576,7 @@ footer > ul li {
     float: left;
     padding: 20px 15px;
     width: 25%;
-
+    
     box-sizing:border-box;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
@@ -589,8 +585,9 @@ footer > ul li {
 footer > ul li {
     padding-left: 0;
 }
+
 footer > ul li:nth-child(4) { padding-right: 0;
-  }
+}
 
 footer > ul li .text {
     color: white;
@@ -601,71 +598,59 @@ footer > ul li .text {
     text-align: justify;
     white-space: nowrap;
 }
+
 .text h4 {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .text a {
     border-bottom: 1px dotted transparent;
     color: white;
 }
+
 .text a:hover {
     border-color: white;
 }
 
 #faceikon {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 
 #faceikon, #instaikon {
-  margin-top: 8px;
+	margin-top: 8px;
     margin-right: 5px;
     margin-left: 10px;
 }
-
 
 a {
 	color: white;
 	font-size: 1em;
 	text-decoration: none;
 }
-
-
 /* With credit to Script Tutorials: https://www.script-tutorials.com/stylish-responsive-footer/ */
-
 /*////////////////////////////END OF CSS FOR FOOTER/////////////////*/
 
-/*////////////////////Responsive Design, written by Torstein & Cecilie/////////////////*/
 
+
+/*////////////////////Responsive Design, written by Torstein & Cecilie/////////////////*/
 @media only screen and (max-width: 700px) {
     body {
         background-color: lightblue;
     }
-
 }
 
 /*////////////////////Responsive Design footer, written by Susanne/////////////////*/
-
-
-
 @media screen and (max-width: 900px)  {
-
-  #boks1, #boks2 {
+	#boks1, #boks2 {
       float:left;
       width:auto;
-  }
-
-    footer > ul li {
+	}
+	footer > ul li {
       float: none;
       width: auto;
     }
-
-
-
-
-
-
-
+}
 /*//////////////End of responsive design////////*/

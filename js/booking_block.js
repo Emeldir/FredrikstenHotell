@@ -19,5 +19,5 @@ var yyyy = today.getFullYear();
 today = yyyy+'-'+mm+'-'+dd;
 document.getElementById("datefield").setAttribute("min", today);
 
-/*thanks to code from link: 
+/* Code from link: 
 http://stackoverflow.com/questions/32378590/set-max-date-to-today-for-date-input*/

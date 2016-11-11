@@ -26,9 +26,25 @@ function setSeason(season){
    			 
    		case "winter":
 			 show("winter"); 
-    		hide("autumn"); 
-    		hide("spring");
-    		hide("summer");
+    		 hide("autumn"); 
+    		 hide("spring");
+    		 hide("summer");
+   			 
+   			 break;
+   			 
+   		case "spring":
+			 show("spring"); 
+    		 hide("autumn"); 
+    		 hide("winter");
+    		 hide("summer");
+   			 
+   			 break;
+   			 
+   		case "summer":
+			 show("summer"); 
+    		 hide("autumn"); 
+    		 hide("winter");
+    		 hide("spring");
    			 
    			 break;
 		

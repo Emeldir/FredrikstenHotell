@@ -548,9 +548,10 @@ font-size:60%;
 
 
 #main {overflow:auto;
-	padding: 120px 0;
+padding-top: 40px;
 padding-left: 10%;
 padding-right: 10%;
+padding-bottom: 100px;
 z-index: 1;
 }
 
@@ -588,7 +589,8 @@ footer > ul li {
 footer > ul li {
     padding-left: 0;
 }
-footer > ul li:nth-child(4) { padding-right: 0;
+footer > ul li:nth-child(4) {
+	padding-right: 0;
   }
 
 footer > ul li .text {
@@ -645,7 +647,7 @@ a {
 
 }
 
-/*////////////////////Responsive Design footer, written by Susanne/////////////////*/
+/*////////////////////Responsive Design footer and index.html, written by Susanne/////////////////*/
 
 
 

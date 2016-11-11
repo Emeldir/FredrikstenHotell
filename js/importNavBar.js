@@ -21,15 +21,15 @@ content = '<nav> <div class="nav-responsive">'
                +'<li class="opplevelser_links"><a  href=opplevelser_matogdrikke.html> MAT OG DRIKKE </a></li>'
                +'<li class="opplevelser_links"><a  href=opplevelser_selskap.html> SELSKAP </a></li>'
                +'<li class="opplevelser_links"><a  href="opplevelser_aktiviteter.html"> AKTIVITETER </a></li>'
-               +'<li><a href="galleri.html">GALLERI</a></li>'
-               +'<li><a href="kontakt.html">KONTAKT</a></li>'
+               +'<li><a href=galleri.html>GALLERI</a></li>'
+               +'<li><a href=kontakt.html>KONTAKT</a></li>'
                +'<li class="BookRom"><a href="http://online.techotel.dk/domino.aspx?hotelid=76955&lang=no" target="_blank">BOOK ROM</a></li></ul></nav>'
 // Code for extra navbar under Opplevelser. Written by Torstein.               
            +'<div  id="opplevelser_bar" class="opplevelser" >'
 +         '<ul>'
-+         '<li><a href=opplevelser_matogdrikke.html id="matogdrikke"> Mat og Drikke </a></li>'
-+         '<li><a href=opplevelser_selskap.html id="selskap"> Selskap </a></li>'
-+         '<li><a href="opplevelser_aktiviteter.html"> Aktiviteter </a></li></ul></div>';
++         '<li><a href=opplevelser_matogdrikke.html > Mat og Drikke </a></li>'
++         '<li><a href=opplevelser_selskap.html > Selskap </a></li>'
++         '<li><a href=opplevelser_aktiviteter.html> Aktiviteter </a></li></ul></div>';
   
 //Written by Cecilie
 navbar.innerHTML += content;

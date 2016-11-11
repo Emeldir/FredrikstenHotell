@@ -779,8 +779,6 @@ a {
 		background-color: #000;
 		opacity: 0.85;
 		max-height: 100%;
-		transition-duration: .3s;
-
 	}
 	ul.topnav.responsive li#opplevelser{display: none;}
 

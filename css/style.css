@@ -288,8 +288,8 @@ li {
 	margin: 1%;
 	width: 300px;
 	height: 450px;
+	margin-top: 12px;
 	background: white;
-	margin-top: 0px;
 	position: relative;
 }
 
@@ -568,8 +568,6 @@ margin-top:0
 
 
 
- 
-
 
 /*////////////////////End of CSS for kontakt.html, written by Sunniva/////////////////////*/
 
@@ -622,15 +620,13 @@ footer > ul li {
 footer > ul li {
     padding-left: 0;
 }
-<<<<<<< HEAD
 footer > ul li:nth-child(4) {
 	padding-right: 0;
   }
-=======
+
 
 footer > ul li:nth-child(4) { padding-right: 0;
 }
->>>>>>> origin/master
 
 footer > ul li .text {
     color: white;
@@ -683,7 +679,6 @@ a {
     body {
         background-color: lightblue;
     }
-<<<<<<< HEAD
 
 }
 

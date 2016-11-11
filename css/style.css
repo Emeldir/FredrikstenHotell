@@ -454,6 +454,7 @@ h5:after {
 .gallerioverskrift h1{
 	position: relative;
 	left: 12%;
+	max-width: 80%;
 	padding-top: 250px;
 	color: black;
 	font-size: 5.9vw;
@@ -466,9 +467,9 @@ h5:after {
 	column-gap: 50px;
 	height: auto;
 	width: 80%;
+	max-width: 100%;
 	margin: auto;
 	margin-bottom: 200px;
-	text-align: center;
 }
 
 .thumbs {
@@ -506,16 +507,21 @@ h5:after {
 
 .buttonleft{
 	background-color: black;
+	font-size: 30px;
 	float: left;
 	width: 50px;
-	height: 50px;
+	height: 40px;
+	border-radius: 5px;
 }
 
 .buttonright{
 	background-color: black;
+	text-align: right;
+	font-size: 30px;
 	float: right;
 	width: 50px;
-	height: 50px;
+	height: 40px;
+	border-radius: 5px;
 }
 
 .buttonright:hover, .buttonleft:hover{
@@ -536,12 +542,12 @@ margin-top:0
         margin-left:60%;
         margin-right:10%;
        }
-       
-#form { 
+
+#form {
         margin-left: 20%;
         position:absolute;
        }
-       
+
 .formelement	 {
     width: 80%;
     padding: 8px 20px;
@@ -551,7 +557,7 @@ margin-top:0
     border-radius: 4px;
     box-sizing: border-box;
     font-size:16px;
-} 
+}
 
 #kontaktOssSend	 {
     width: 40%;
@@ -562,8 +568,8 @@ margin-top:0
     border-radius: 4px;
     box-sizing: border-box;
     font-size:16px;
-  
-} 
+
+}
 
 
 

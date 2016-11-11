@@ -547,6 +547,7 @@ h5:after {
 
 .buttonright:hover, .buttonleft:hover{
 	color: darkgrey;
+	cursor: pointer;
 }
 /*////////////////////END OF CSS FOR GALLERI.HTML, WRITTEN BY TORSTEIN/////////////////////*/
 
@@ -595,14 +596,7 @@ margin-top:0
     color: #ffffff;
     background-color:#8b0007
 }
-<<<<<<< HEAD
-=======
-=======
 
-}
->>>>>>> origin/master
-=======
->>>>>>> origin/master
 
 
 #kontaktOssSend:hover {

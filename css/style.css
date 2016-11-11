@@ -193,14 +193,18 @@ article h4 { /*skape rom mellom overskrift og brødtekst*/
 	margin-bottom: 20px;
 }
 
-	
+	#header {
+	position: relative;
+	}
+
+	/*styling av den røde booking boksen øverst til høyre på index.html siden*/
 	#bookingBoks {
 		background-color: rgba(139, 0, 7, 0.8); /*#8b0007;*/
-		border-radius: 3px;
+		border-radius: 5px;
 		width: 35%;/*250px;*/
 		max-width: 250px;
 		min-width: 180px;
-		height: 30%;/*300px;*/
+		height: 250px;
 		color: white;
 		position: absolute; right: 10%; bottom: 2%;
 		text-align: center;
@@ -210,20 +214,35 @@ article h4 { /*skape rom mellom overskrift og brødtekst*/
 		margin-top: 20px;
 	}
 
+	.selector{
+  		-webkit-appearance: none;
+  		width: 50px;
+  		height: 24px;
+  		border-radius: 0;
+	}
+
 	#ankomst { /*felt til å skrive inn ankomst*/
-		padding-left: 10px;
-		margin-top: 20px;
 		position: relative;
 		width: 180px;
 		height: 24px;
 	}
 	#avreise { /*felt til å skrive inn avreise*/
-		padding-left: 10px;
 		margin-top: 10px;
 		position: relative;
 		width: 180px;
 		height: 24px;
 	}
+	.fieldset {
+  		padding-left: 10px;
+  		margin-top: 15px;
+  		border: 0;
+	}
+	.liBookingBoks{
+  		float:left;
+  		width: 40px;
+  		margin-left: 25px;
+	}
+
 	#sjekkTilgjengelighet { /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
 		position: auto;
 		border-radius: 2px;
@@ -441,13 +460,11 @@ margin-bottom: 30px;
 
 
 #main {overflow:auto;
-	padding: 250px 0; /* must be same height as the footer */
+	padding: 120px 0; 
 padding-left: 10%;
 padding-right: 10%;
 z-index: 1;
 }
-
-
 
 footer {
     background-color: black;
@@ -479,12 +496,12 @@ footer > ul li {
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
 }
+
 footer > ul li {
     padding-left: 0;
 }
 footer > ul li:nth-child(4) { padding-right: 0;
   }
-
 
 footer > ul li .text {
     color: #848889;
@@ -518,7 +535,6 @@ footer > ul li .text {
     margin-right: 5px;
     margin-left: 10px;
 }
-
 
 
 a {

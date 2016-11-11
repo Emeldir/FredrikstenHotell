@@ -220,6 +220,16 @@ article h4 { /*skape rom mellom overskrift og brødtekst*/
   		height: 24px;
   		border-radius: 0;
 	}
+	input[type="date"]:before {
+    	content: attr(placeholder) !important;
+    	color: #aaa;
+    	font-family: Helvetica, "Gill Sans", sans-serif;
+    	margin-right: 0.5em;
+  	}
+  	input[type="date"]:focus:before,
+  	input[type="date"]:valid:before {
+    	content: "";
+  	}
 
 	#ankomst { /*felt til å skrive inn ankomst*/
 		position: relative;

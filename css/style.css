@@ -642,9 +642,7 @@ a {
     body {
         background-color: lightblue;
     }
-#bookingBoks {
-	display: none;
-}
+
 }
 
 /*////////////////////Responsive Design footer, written by Susanne/////////////////*/
@@ -663,7 +661,9 @@ a {
       width: auto;
     }
 
-
+		#bookingBoks {
+			display: none;
+		}
 
 
 

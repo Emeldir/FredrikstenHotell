@@ -648,15 +648,9 @@ a {
 
 }
 
-/*////////////////////Responsive Design footer and index.html, written by Susanne/////////////////*/
 
 
-
-=======
-}
-
-/*////////////////////Responsive Design footer, written by Susanne/////////////////*/
->>>>>>> origin/master
+/*////////////////////Responsive Design footer and index.hmtl, written by Susanne/////////////////*/
 @media screen and (max-width: 900px)  {
 	#boks1, #boks2 {
       float:left;
@@ -666,7 +660,6 @@ a {
       float: none;
       width: auto;
     }
-<<<<<<< HEAD
 
 		#bookingBoks {
 			display: none;
@@ -674,9 +667,4 @@ a {
 
 
 
-
-
-=======
-}
->>>>>>> origin/master
 /*//////////////End of responsive design////////*/

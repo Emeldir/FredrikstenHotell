@@ -1,7 +1,9 @@
-/* FILE NAME: booking_block.js
+/* 
+FILE NAME: booking_block.js
 //WRITTEN BY: Ida Christine Opsahl
 //WHEN: November 2016
-//PURPOSE: To make it impossible to pick a date older than today   */
+//PURPOSE: To make it impossible to pick a date older than today
+*/
 
 var today = new Date();
 var dd = today.getDate();
@@ -16,3 +18,6 @@ var yyyy = today.getFullYear();
 
 today = yyyy+'-'+mm+'-'+dd;
 document.getElementById("datefield").setAttribute("min", today);
+
+/*thanks to code from link: 
+http://stackoverflow.com/questions/32378590/set-max-date-to-today-for-date-input*/

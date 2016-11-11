@@ -1,0 +1,286 @@
+<!-- 
+FILE NAME: 
+WRITTEN BY: Cecilie Kristoffersen 
+WHEN: Oktober 2016
+PURPOSE: A reusubale navbar. 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta lang="no">
+
+	<style type="text/css">
+
+	*{
+	/* Fjerner luftrom over og på sidene*/
+	margin:0;
+	padding:0;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+
+}
+
+	    /*#topNavbar ul{
+	    	list-style-type:none;
+	    	margin:0;
+	    	padding:0;
+	    	overflow:hidden;
+	    	
+   
+
+	    }*/
+	body{
+		background-color:#f4f4f4;
+	}
+
+	nav {
+	position: fixed;
+	z-index: 2;
+  text-align:center;
+ 	list-style-type: none;
+ 	max-width: 100%;
+ 	min-width: 100%;
+ 	height: 60px;
+  	background-color: #000;
+ 	overflow: hidden;
+  }
+
+
+ul.topnav li{
+   	display: inline;
+  }
+
+ul.topnav li a{
+  	display: inline-block;
+  	text-decoration: none;
+  	color: white;
+  	width:12%;
+  	font-size:12px;
+	transition: 0.5s;
+  }
+
+ul.topnav li a img{
+  	margin-top: 10px;
+  }
+
+ ul.topnav li a:hover{
+ 	color:gray;
+ }
+
+ ul.topnav li a:active{
+ 	color:#504f4f ;
+ }
+
+.dritt .icon {
+ 	display: none;
+ }
+
+
+.BookRom {
+	float:right;
+	background-color:#8b0007;
+	margin-top: 20px;
+	width:8%;
+	display: inline-block;
+}
+
+.dritt .logo{display: none;}
+
+
+.dritt .icon{
+	display: none;
+	padding-top:15px;
+	padding-right: 20px; 
+	color: white;
+
+}
+
+.dritt {
+	display: none;
+}
+
+/*Opplevelser*/
+.opplevelser {
+	z-index: 2;
+	position: fixed; top: 60px;
+ display:none;
+ background-color: black;
+ max-width: 100%;
+ min-width: 99%;
+ height: 45px;
+ text-align: right;
+}
+
+.opplevelser ul{
+ margin-right: 30%;
+ padding-top: 15px;
+}
+
+.opplevelser li{
+ display:inline;
+}
+
+.opplevelser a{
+ display: inline-block;
+ text-decoration: none;
+ color: white;
+ width:7%;
+ font-size:0.7em;
+}
+
+.opplevelser a:hover{
+ color: grey;
+ transition-duration:.3s;
+}
+
+
+
+@media only screen and (max-width:900px){
+	.opplevelser.responsive {display: none}
+
+	nav ul.topnav {
+		width:100%;
+	}
+	ul.topnav li{display: none;}
+	
+	.dritt .icon{
+		float:right;
+		display: inline-block;
+	}
+	.dritt .logo{
+		float: left;
+		width: 150px;
+		background-size: cover;
+		display: inline-block;
+		box-sizing: border-box;
+		height:60px;
+		padding:20px;
+	}
+			
+
+	ul.topnav.responsive {
+		position: fixed;
+		top:60px;
+		background-color: #000;
+		opacity: 0.85;
+		max-height: 100%;
+		
+	}
+	
+	ul.topnav.responsive li:not(:nth-child(4)){
+		display: block;
+		width:100%;
+		text-align: center;
+		box-sizing: border-box;
+		height: 14%;
+		padding: 10px;
+		
+	}
+
+	ul.topnav.responsive li.BookRom{
+		display:block;
+		width:100%;
+		float: none;
+		height: 40px;
+	}
+
+	 .dritt {
+	 	display: block;
+	 }
+	 .opplevelser li{display: none}
+}
+
+
+
+	
+	</style>
+</head>
+<body>
+<div id="nav-collapsed">
+  <nav>
+  	<div class="dritt">
+    	<a class="icon" href="javascript:void(0);" style="font-size:20px;" onclick="myFunction()">☰</a>
+  		<a class="logo" href="index.html"><img src="img/logo/FredrikstenLogo.svg"></a>
+  	</div>
+  	<ul class="topnav" id="topNavbar">
+		<li><a href=index.html>HOTELLET</a></li>
+		<li><a href=romogsuiter.html>ROM OG SUITER </a></li>
+		<li><a href=konferanse.html>KONFERANSE </a></li>
+		<!-- Making the logo clicable, linking back to index-->
+		<li><a href="index.html"><img src="img/logo/FredrikstenLogo.svg"></a></li>
+		<li><a id="opplevelser" >OPPLEVELSER </a></li>
+		<li><a href="galleri.html">GALLERI</a></li>
+		<li><a href="kontakt.html">KONTAKT</a></li>
+		<li class="BookRom"><a href="">BOOK ROM</a></li>
+    </ul>
+  </nav>
+
+  </div>
+
+<div  id="opplevelser_bar" class="opplevelser" >
+      <ul>
+        <li><a class="opplevelser_links" href=opplevelser_matogdrikke.html id="matogdrikke"> Mat og Drikke </a></li>
+        <li><a class="opplevelser_links" href=opplevelser_selskap.html id="selskap"> Selskap </a></li>'
+        <li><a class="opplevelser_links" href="opplevelser_aktiviteter.html"> Aktiviteter </a></li>
+</ul></div>
+
+
+
+<script type="text/javascript">
+	function myFunction(){
+		var x = document.getElementById("topNavbar");
+		if(x.className === "topnav"){
+			x.className += " responsive";
+		}else {
+			x.className = "topnav";
+		}
+	}
+
+var opplevelser_bar = document.getElementById("opplevelser_bar");
+opplevelser_bar.className = "opplevelser"
+
+/*function Satan(){
+	var y = document.getElementById("opplevelser_bar");
+	if(y.className ==="opplevelser"){
+		y.className += " responsive";
+	}else{
+		y.className ="opplevelser";
+		opplevelser.addEventListener("mouseenter", function( event ) {
+    opplevelser_bar.style.display = "block";
+
+})
+opplevelser_bar.addEventListener("mouseleave", function( event ) {
+    opplevelser_bar.style.display = "none";
+})
+	}
+}*/
+
+opplevelser.addEventListener("mouseenter", function( event ) {
+    
+    var y = document.getElementById("opplevelser_bar");
+    if(y.className === "opplevelser"){
+    	y.className += " responsive";
+    	opplevelser_bar.style.display = "block";
+    }else{
+    	y.className = "opplevelser";
+
+    }
+
+})
+opplevelser_bar.addEventListener("mouseleave", function( event ) {
+    opplevelser_bar.style.display = "none";
+})
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
+
+
+

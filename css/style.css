@@ -45,6 +45,26 @@ article{
 	min-height: 100%;
 }
 
+.bookingButtons	 {
+    width: 40%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    margin-top:40px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size:16px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color:#8b0007;
+  
+} 
+
+.bookingButtons:hover {
+    background-color: #580004;
+    color: #ffffff;
+}
 /* Bildet dekker hele skjermen*/
 .bigPicture{
 	/*margin-top: 30px; ødelegger for galleri og index, se på dette senere. Burde ha der for å få mer av bildet med*/
@@ -363,8 +383,8 @@ h1 {
 }
 
 /*Kan bruke denne på alle "knapper" som skal se like ut*/
-.bookingButtons{ /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
-	position: auto;
+/*.bookingButtons{ /*knapp til å sjekke om tilgjengelighet opp mot opplysningene*/
+	/*position: auto;
 	border-radius: 3px;
 	border: 1px solid #ebe9e4;
 	background-color: rgb(139, 0, 7);
@@ -374,7 +394,7 @@ h1 {
 	margin-bottom: 40px;
 	width: 180px;
 	height: 24px;
-}
+} */
 /*////////////////////END OF CSS FOR KONFERANSE.HTML, WRITTEN BY IDA/////////////////////*/
 
 
@@ -562,8 +582,17 @@ margin-top:0
     border-radius: 4px;
     box-sizing: border-box;
     font-size:16px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color:#8b0007
   
 } 
+
+#kontaktOssSend:hover {
+    background-color: #580004;
+    color: #ffffff;
+}
+
 
 
 

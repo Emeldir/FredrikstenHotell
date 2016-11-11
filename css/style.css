@@ -546,7 +546,7 @@ font-size:60%;
 /*////////////////////END OF CSS FOR GALLERI.HTML, WRITTEN BY TORSTEIN/////////////////////*/
 
 /*///////////////// CSS for Footer, written by Susanne ///////////////////*/
-
+/* With credit to Script Tutorials: https://www.script-tutorials.com/stylish-responsive-footer/ */
 
 #main {overflow:auto;
 	padding: 120px 0;
@@ -631,12 +631,6 @@ a {
 	font-size: 1em;
 	text-decoration: none;
 }
-
-a:hover {background-color:transparent; text-decoration:underline}
-
-/* must declare 0 margins on everything, also for main layout components use padding, not
-vertical margins (top and bottom) to add spacing, else those margins get added to total height
-and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
 
 
 

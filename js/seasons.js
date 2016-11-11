@@ -5,6 +5,7 @@
 
 //Seasons:
 
+var d = new Date();
 var month = d.getMonth() + 1;
 
 if (month >= 3 && month <= 5) {

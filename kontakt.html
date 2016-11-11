@@ -44,22 +44,7 @@ PURPOSE:
 			</article>
 			
 			<div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://www.google.no/maps/place/Fredriksten+Hotell/@59.1161757,11.394511,15z/data=!4m2!3m1!1s0x0:0x319062ce0c7a5973?sa=X&ved=0ahUKEwj6pPS-vaDQAhWCkCwKHbE4CCUQ_BIIlQEwDA">
-    </script>
+
 
   			<!--<footer> -->
   				<article>
@@ -85,6 +70,16 @@ PURPOSE:
   		</wrapper>
     	<script src="js/importNavBar.js" type="text/javascript"></script>
 			<script src="js/footerresp.js" type="text/javascript"></script>
+			<script src="js/googlemap.js" type="text/javascript"></script>
+			
+
+ 
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl7tZ5P2aqkqyc8ui3xJNcp67DV8KWW2g&callback=initMap">
+    </script>
+        <script async defer
+    src="https://www.google.no/maps/place/Fredriksten+Hotell/@59.1161757,11.394511,15z/data=!4m2!3m1!1s0x0:0x319062ce0c7a5973?sa=X&ved=0ahUKEwj6pPS-vaDQAhWCkCwKHbE4CCUQ_BIIlQEwDA">
+    </script>
 
   	</body>
 </html>

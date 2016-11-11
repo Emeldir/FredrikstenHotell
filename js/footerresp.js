@@ -1,12 +1,10 @@
-/* FILE NAME: footer.js
+/* FILE NAME: footerresp.js
 //WRITTEN BY: Susanne Rom
 //WHEN: November 2016
 //PURPOSE: To make contact info and links avaiable to users at all times.   */
 
 
-
 var footer = document.getElementById("footer");
-
 
 var content;
 
@@ -36,14 +34,14 @@ content =
 +           '<div class="text">'
 +                '<h4>SOSIALE MEDIER</h4>'
 +               '<div>'
-+                 '<a href="https://www.facebook.com/fredrikstenhotell/?fref=ts"> <img id="faceikon" src="img/ikoner/facebook.png" heigth="57" width="57"></a>'
-+                  '<a href="https://www.instagram.com/fredrikstenhotell/">  <img id="instaikon" src="img/ikoner/insta.png" heigth="60" width="60"> </a>'
++                 '<a href="https://www.facebook.com/fredrikstenhotell/?fref=ts"> <img id="faceikon" src="img/ikoner/facebook.png" alt="Facebook ikon" heigth="57" width="57"></a>'
++                  '<a href="https://www.instagram.com/fredrikstenhotell/">  <img id="instaikon" src="img/ikoner/insta.png" alt="Instagram ikon" heigth="60" width="60"> </a>'
 +                '</div>'
 +            '</div>'
 +        '</li>'
 +        '<li>'
 +            '<div class="text">'
-+               '<div> <a href="https://no.tripadvisor.com/Hotel_Review-g315897-d3246588-Reviews-Fredriksten_Hotell-Halden_Halden_Municipality_Ostfold_Eastern_Norway.html"> <img src="img/ikoner/testtripadvisor.png" heigth="140" width="140"></a> </div>'
++               '<div> <a href="https://no.tripadvisor.com/Hotel_Review-g315897-d3246588-Reviews-Fredriksten_Hotell-Halden_Halden_Municipality_Ostfold_Eastern_Norway.html"> <img src="img/ikoner/testtripadvisor.png" alt="Tripadvisor ikon" heigth="140" width="140"></a> </div>'
 +            '</div>'
 +        '</li>'
 +'</div>'/*end of boks2 */

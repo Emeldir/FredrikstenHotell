@@ -594,13 +594,14 @@ margin-top:0
     cursor: pointer;
     color: #ffffff;
     background-color:#8b0007
+}
 <<<<<<< HEAD
-
-}
 =======
 =======
 
 }
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 
 
@@ -724,7 +725,18 @@ a {
     body {
         background-color: lightblue;
     }
+<<<<<<< HEAD
 
+=======
+    
+    #map { 
+    margin-top:500px;
+    
+    #form {
+        width:10%
+       }
+    
+>>>>>>> origin/master
 
 }
 

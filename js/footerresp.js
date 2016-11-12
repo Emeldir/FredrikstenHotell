@@ -44,7 +44,7 @@ content =
 +               '<div> <a href="https://no.tripadvisor.com/Hotel_Review-g315897-d3246588-Reviews-Fredriksten_Hotell-Halden_Halden_Municipality_Ostfold_Eastern_Norway.html"> <img src="img/ikoner/testtripadvisor.png" alt="Tripadvisor ikon" heigth="140" width="140"></a> </div>'
 +            '</div>'
 +        '</li>'
-+'</div>'/*end of boks2 */
++'</div>' /*end of boks2 */
 +    '</ul>'
 +'</footer>'
 

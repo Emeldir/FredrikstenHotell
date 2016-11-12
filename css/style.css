@@ -83,7 +83,7 @@ article{
 /* Bildet dekker hele skjermen*/
 .bigPicture{
     width:100%;
-    padding-top:60px;
+    
 }
 
 .pictureContainer{
@@ -120,16 +120,16 @@ article{
 
 
 /*///////CSS for Navigation Bar. Written by Cecilie///////*/
-	nav {
+ul.topnav {
 	position: fixed;
 	z-index: 2;
-  text-align:center;
+    text-align:center;
  	list-style-type: none;
  	max-width: 100%;
  	min-width: 100%;
- 	height: 60px;
-  	background-color: #000;
+ 	background:#000;
  	overflow: hidden;
+ 	height:60px;
   }
 
 
@@ -152,7 +152,6 @@ ul.topnav li a img{
 
  ul.topnav li a:hover{
  	color:gray;
- 	transition-duration:.3s;
  }
 
  ul.topnav li a:active{
@@ -160,39 +159,36 @@ ul.topnav li a img{
  }
 
 
-.BookRom {
+ul li.BookRom {
 	float:right;
 	background-color:#8b0007;
 	margin-top: 20px;
 	width:8%;
 	display: inline-block;
 }
-
-.nav-responsive .logo{display: none;}
-
-
-.nav-responsive .icon{
-	display: none;
+.mainNav {
+	width:100%;
+	height:60px;
+	display:none;
+	background:#000;
+}
+.icon{
 	padding-top:15px;
-	padding-right: 20px;
+	padding-right: 20px; 
 	color: white;
+    background-color: black;
 
 }
-
-.nav-responsive {
-	display: none;
-}
-
-/*/////Styling for the dropdown under Opplevelser. Written by Torstein///////*/
+/*//////////////////////Opplevelser. Written by Torstein////////////////*/ 
 .opplevelser {
 	z-index: 2;
 	position: fixed; top: 60px;
-    display:none;
-    background-color: black;
-    max-width: 100%;
-    min-width: 100%;
-    height: 45px;
-    text-align: right;
+ display:none;
+ background-color: black;
+ max-width: 100%;
+ min-width: 100%;
+ height: 45px;
+ text-align: right;
 }
 
 .opplevelser ul{
@@ -209,14 +205,13 @@ ul.topnav li a img{
  text-decoration: none;
  color: white;
  width:7%;
- font-size:0.8em;
+ font-size:0.7em;
 }
 
 .opplevelser a:hover{
  color: grey;
  transition-duration:.3s;
 }
-
 ul.topnav li.opplevelser_links{display: none;}
 
 /*//////////////End of CSS for navbar/////////*/
@@ -786,20 +781,20 @@ a {
 
 /*////////////////////Responsive Design, written by Torstein & Cecilie/////////////////*/
 @media only screen and (max-width:900px){
-	.nav-responsive {
-	 	display: block;
-	}
+	ul.topnav {
+		width:100%; background:none; height:auto;}
 
-	nav ul.topnav {
-		width:100%;
-	}
 	ul.topnav li{display: none;}
-
-	.nav-responsive .icon{
-		float:right;
-		display: inline-block;
+    
+	.mainNav {
+		display: block;
 	}
-	.nav-responsive .logo{
+	.icon{
+		float:right;
+		display: block;
+		color: white;
+	}
+	.logo{
 		float: left;
 		width: 150px;
 		background-size: cover;
@@ -808,29 +803,26 @@ a {
 		height:60px;
 		padding:20px;
 	}
-
-
+			
 	ul.topnav.responsive {
-		display: block;
 		position: fixed;
 		top:60px;
 		background-color: #000;
 		opacity: 0.85;
-		max-height: 100%;
-		transition-duration: .3s;
-
 	}
 	ul.topnav.responsive li#opplevelser{display: none;}
+	ul.topnav.responsive li.logo_center{display: none;}
 
-	ul.topnav.responsive li:not(:nth-child(4)){
+	ul.topnav.responsive li{
 		display: block;
 		width:100%;
 		text-align: center;
 		box-sizing: border-box;
 		height: 14%;
 		padding: 10px;
-
+		
 	}
+
 
 
 	ul.topnav.responsive li.BookRom{
@@ -840,10 +832,9 @@ a {
 		height: 40px;
 	}
 
-
-
+	
+	 
 }
-
 /*Legg dette inn for kontakt*/
     /*#map {
     margin-top:500px;}

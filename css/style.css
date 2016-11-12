@@ -11,8 +11,6 @@ WHEN: Oktober/November 2016
 PURPOSE: Stylesheet for the whole homepage
 */
 
-
-
 /* /////General CSS for the whole site. Written by Cecilie////*/
 *{
 	/* Fjerner luftrom over og på sidene*/
@@ -781,9 +779,12 @@ a {
 
 /*////////////////////Responsive Design, written by Torstein & Cecilie/////////////////*/
 @media only screen and (max-width:900px){
+	@-ms-viewport{
+        width:320px;
+    }
 	.nav-responsive {
 	 	display: block;
-	 }
+	}
 
 	nav ul.topnav {
 		width:100%;

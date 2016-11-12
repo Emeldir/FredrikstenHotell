@@ -617,20 +617,41 @@ text-align: center;
 
 /*////////////////////CSS for kontakt.html, written by Sunniva/////////////////////*/
 
+#hele {
+ }
+
+#contactText {
+
+}
+
+
+#formPlace {
+	float: left;
+	margin-left: 25%;
+
+}
+
+
+#mapPlace {
+	display: inline-block;
+
+}
+
+#contactPlace {
+	margin: 30px;
+	display: block;
+
+}
 
 
 #map {
-        margin-top:4%;
-        position:relative;
+        margin-top:1%;
         height: 408px;
-        margin-right:25%;
-        margin-left:51%;
+				width: 290px;
+				float: left;
        }
 
-#form {
-        margin-left: 25%;
-        position:absolute;
-       }
+
 
 .formelement	 {
     width: 80%;
@@ -860,6 +881,20 @@ a {
 			display: none;
 		}
 
+#mapPlace {
+	float: none;
+	margin-left: 25%;
 
+}
+
+#formPlace {
+}
+
+		#map{
+			border: 10px black solid;
+			width: 300px;
+			float: none;
+			margin-top: 25px; 
+		}
 
 /*//////////////End of responsive design////////*/

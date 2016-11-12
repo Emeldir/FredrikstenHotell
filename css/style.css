@@ -82,8 +82,8 @@ article{
 }
 /* Bildet dekker hele skjermen*/
 .bigPicture{
-	/*margin-top: 30px; ødelegger for galleri og index, se på dette senere. Burde ha der for å få mer av bildet med*/
-    width:100%
+    width:100%;
+    padding-top:60px;
 }
 
 .pictureContainer{

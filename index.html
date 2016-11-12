@@ -22,13 +22,48 @@ PURPOSE:
   				<header id="header">
           			<div class="pictureContainer">
             			<img src="img/frontpage/frontpage2.jpg" alt="Utsikt Halden Natt" class="bigPicture">
-          				<img src="img/frontpage/frontpage3.jpg" alt="Julestemning" class="bigPicture" >
-          				<!-- <img src="img/frontpage/frontpage4.jpg" alt="Hotellrom" class="bigPicture"> -->
-          				<img src="img/frontpage/frontpage5.jpg" alt="sitteplass" class="bigPicture">
+          				<img src="img/frontpage/frontpage3.jpg" alt="Julestemning" class="bigPicture">
+          				<img src="img/frontpage/frontpage5.jpg" alt="Sitteplass" class="bigPicture">
+          				<img src="img/frontpage/frontpage4.jpg" alt="Sitteplass" class="bigPicture">
           				<h1 class="overskrift">Velkommen</h1>
-
+						
+						<div id="bookingBoks">
+  							<h3>Book ditt opphold</h3>
+  							<form name="myForm" action="http://online.techotel.dk/domino.aspx?hotelid=76955&lang=no" method="post">
+    							<fieldset class="fieldset">
+      								<input type="date" name="ankomst" id="ankomst" placeholder="ANKOMST" min="2016-11-11" required> <br>
+      								<input type="date" name="avreise" id="avreise" placeholder="AVREISE" min="2016-11-11" required> <br>
+    							</fieldset>
+    							<fieldset class="fieldset">
+      								<ul class="col-3">
+        								<li class="liBookingBoks">
+          									<div class="romValg">
+            									<label for="rom"> Rom</label> <br>
+            									<input type="number" min="1" max="10" class="selector" required>
+          									</div>
+        								</li>
+        								<li class="liBookingBoks">
+          									<div class="voksneValg">
+            									<label for="voksne"> Voksne</label> <br>
+            									<input type="number" min="1" max="10" class="selector" required>
+          									</div>
+        								</li>
+        								<li class="liBookingBoks">
+          									<div class="barnValg">
+            									<label for="barn"> Barn </label> <br>
+            									<input type="number" min="0" max="10" class="selector" required>
+          									</div>
+        								</li>
+      								</ul>
+    							</fieldset>
+    							<fieldset class="fieldset">
+      								<input type="submit" id="sjekkTilgjengelighet" value="Sjekk tilgjengelighet">
+    							</fieldset>
+							</form>
+						</div>
+					</div>
           				<!-- Den røde booking boksen øverst til høyre på siden-->
-          				<div id="bookingBoks">
+          				<!--<div id="bookingBoks">
               				<h3>Book ditt opphold</h3>
               				<form name="myForm" action="http://online.techotel.dk/domino.aspx?hotelid=76955&lang=no" method="post">
               					<fieldset class="fieldset">
@@ -98,8 +133,7 @@ PURPOSE:
                 				</fieldset>
                 				<input type="submit" id="sjekkTilgjengelighet" value="Sjekk Tilgjengelighet"> </input>
               				</form>
-            			</div>
-          			</div>
+            			</div>-->
   				</header>
 
       			<div class="underMeny" >

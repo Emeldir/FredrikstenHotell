@@ -244,7 +244,8 @@ div h3 { /*overskrift i bookingboks- book ditt opphold*/
 }
 
 .selector{ /*Drop down meny- Rom, Voksne, Barn */
-  	-webkit-appearance: menulist-button;
+  	-webkit-appearance: none;
+  	color: #504f4f;
   	width: 50px;
   	height: 24px;
   	border-radius: 0;
@@ -252,29 +253,26 @@ div h3 { /*overskrift i bookingboks- book ditt opphold*/
 
 input[type="date"]:before {
     content: attr(placeholder); /*legge til placeholder til tekst*/
-    color: #aaa;
+    color: #504f4f;
     font-family: Helvetica, "Gill Sans", sans-serif;
     margin-right: 0.5em;
 }
 input[type="date"] {
-    color: #aaa;
+    color: #504f4f;
     font-family: Helvetica, "Gill Sans", sans-serif;
     margin-right: 0.5em;
 }
 
-/* link to */
-::-webkit-inner-spin-button {
-    display: none;
+::-webkit-inner-spin-button { /* arrows inside fields */
+    display: block;
 }
 
-/*input[type="date"]:focus:before,*/
-/*input[type="date"]:valid:before {
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
     content: "";
-}*/
+}
 
 #ankomst { /*felt til å skrive inn ankomst*/
-	/*position: relative;*/
-	/*padding-left: 5px;*/
 	width: 75%;/*180px;*/
 	max-width: 180px;
 	height: 24px;
@@ -310,7 +308,6 @@ input[type="date"] {
 	background-color: rgb(139, 0, 7); /**/
 	color: white;
 	margin-top: 20px;
-	/*position: relative;*/
 	width: 75%;/*180px;*/
 	max-width: 180px;
 	height: 24px;

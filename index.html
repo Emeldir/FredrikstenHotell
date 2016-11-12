@@ -15,17 +15,20 @@ PURPOSE:
 	</head>
 	
 	<body>
-    	<div id="navbar"></div> <!-- -->
+    	<div id="navbar"></div> <!--Placeholder for navigation Bar-->
 		<div class="wrap">
   			<wrapper>
   				<header id="header">
-          			<div class="pictureContainer">
+          			<div class="pictureContainer"> <!-- gathers slideshow, heading and booking box in the top section -->
+          				<!-- the pictures in the slideshow -->
             			<img src="img/frontpage/frontpage2.jpg" alt="Utsikt Halden Natt" class="bigPicture">
           				<img src="img/frontpage/frontpage3.jpg" alt="Julestemning" class="bigPicture">
           				<img src="img/frontpage/frontpage5.jpg" alt="Sitteplass" class="bigPicture">
           				<img src="img/frontpage/frontpage4.jpg" alt="Sitteplass" class="bigPicture">
+          				<!-- End of pictures in the slideshow -->
           				<h1 class="overskrift">Velkommen</h1>
-			
+						
+						<!-- Booking box section -->
 						<div id="bookingBoks">
   							<h3>Book ditt opphold</h3>
   							<form name="myForm" action="http://online.techotel.dk/domino.aspx?hotelid=76955&lang=no" method="post">
@@ -59,85 +62,18 @@ PURPOSE:
       								<input type="submit" id="sjekkTilgjengelighet" value="Sjekk tilgjengelighet">
     							</fieldset>
 							</form>
-						</div>
-					</div>
-          				<!-- Den røde booking boksen øverst til høyre på siden-->
-          				<!--<div id="bookingBoks">
-              				<h3>Book ditt opphold</h3>
-              				<form name="myForm" action="http://online.techotel.dk/domino.aspx?hotelid=76955&lang=no" method="post">
-              					<fieldset class="fieldset">
-                					<input type="date" name="ankomst" id="ankomst" placeholder="ANKOMST" min="2016-11-11" required> <br>
-                					<input type="date" name="avreise" id="avreise" placeholder="AVREISE" min="2016-11-11" required> <br>
-                				</fieldset>
-                				<fieldset class="fieldset">
-                					<ul class="col-3">
-          								<li class="liBookingBoks">
-            								<div class="romValg">
-              									<label for="rom">Rom</label><br>
-              									<select class="selector" required>
-                									<option value="0">0</option>
-                									<option value="1">1</option>
-                									<option value="2">2</option>
-                									<option value="3">3</option>
-                									<option value="4">4</option>
-                									<option value="5">5</option>
-                									<option value="6">6</option>
-                									<option value="7">7</option>
-                									<option value="8">8</option>
-                									<option value="9">9</option>
-                									<option value="10">10</option>
-                									<span style="width: 62px; user-select: none;"></span>
-              									</select>
-            								</div>
-          								</li>
-          								<li class="liBookingBoks">
-            								<div class="voksneValg">
-              									<label for="voksne">Voksne</label><br>
-              									<select class="selector" required>
-                									<option value="0">0</option>
-                									<option value="1">1</option>
-                									<option value="2">2</option>
-                									<option value="3">3</option>
-                									<option value="4">4</option>
-                									<option value="5">5</option>
-                									<option value="6">6</option>
-                									<option value="7">7</option>
-                									<option value="8">8</option>
-                									<option value="9">9</option>
-                									<option value="10">10</option>
-                									<span style="width: 62px; user-select: none;"></span>
-              									</select>
-              								</div>
-          								</li>
-          								<li class="liBookingBoks">
-            								<div class="barnValg">
-              									<label for="barn">Barn</label><br>
-              									<select class="selector" required>
-                									<option value="0">0</option>
-                									<option value="1">1</option>
-                									<option value="2">2</option>
-                									<option value="3">3</option>
-                									<option value="4">4</option>
-                									<option value="5">5</option>
-                									<option value="6">6</option>
-                									<option value="7">7</option>
-                									<option value="8">8</option>
-                									<option value="9">9</option>
-                									<option value="10">10</option>
-                									<span style="width: 62px; user-select: none;"></span>
-              									</select>
-            								</div>
-          								</li>
-        							</ul>
-                				</fieldset>
-                				<input type="submit" id="sjekkTilgjengelighet" value="Sjekk Tilgjengelighet"> </input>
-              				</form>
-            			</div>-->
+						</div> 
+						<!-- End of booking box section -->
+						
+					</div> 
+					<!-- End of pictureContainer -->
   				</header>
-
-      			<div class="underMeny" >
+				
+				<!--Anchor link-->
+      			<div class="underMeny" > 
         			| <a href="#vårFilosofi"> VÅR FILOSOFI </a> | <a href="#historie"> HISTORIE </a>  |
       			</div>
+      			<!--End of Anchor-->
 
 				<article>
         			<h4> HISTORISK PÅ FESTNINGEN I HALDEN </h4><br>
@@ -210,16 +146,13 @@ PURPOSE:
         			</p>
       			</article>
 
-
-						<footer>
-							<img src="img/kaserna_2.jpg" alt="OversiktHotellet" class="contentPicture">
-							</footer>
+				<footer> <!--Photo in footer to place it at the bottom of page-->
+					<img src="img/kaserna_2.jpg" alt="OversiktHotellet" class="contentPicture">
+				</footer>
   			</wrapper>
-		</div>
+		</div> <!-- End of wrap -->
 
-		<footer id="footer">
-		</footer>
-
+		<footer id="footer"></footer>
   		<script src="js/importNavBar.js" type="text/javascript"></script>
 		<script src="js/slideshow.js" type="text/javascript"></script>
 		<script src="js/footerresp.js" type="text/javascript"></script>

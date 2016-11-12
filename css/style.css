@@ -224,13 +224,13 @@ ul.topnav li.opplevelser_links{display: none;}
 
 
 /*//////////////Index.html, written by Ida/////////////////////////////*/
-#bookingBoks { /* booking boksen øverst til høyre på index.html siden */
-	background-color: rgba(139, 0, 7, 0.8); /* Rødfargen #8b0007 */
+#bookingBoks { /* Red booking box */
+	background-color: rgba(139, 0, 7, 0.8); /* red color #8b0007 */
 	border-radius: 5px;
-	width: 30%;/*250px;*/
-	max-width: 250px;
-	min-width: 180px;
-	height: 250px;
+	width: 30%; /* Overall width of the box */
+	max-width: 250px; /* Max width of the box */
+	min-width: 180px; /* Min width of the box */
+	height: 250px; /* Fixed height of the box */
 	color: white;
 	position: absolute; right: 10%; bottom: 2%;
 	text-align: center;
@@ -779,9 +779,6 @@ a {
 
 /*////////////////////Responsive Design, written by Torstein & Cecilie/////////////////*/
 @media only screen and (max-width:900px){
-	@-ms-viewport{
-        width:320px;
-    }
 	.nav-responsive {
 	 	display: block;
 	}

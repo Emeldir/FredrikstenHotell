@@ -31,11 +31,13 @@ html {
 body{
 	background-color: #f4f4f4;
 	font-family:  Helvetica, "Gill Sans", sans-serif;
+	
 }
 
 p, ul,li{
 	font-size: 1em;
 	font-weight:100;
+	line-height:150%;
 }
 
 h4 {
@@ -880,5 +882,10 @@ a {
 			float: none;
 			margin-top: 35px;
 		}
+		
+		article{
+	width:80%;
+	
+	}
 
 /*//////////////End of responsive design////////*/

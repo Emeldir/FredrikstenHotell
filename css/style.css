@@ -37,7 +37,10 @@ body{
 p, ul,li{
 	font-size: 1em;
 	font-weight:100;
-	line-height:150%;
+}
+
+p {
+line-height:150%;
 }
 
 h4 {

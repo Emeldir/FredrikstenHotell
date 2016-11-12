@@ -619,32 +619,22 @@ text-align: center;
 
 /*////////////////////CSS for kontakt.html, written by Sunniva/////////////////////*/
 
-#hele {
- }
-
-#contactText {
-
-}
 
 
 #formPlace {
 	float: left;
 	margin-left: 25%;
-
 }
 
 
 #mapPlace {
 	display: inline-block;
-
 }
 
 #contactPlace {
 	margin: 30px;
 	display: block;
-
 }
-
 
 #map {
         margin-top:1%;
@@ -652,8 +642,6 @@ text-align: center;
 				width: 290px;
 				float: left;
        }
-
-
 
 .formelement	 {
     width: 80%;
@@ -682,21 +670,19 @@ text-align: center;
 }
 
 
-
 #kontaktOssSend:hover {
     background-color: #580004;
     color: #ffffff;
 }
 
 
-
+/* gå gjennom kontakt.html og fjern alle unødvendige id og class */
 
 
 
 /*////////////////////End of CSS for kontakt.html, written by Sunniva/////////////////////*/
 
 
-/*///////////////// CSS for Footer, written by Susanne ///////////////////*/
 
 
 /*///////////////// CSS for Footer, written by Susanne ///////////////////*/
@@ -883,20 +869,15 @@ a {
 			display: none;
 		}
 
-#mapPlace {
+		#mapPlace {
 	float: none;
 	margin-left: 25%;
+	}
 
-}
 
-#formPlace {
-}
-
-		#map{
-			border: 10px black solid;
-			width: 300px;
+	#map {
 			float: none;
-			margin-top: 35px; 
+			margin-top: 35px;
 		}
 
 /*//////////////End of responsive design////////*/

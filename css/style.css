@@ -321,10 +321,17 @@ input[type="date"] {
 	text-align: center;
 }
 
+
 .underMeny a {font-size: 1 ems;}
-.underMeny a:hover {color: #ededed;}
+.underMeny a:hover {color: #777777;}
 .underMeny a:link {color: #504f4f;}
 .underMeny a:visited {color: #504f4f;}
+
+#sjekkTilgjengelighet:hover{
+cursor: pointer;
+}
+
+
 /*///////////////////END OF CSS FOR INDEX.HTML//////////////////////////*/
 
 
@@ -522,7 +529,7 @@ font-size: 20px;
 
 
 .seasonMenu a:hover {
-color: #ededed;
+color: #777777;
 cursor: pointer;
 }
 

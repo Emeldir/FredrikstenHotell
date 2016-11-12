@@ -31,16 +31,11 @@ html {
 body{
 	background-color: #f4f4f4;
 	font-family:  Helvetica, "Gill Sans", sans-serif;
-	
 }
 
 p, ul,li{
 	font-size: 1em;
 	font-weight:100;
-}
-
-p {
-line-height:150%;
 }
 
 h4 {
@@ -87,8 +82,8 @@ article{
 }
 /* Bildet dekker hele skjermen*/
 .bigPicture{
-    width:100%;
-    padding-top: 60px;
+	/*margin-top: 30px; ødelegger for galleri og index, se på dette senere. Burde ha der for å få mer av bildet med*/
+    width:100%
 }
 
 .pictureContainer{
@@ -125,16 +120,16 @@ article{
 
 
 /*///////CSS for Navigation Bar. Written by Cecilie///////*/
-ul.topnav {
+	nav {
 	position: fixed;
 	z-index: 2;
-    text-align:center;
+  text-align:center;
  	list-style-type: none;
  	max-width: 100%;
  	min-width: 100%;
- 	background:#000;
+ 	height: 60px;
+  	background-color: #000;
  	overflow: hidden;
- 	height:60px;
   }
 
 
@@ -157,6 +152,7 @@ ul.topnav li a img{
 
  ul.topnav li a:hover{
  	color:gray;
+ 	transition-duration:.3s;
  }
 
  ul.topnav li a:active{
@@ -164,38 +160,39 @@ ul.topnav li a img{
  }
 
 
-ul li.BookRom {
+.BookRom {
 	float:right;
 	background-color:#8b0007;
 	margin-top: 20px;
 	width:8%;
 	display: inline-block;
 }
-.mainNav {
-	width:100%;
-	height:60px;
-	display:none;
-	background:#000;
-	position: fixed;
-	z-index: 2;
-}
-.icon{
+
+.nav-responsive .logo{display: none;}
+
+
+.nav-responsive .icon{
+	display: none;
 	padding-top:15px;
-	padding-right: 20px; 
+	padding-right: 20px;
 	color: white;
-    background-color: black;
 
 }
-/*//////////////////////Opplevelser. Written by Torstein////////////////*/ 
+
+.nav-responsive {
+	display: none;
+}
+
+/*/////Styling for the dropdown under Opplevelser. Written by Torstein///////*/
 .opplevelser {
 	z-index: 2;
 	position: fixed; top: 60px;
- display:none;
- background-color: black;
- max-width: 100%;
- min-width: 100%;
- height: 45px;
- text-align: right;
+    display:none;
+    background-color: black;
+    max-width: 100%;
+    min-width: 100%;
+    height: 45px;
+    text-align: right;
 }
 
 .opplevelser ul{
@@ -212,13 +209,14 @@ ul li.BookRom {
  text-decoration: none;
  color: white;
  width:7%;
- font-size:0.7em;
+ font-size:0.8em;
 }
 
 .opplevelser a:hover{
  color: grey;
  transition-duration:.3s;
 }
+
 ul.topnav li.opplevelser_links{display: none;}
 
 /*//////////////End of CSS for navbar/////////*/
@@ -388,7 +386,7 @@ li {
 	-webkit-transform: translateX(-50%);
 }
 
-.bookNa {
+#bookNa {
 	background-color: rgb(139, 0, 7);
 	border-style: none;
 	color: white;
@@ -788,21 +786,20 @@ a {
 
 /*////////////////////Responsive Design, written by Torstein & Cecilie/////////////////*/
 @media only screen and (max-width:900px){
-	ul.topnav {
-		width:100%; background:none; height:auto;}
+	.nav-responsive {
+	 	display: block;
+	}
 
+	nav ul.topnav {
+		width:100%;
+	}
 	ul.topnav li{display: none;}
-    
-	.mainNav {
-		display: block;
 
-	}
-	.icon{
+	.nav-responsive .icon{
 		float:right;
-		display: block;
-		color: white;
+		display: inline-block;
 	}
-	.logo{
+	.nav-responsive .logo{
 		float: left;
 		width: 150px;
 		background-size: cover;
@@ -811,33 +808,29 @@ a {
 		height:60px;
 		padding:20px;
 	}
-			
+
+
 	ul.topnav.responsive {
+		display: block;
 		position: fixed;
 		top:60px;
 		background-color: #000;
 		opacity: 0.85;
+		max-height: 100%;
+		transition-duration: .3s;
+
 	}
 	ul.topnav.responsive li#opplevelser{display: none;}
-	ul.topnav.responsive li.logo_center{display: none;}
 
-	ul.topnav.responsive li{
+	ul.topnav.responsive li:not(:nth-child(4)){
 		display: block;
 		width:100%;
 		text-align: center;
-		box-sizing: border-box;		
-	}
-
-	ul.topnav.responsive a{
-		display: block;
-		width: 100%;
-		height: 100%;
-
+		box-sizing: border-box;
+		height: 14%;
 		padding: 10px;
+
 	}
-
-
-
 
 
 	ul.topnav.responsive li.BookRom{
@@ -847,9 +840,10 @@ a {
 		height: 40px;
 	}
 
-	
-	 
+
+
 }
+
 /*Legg dette inn for kontakt*/
     /*#map {
     margin-top:500px;}
@@ -885,10 +879,5 @@ a {
 			float: none;
 			margin-top: 35px;
 		}
-		
-		article{
-	width:80%;
-	
-	}
 
 /*//////////////End of responsive design////////*/

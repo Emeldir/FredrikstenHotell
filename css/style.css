@@ -11,8 +11,6 @@ WHEN: Oktober/November 2016
 PURPOSE: Stylesheet for the whole homepage
 */
 
-
-
 /* /////General CSS for the whole site. Written by Cecilie////*/
 *{
 	/* Fjerner luftrom over og på sidene*/
@@ -226,13 +224,13 @@ ul.topnav li.opplevelser_links{display: none;}
 
 
 /*//////////////Index.html, written by Ida/////////////////////////////*/
-#bookingBoks { /* booking boksen øverst til høyre på index.html siden */
-	background-color: rgba(139, 0, 7, 0.8); /* Rødfargen #8b0007 */
+#bookingBoks { /* Red booking box */
+	background-color: rgba(139, 0, 7, 0.8); /* red color #8b0007 */
 	border-radius: 5px;
-	width: 30%;/*250px;*/
-	max-width: 250px;
-	min-width: 180px;
-	height: 250px;
+	width: 30%; /* Overall width of the box */
+	max-width: 250px; /* Max width of the box */
+	min-width: 180px; /* Min width of the box */
+	height: 250px; /* Fixed height of the box */
 	color: white;
 	position: absolute; right: 10%; bottom: 2%;
 	text-align: center;
@@ -244,7 +242,8 @@ div h3 { /*overskrift i bookingboks- book ditt opphold*/
 }
 
 .selector{ /*Drop down meny- Rom, Voksne, Barn */
-  	-webkit-appearance: menulist-button;
+  	-webkit-appearance: none;
+  	color: #504f4f;
   	width: 50px;
   	height: 24px;
   	border-radius: 0;
@@ -252,29 +251,26 @@ div h3 { /*overskrift i bookingboks- book ditt opphold*/
 
 input[type="date"]:before {
     content: attr(placeholder); /*legge til placeholder til tekst*/
-    color: #aaa;
+    color: #504f4f;
     font-family: Helvetica, "Gill Sans", sans-serif;
     margin-right: 0.5em;
 }
 input[type="date"] {
-    color: #aaa;
+    color: #504f4f;
     font-family: Helvetica, "Gill Sans", sans-serif;
     margin-right: 0.5em;
 }
 
-/* link to */
-::-webkit-inner-spin-button {
-    display: none;
+::-webkit-inner-spin-button { /* arrows inside fields */
+    display: block;
 }
 
-/*input[type="date"]:focus:before,*/
-/*input[type="date"]:valid:before {
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
     content: "";
-}*/
+}
 
 #ankomst { /*felt til å skrive inn ankomst*/
-	/*position: relative;*/
-	/*padding-left: 5px;*/
 	width: 75%;/*180px;*/
 	max-width: 180px;
 	height: 24px;
@@ -310,7 +306,6 @@ input[type="date"] {
 	background-color: rgb(139, 0, 7); /**/
 	color: white;
 	margin-top: 20px;
-	/*position: relative;*/
 	width: 75%;/*180px;*/
 	max-width: 180px;
 	height: 24px;
@@ -321,10 +316,17 @@ input[type="date"] {
 	text-align: center;
 }
 
+
 .underMeny a {font-size: 1 ems;}
-.underMeny a:hover {color: #ededed;}
+.underMeny a:hover {color: #777777;}
 .underMeny a:link {color: #504f4f;}
 .underMeny a:visited {color: #504f4f;}
+
+#sjekkTilgjengelighet:hover{
+cursor: pointer;
+}
+
+
 /*///////////////////END OF CSS FOR INDEX.HTML//////////////////////////*/
 
 
@@ -522,7 +524,7 @@ font-size: 20px;
 
 
 .seasonMenu a:hover {
-color: #ededed;
+color: #777777;
 cursor: pointer;
 }
 
@@ -800,7 +802,7 @@ a {
 @media only screen and (max-width:900px){
 	.nav-responsive {
 	 	display: block;
-	 }
+	}
 
 	nav ul.topnav {
 		width:100%;

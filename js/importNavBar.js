@@ -25,13 +25,13 @@ content = '<nav> <div class="nav-responsive">'
                +'<li><a href="galleri.html">GALLERI</a></li>'
                +'<li><a href="kontakt.html">KONTAKT</a></li>'
                +'<li class="BookRom"><a href="http://online.techotel.dk/domino.aspx?hotelid=76955&lang=no" target="_blank">BOOK ROM</a></li></ul></nav>'
-// Code for extra navbar under Opplevelser. Written by Torstein.               
+// Code for extra navbar under Opplevelser. Written by Torstein.
            +'<div  id="opplevelser_bar" class="opplevelser" >'
 +         '<ul>'
 +         '<li><a href="opplevelser_matogdrikke.html"> Mat og Drikke </a></li>'
 +         '<li><a href="opplevelser_selskap.html" > Selskap </a></li>'
 +         '<li><a href="opplevelser_aktiviteter.html"> Aktiviteter </a></li></ul></div>';
-  
+
 //Written by Cecilie
 navbar.innerHTML += content;
 console.log('kake')
@@ -41,7 +41,7 @@ console.log('kake')
 function IconClick(){
 		var x = document.getElementById("topNavbar");
 		if(x.className === "topnav"){
-			x.className += " responsive";
+			x.className += "responsive";
 			console.log('8')
 		}else {
 			x.className = "topnav";

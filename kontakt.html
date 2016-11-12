@@ -3,7 +3,7 @@
 WRITTEN BY: Ida Christine Opsahl
 			Sunniva Johansen
 WHEN: Oktober/November 2016
-PURPOSE: 
+PURPOSE:
 -->
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@ PURPOSE:
 	<body>
   <!--Navigation Bar-->
       <div id="navbar"></div>
-        
+
 		<div class="wrap">
 			  		<wrapper>
   			<header>
@@ -27,32 +27,43 @@ PURPOSE:
             <img src="img/kontakt/kontakt_forside.jpg" alt="resepsjonen" class="bigPicture">
             <h1 class="overskrift">Kontakt oss</h1>
           </div>
-  				
+
   			</header>
+
+<div id=contactText>
 
   			<article>
   				<p>Kontakt oss gjerne for spørsmål eller forespørsler. Vi skreddersyr et konferanseopplegg,
   				Selskap eller opphold som passer deg og ditt behov. Fyll ut kontaktskjema under, eller kontakt
   				oss direkte via mail på post@fredrikstenhotell.no eller telefon +47 69 02 10 10.</p>
   				</article>
-  				<div id="form" class="formAndMap"> 
-  		
+
+</div> <!--end of div contactText -->
+
+<div id="formPlace">
+
+	<div id="form" class="formAndMap">
+
   				<form id="contactform" action="contact.php">
   					<input class="formelement" type="text" id="kontaktOssNavn" placeholder="Navn"> </input> <br>
   					<input class="formelement" type="email" id="kontaktOssEpost" placeholder="E-post"> </input><br>
   					<input class="formelement" type="tel" id="kontaktOssTelefon" placeholder="Telefon"> </input><br>
   					<textarea class="formelement" id="kontaktOssForespørsel" cols="40" rows="10" placeholder="Forespørsel"></textarea><br>
-  					<!--<input type="text" id="kontaktOssForespørsel" placeholder="Forespørsel"> </input><br>-->	
+  					<!--<input type="text" id="kontaktOssForespørsel" placeholder="Forespørsel"> </input><br>-->
   					<input class="formelement" type="button" id="kontaktOssSend" onclick="kontaktOssSend()" value="SEND"> </input><br>
   				</form>
-  				
+
   				</div>
-			
-			
-			<div id="map" class="formAndMap"></div>
 
 
-  			<!--<footer> -->
+</div> 	<!-- end of div formPlace -->
+
+<div id="mapPlace">
+				<div id="map" class="formAndMap"></div>
+			</div>
+
+<div id="contactPlace">
+
   				<article>
   					<p>KONTAKTINFO<br>
   						+47 69 02 10 10<br>
@@ -63,13 +74,13 @@ PURPOSE:
   						Generalveien 25-27, 1769 Halden, Norway
   					</p>
   				</article>
-  		<!--	</footer>   -->		<!--footer kan ikke være her pga js-footeren-->
+
+				</div> <!-- end of div contactInfo -->
 
 
 			</div>   				<!--div til wrap-->
 
 			<footer id="footer">
-
 			   </footer>
 
 
@@ -77,9 +88,9 @@ PURPOSE:
     	<script src="js/importNavBar.js" type="text/javascript"></script>
 			<script src="js/footerresp.js" type="text/javascript"></script>
 			<script src="js/googlemap.js" type="text/javascript"></script>
-			
 
- 
+
+
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl7tZ5P2aqkqyc8ui3xJNcp67DV8KWW2g&callback=initMap">
     </script>

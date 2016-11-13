@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!--
 /*FILE NAME: kontakt.html
 WRITTEN BY: Ida Christine Opsahl
@@ -6,19 +7,19 @@ WHEN: Oktober/November 2016
 PURPOSE:
 -->
 
-<!DOCTYPE html>
-<html>
+
+<html lang="no">
 	<head>
 		<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title> Fredriksten Hotell | Kontakt </title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-    	<link href="img/ikoner/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="img/ikoner/favicon.ico" rel="icon" type="image/x-icon">
 	</head>
 
 	<body>
   <!--Navigation Bar-->
-      <div id="navbar"></div><!--Placeholder for navigation Bar-->
+    <div id="navbar"></div><!--Placeholder for navigation Bar-->
 		<div class="wrap">
 
   			<header>
@@ -32,20 +33,20 @@ PURPOSE:
   				<p>Kontakt oss gjerne for spørsmål eller forespørsler. Vi skreddersyr et konferanseopplegg,
   				Selskap eller opphold som passer deg og ditt behov. Fyll ut kontaktskjema under, eller kontakt
   				oss direkte via mail på post@fredrikstenhotell.no eller telefon +47 69 02 10 10.</p>
-  				</article>
+  			</article>
 
 
 <div id="formPlace">
-
+      
   			<div id="form" class="formAndMap">
   				<form id="contactform" action="contact.php">
 
-  					<input class="formelement" type="text" id="kontaktOssNavn" placeholder="Navn" required> </input> <br>
-  					<input class="formelement" type="email" id="kontaktOssEpost" placeholder="E-post" required> </input><br>
-  					<input class="formelement" type="tel" id="kontaktOssTelefon" placeholder="Telefon" required> </input><br>
+  					<input class="formelement" type="text" id="kontaktOssNavn" placeholder="Navn" required> <br>
+  					<input class="formelement" type="email" id="kontaktOssEpost" placeholder="E-post" required> <br>
+  					<input class="formelement" type="tel" id="kontaktOssTelefon" placeholder="Telefon" required><br>
   					<textarea class="formelement" id="kontaktOssForespørsel" cols="40" rows="10" placeholder="Forespørsel" required></textarea><br>
   					<!--<input type="text" id="kontaktOssForespørsel" placeholder="Forespørsel"> </input><br>-->
-  					<input class="formelement" type="button" id="kontaktOssSend" onclick="kontaktOssSend()" value="SEND"> </input><br>
+  					<input class="bookingButtons" type="button"  onclick="kontaktOssSend()" value="SEND"><br>
   				</form>
 
   				</div>
@@ -74,11 +75,9 @@ PURPOSE:
 
 			</div>   				<!--div til wrap-->
 
-			<footer id="footer">
-			   </footer>
+			<footer id="footer"></footer>
 
 
-  		</wrapper>
     	<script src="js/importNavBar.js" type="text/javascript"></script>
 			<script src="js/footerresp.js" type="text/javascript"></script>
 			<script src="js/googlemap.js" type="text/javascript"></script>

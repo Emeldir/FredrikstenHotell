@@ -1,7 +1,7 @@
 //FILE NAME: seasons.js
 //WRITTEN BY: Sunniva Johansen
 //WHEN: November 2016
-//PURPOSE: Change content in "matogdrikke" and "aktiviteter" depending on the seasons.
+//PURPOSE: Change content in  "aktiviteter" depending on the seasons.
 
 function show(id){
 console.log(id);

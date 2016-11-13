@@ -1,9 +1,9 @@
 //FILE NAME: importNavBar.js
-//WRITTEN BY: Cecilie Kristoffersen
+//WRITTEN BY: Cecilie Kristoffersen and Torstein Bakke
 //WHEN: November 2016
 //PURPOSE: A reusubale navbar.
 
-//IMPORTS NAVBAR:
+//IMPORTS NAVBAR written by Cecilie
 
 var navbar = document.getElementById("navbar");
 
@@ -14,10 +14,9 @@ content = '<nav class="mainNav">'
                +'<a class="icon" href="javascript:void(0);" style="font-size:20px;" onclick="IconClick()">☰</a>'
                +'<a class="logo" href="index.html"><img src="img/logo/FredrikstenLogo.svg"></a></nav>'
            +'<ul class="topnav" id="topNavbar">'
-               +'<li><a href="index.html">HOTELLET</a></li>'
+               +'<li class ="logo_center"><a href="index.html"><img src="img/logo/FredrikstenLogo.svg" alt="FredrikstenLogo"></a></li>'
                +'<li><a href="romogsuiter.html">ROM OG SUITER </a></li>'
                +'<li><a href="konferanse.html">KONFERANSE </a></li>'
-               +'<li class ="logo_center"><a href="index.html"><img src="img/logo/FredrikstenLogo.svg"></a></li>'
                +'<li id="opplevelser"><a >OPPLEVELSER </a></li>'
                +'<li class="opplevelser_links"><a  href="opplevelser_matogdrikke.html"> MAT OG DRIKKE </a></li>'
                +'<li class="opplevelser_links"><a  href="opplevelser_selskap.html"> SELSKAP </a></li>'
@@ -28,7 +27,7 @@ content = '<nav class="mainNav">'
 // Code for extra navbar under Opplevelser. Written by Torstein.
            +'<div  id="opplevelser_bar" class="opplevelser" >'
 +         '<ul>'
-+         '<li><a href="opplevelser_matogdrikke.html"> Mat og Drikke </a></li>'
++         '<li><a href="opplevelser_matogdrikke.html"> Mat og drikke </a></li>'
 +         '<li><a href="opplevelser_selskap.html" > Selskap </a></li>'
 +         '<li><a href="opplevelser_aktiviteter.html"> Aktiviteter </a></li></ul></div>';
 
